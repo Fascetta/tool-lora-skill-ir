@@ -1,0 +1,559 @@
+{
+  "conditions": {
+    "constant": {
+      "action_accuracy": 0.5,
+      "argument_accuracy": 0.0,
+      "opaque_exact": 0.0
+    },
+    "counterfactual": {
+      "action_accuracy": 1.0,
+      "argument_accuracy": 1.0,
+      "opaque_exact": 1.0
+    },
+    "lexical_shuffled": {
+      "action_accuracy": 1.0,
+      "argument_accuracy": 0.0,
+      "opaque_exact": 0.0
+    },
+    "matched": {
+      "action_accuracy": 1.0,
+      "argument_accuracy": 1.0,
+      "opaque_exact": 1.0
+    },
+    "relation_shuffled": {
+      "action_accuracy": 0.0,
+      "argument_accuracy": 1.0,
+      "opaque_exact": 1.0
+    }
+  },
+  "criteria": {
+    "counterfactual_action": 1.0,
+    "matched_action": 1.0,
+    "opaque_recovery": 1.0,
+    "reload_identity": 1.0,
+    "semantic_reconstruction": 1.0
+  },
+  "cuda_visible_devices": "2",
+  "evaluator_only": [
+    "truth_policy",
+    "condition_labels",
+    "expected_decisions"
+  ],
+  "experiment": "stage4_p0_oracle_tool_policy",
+  "fixture_sha256": "99962d2fe1f31ca860acc22b058ebb4702f928feaacb1a61f12bacaa2809c0a2",
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "learner_visible": [
+    "serialized_ir",
+    "held_out_request",
+    "public_tool_schema"
+  ],
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "public_schema": {
+    "actions": [
+      [
+        "dispatch_alpha",
+        [
+          "entity",
+          "scope"
+        ]
+      ],
+      [
+        "dispatch_beta",
+        [
+          "entity",
+          "scope"
+        ]
+      ]
+    ]
+  },
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "representation": {
+    "opaque_recovery": 1.0,
+    "semantic_reconstruction": 1.0,
+    "serialization_reload_identity": 1.0
+  },
+  "rows": [
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 0
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 0
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 0
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 0
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 0
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 1
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 1
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 1
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 1
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 1
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 2
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 2
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 2
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 2
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 2
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 3
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 3
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 3
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 3
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 3
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 4
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 4
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 4
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 4
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 4
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 5
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 5
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 5
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 5
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 5
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 6
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 6
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 6
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 6
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 6
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 7
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 7
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 7
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 7
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 7
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 8
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 8
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 8
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 8
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 8
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 9
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 9
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 9
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 9
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 9
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 10
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 10
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 10
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 10
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 10
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 11
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 11
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 11
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 11
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 11
+    }
+  ],
+  "seed": 410,
+  "skill_count": 12
+}

@@ -1,0 +1,1392 @@
+{
+  "appworld_commit": "efac79081936323733f68fd78260dab6981f195a",
+  "appworld_package_file_count": 92,
+  "appworld_package_path": "/tmp/appworld-b0-XIZl9D",
+  "appworld_package_tree_sha256": "3e5d86fd6a48c0c793c896067ed407b1539b9a3e1238b19e6c31ea1decab3065",
+  "appworld_root": "/tmp/appworld-root-b0-ohMzCT",
+  "appworld_version": "0.1.3.post1",
+  "b0_fixture_sha256": "a7bbcea4c8c598170d5b8e41f65bbe6d4a9f06d69ded58b007038985b570ff21",
+  "canonical": [
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 0
+    },
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 1
+    },
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 2
+    },
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 3
+    },
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 4
+    },
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 5
+    },
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 6
+    },
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 7
+    },
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 8
+    },
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 9
+    },
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 10
+    },
+    {
+      "primary_alternate": true,
+      "primary_paraphrase": true,
+      "skill": 11
+    }
+  ],
+  "canonical_metrics": {
+    "opaque_lexical_recovery": 1.0,
+    "primary_alternate_equality": 1.0,
+    "primary_paraphrase_equality": 1.0,
+    "relational_recovery": 1.0,
+    "semantic_collision_count": 0
+  },
+  "conditions": {
+    "constant": {
+      "action_accuracy": 0.5,
+      "exact_binding_accuracy": 0.08333333333333333,
+      "state_accuracy": 1.0
+    },
+    "counterfactual": {
+      "action_accuracy": 1.0,
+      "exact_binding_accuracy": 1.0,
+      "state_accuracy": 1.0
+    },
+    "lexical_shuffled": {
+      "action_accuracy": 1.0,
+      "exact_binding_accuracy": 0.0,
+      "state_accuracy": 1.0
+    },
+    "matched": {
+      "action_accuracy": 1.0,
+      "exact_binding_accuracy": 1.0,
+      "state_accuracy": 1.0
+    },
+    "relation_shuffled": {
+      "action_accuracy": 0.0,
+      "exact_binding_accuracy": 1.0,
+      "state_accuracy": 1.0
+    }
+  },
+  "cuda_visible_devices": "2",
+  "evaluator_only": [
+    "truth policy",
+    "candidate states",
+    "expected outcomes"
+  ],
+  "experiment": "stage4_b1_appworld_acquisition",
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "identifiability_audit": {
+    "accuracy": 1.0,
+    "rows": [
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "0:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "0:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "0:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "10:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "10:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "10:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "11:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "11:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "11:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "1:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "1:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "1:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "2:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "2:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "2:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "3:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "3:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "3:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "4:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "4:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "4:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "5:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "5:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "5:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "6:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "6:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "6:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "7:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "7:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "7:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "8:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "8:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "8:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "9:alternate_entity"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "9:paraphrased"
+      },
+      {
+        "candidate_count": 1,
+        "intended_present": true,
+        "support": "9:primary"
+      }
+    ]
+  },
+  "learner_visible": [
+    "natural request text",
+    "public tool schema",
+    "concrete tool call",
+    "observable result"
+  ],
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "rows": [
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 0,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 0,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 0,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 0,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 0,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 0,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 0,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 0,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 0,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 0,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 1,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 1,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 1,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 1,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 1,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 1,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 1,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 1,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 1,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 1,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 2,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 2,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 2,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 2,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 2,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 2,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 2,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 2,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 2,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 2,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 3,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 3,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 3,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 3,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 3,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 3,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 3,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 3,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 3,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 3,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 4,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 4,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 4,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 4,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 4,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 4,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 4,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 4,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 4,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 4,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 5,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 5,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 5,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 5,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 5,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 5,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 5,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 5,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 5,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 5,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 6,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 6,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 6,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 6,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 6,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 6,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 6,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 6,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 6,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 6,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 7,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 7,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 7,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 7,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 7,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 7,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 7,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 7,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 7,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 7,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 8,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 8,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 8,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 8,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 8,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 8,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 8,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 8,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 8,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 8,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 9,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 9,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 9,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 9,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 9,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 9,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 9,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 9,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 9,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 9,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 10,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 10,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 10,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 10,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 10,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 10,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 10,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 10,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 10,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 10,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 11,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 11,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 11,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 11,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 11,
+      "state_correct": true,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "matched",
+      "reload_identity": true,
+      "skill": 11,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": true,
+      "condition": "counterfactual",
+      "reload_identity": null,
+      "skill": 11,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": true,
+      "condition": "relation_shuffled",
+      "reload_identity": null,
+      "skill": 11,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "binding_correct": false,
+      "condition": "lexical_shuffled",
+      "reload_identity": null,
+      "skill": 11,
+      "state_correct": true,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "binding_correct": false,
+      "condition": "constant",
+      "reload_identity": null,
+      "skill": 11,
+      "state_correct": true,
+      "surface": "routine"
+    }
+  ],
+  "serialization_reload_identity": 1.0,
+  "support_sets": 36,
+  "support_sha256": "c1cff6bcdc3b4b5467d8e14ab616aef3cf084e6e7f2c501031f154f428e58cb7",
+  "typeguard_workaround": "temporary --target distribution on PYTHONPATH; system site-packages unchanged"
+}

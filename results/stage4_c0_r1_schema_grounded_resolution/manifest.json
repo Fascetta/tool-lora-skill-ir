@@ -1,0 +1,82 @@
+{
+  "c0_fixture_sha256": "3b118aa3ddb795a4d60d10afc6af38ba4f0417b6edde4d0a45de118a12c8ef7a",
+  "classification": "resolver-interface non-identifiability",
+  "controls_performed": false,
+  "cuda_visible_devices": "2",
+  "execution_performed": false,
+  "experiment": "stage4_c0_r1_schema_grounded_resolution",
+  "frozen_components": [
+    "P0 Skill IR",
+    "C0 Simple Note fixture",
+    "hidden-policy semantics",
+    "serialization",
+    "lexical representation",
+    "AppWorld environment/version",
+    "evaluator",
+    "prior acquisition models/artifacts"
+  ],
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "learned_acquisition_used": false,
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "required_controls": [
+    "matched",
+    "counterfactual",
+    "relation_shuffled",
+    "lexical_shuffled",
+    "constant",
+    "serialization_reload",
+    "candidate_order_permutation",
+    "irrelevant_tool_distractors"
+  ],
+  "schema_audit": {
+    "accuracy": 0.0,
+    "candidate_mapping_count": 2,
+    "compatible_candidate_tools": [
+      "simple_note__delete_note",
+      "simple_note__show_note"
+    ],
+    "evidence_excluded": [
+      "evaluator policy IDs",
+      "gold concrete mappings",
+      "prior C0 expected calls",
+      "application-specific lookup tables"
+    ],
+    "evidence_used": [
+      "abstract dispatch-role structure",
+      "public API names",
+      "public descriptions",
+      "public argument schemas"
+    ],
+    "roles": [
+      "dispatch_alpha",
+      "dispatch_beta"
+    ],
+    "rows": [
+      {
+        "candidate_mapping_count": 2,
+        "compatible_candidate_tools": [
+          "simple_note__delete_note",
+          "simple_note__show_note"
+        ],
+        "mappings": [
+          {
+            "dispatch_alpha": "simple_note__delete_note",
+            "dispatch_beta": "simple_note__show_note"
+          },
+          {
+            "dispatch_alpha": "simple_note__show_note",
+            "dispatch_beta": "simple_note__delete_note"
+          }
+        ],
+        "roles": [
+          "dispatch_alpha",
+          "dispatch_beta"
+        ]
+      }
+    ],
+    "unique_mapping": false
+  },
+  "status": "blocked_before_execution",
+  "typeguard_workaround": "temporary --target distribution on PYTHONPATH; system site-packages unchanged"
+}

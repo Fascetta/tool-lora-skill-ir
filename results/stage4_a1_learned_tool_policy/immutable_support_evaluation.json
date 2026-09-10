@@ -1,0 +1,330 @@
+{
+  "heldout": [
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-0-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-0-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-1-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-1-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-2-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-2-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-3-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-3-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-4-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-4-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-5-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-5-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-6-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-6-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-7-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-7-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-8-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-8-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-9-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-9-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-10-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-10-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "urgent"
+        ]
+      ],
+      "entity": "entity-heldout-a1-11-silver"
+    },
+    {
+      "attributes": [
+        [
+          "priority",
+          "routine"
+        ]
+      ],
+      "entity": "entity-heldout-a1-11-silver"
+    }
+  ],
+  "supports": {
+    "0:alternate": [
+      "Example 0: Please process entity-alternate-0-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-0-oak\", \"scope\": \"org-00-opaque-9f00\"}}\nExample 1: Handle entity-alternate-0-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-0-pine\", \"scope\": \"org-00-opaque-9f00\"}}\nExample 2: Could you take care of entity-alternate-0-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-0-cedar\", \"scope\": \"org-00-opaque-9f00\"}}\nExample 3: I need entity-alternate-0-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-0-birch\", \"scope\": \"org-00-opaque-9f00\"}}\n"
+    ],
+    "0:paraphrase": [
+      "Example 0: Please process entity-paraphrase-0-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-0-oak\", \"scope\": \"org-00-opaque-9f00\"}}\nExample 1: Handle entity-paraphrase-0-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-0-pine\", \"scope\": \"org-00-opaque-9f00\"}}\nExample 2: Could you take care of entity-paraphrase-0-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-0-cedar\", \"scope\": \"org-00-opaque-9f00\"}}\nExample 3: I need entity-paraphrase-0-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-0-birch\", \"scope\": \"org-00-opaque-9f00\"}}\n"
+    ],
+    "0:primary": [
+      "Example 0: Please process entity-primary-0-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-0-oak\", \"scope\": \"org-00-opaque-9f00\"}}\nExample 1: Handle entity-primary-0-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-0-pine\", \"scope\": \"org-00-opaque-9f00\"}}\nExample 2: Could you take care of entity-primary-0-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-0-cedar\", \"scope\": \"org-00-opaque-9f00\"}}\nExample 3: I need entity-primary-0-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-0-birch\", \"scope\": \"org-00-opaque-9f00\"}}\n"
+    ],
+    "10:alternate": [
+      "Example 0: Please process entity-alternate-10-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-10-oak\", \"scope\": \"org-10-opaque-9f10\"}}\nExample 1: Handle entity-alternate-10-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-10-pine\", \"scope\": \"org-10-opaque-9f10\"}}\nExample 2: Could you take care of entity-alternate-10-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-10-cedar\", \"scope\": \"org-10-opaque-9f10\"}}\nExample 3: I need entity-alternate-10-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-10-birch\", \"scope\": \"org-10-opaque-9f10\"}}\n"
+    ],
+    "10:paraphrase": [
+      "Example 0: Please process entity-paraphrase-10-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-10-oak\", \"scope\": \"org-10-opaque-9f10\"}}\nExample 1: Handle entity-paraphrase-10-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-10-pine\", \"scope\": \"org-10-opaque-9f10\"}}\nExample 2: Could you take care of entity-paraphrase-10-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-10-cedar\", \"scope\": \"org-10-opaque-9f10\"}}\nExample 3: I need entity-paraphrase-10-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-10-birch\", \"scope\": \"org-10-opaque-9f10\"}}\n"
+    ],
+    "10:primary": [
+      "Example 0: Please process entity-primary-10-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-10-oak\", \"scope\": \"org-10-opaque-9f10\"}}\nExample 1: Handle entity-primary-10-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-10-pine\", \"scope\": \"org-10-opaque-9f10\"}}\nExample 2: Could you take care of entity-primary-10-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-10-cedar\", \"scope\": \"org-10-opaque-9f10\"}}\nExample 3: I need entity-primary-10-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-10-birch\", \"scope\": \"org-10-opaque-9f10\"}}\n"
+    ],
+    "11:alternate": [
+      "Example 0: Please process entity-alternate-11-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-11-oak\", \"scope\": \"org-11-opaque-9f11\"}}\nExample 1: Handle entity-alternate-11-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-11-pine\", \"scope\": \"org-11-opaque-9f11\"}}\nExample 2: Could you take care of entity-alternate-11-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-11-cedar\", \"scope\": \"org-11-opaque-9f11\"}}\nExample 3: I need entity-alternate-11-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-11-birch\", \"scope\": \"org-11-opaque-9f11\"}}\n"
+    ],
+    "11:paraphrase": [
+      "Example 0: Please process entity-paraphrase-11-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-11-oak\", \"scope\": \"org-11-opaque-9f11\"}}\nExample 1: Handle entity-paraphrase-11-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-11-pine\", \"scope\": \"org-11-opaque-9f11\"}}\nExample 2: Could you take care of entity-paraphrase-11-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-11-cedar\", \"scope\": \"org-11-opaque-9f11\"}}\nExample 3: I need entity-paraphrase-11-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-11-birch\", \"scope\": \"org-11-opaque-9f11\"}}\n"
+    ],
+    "11:primary": [
+      "Example 0: Please process entity-primary-11-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-11-oak\", \"scope\": \"org-11-opaque-9f11\"}}\nExample 1: Handle entity-primary-11-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-11-pine\", \"scope\": \"org-11-opaque-9f11\"}}\nExample 2: Could you take care of entity-primary-11-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-11-cedar\", \"scope\": \"org-11-opaque-9f11\"}}\nExample 3: I need entity-primary-11-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-11-birch\", \"scope\": \"org-11-opaque-9f11\"}}\n"
+    ],
+    "1:alternate": [
+      "Example 0: Please process entity-alternate-1-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-1-oak\", \"scope\": \"org-01-opaque-9f01\"}}\nExample 1: Handle entity-alternate-1-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-1-pine\", \"scope\": \"org-01-opaque-9f01\"}}\nExample 2: Could you take care of entity-alternate-1-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-1-cedar\", \"scope\": \"org-01-opaque-9f01\"}}\nExample 3: I need entity-alternate-1-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-1-birch\", \"scope\": \"org-01-opaque-9f01\"}}\n"
+    ],
+    "1:paraphrase": [
+      "Example 0: Please process entity-paraphrase-1-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-1-oak\", \"scope\": \"org-01-opaque-9f01\"}}\nExample 1: Handle entity-paraphrase-1-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-1-pine\", \"scope\": \"org-01-opaque-9f01\"}}\nExample 2: Could you take care of entity-paraphrase-1-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-1-cedar\", \"scope\": \"org-01-opaque-9f01\"}}\nExample 3: I need entity-paraphrase-1-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-1-birch\", \"scope\": \"org-01-opaque-9f01\"}}\n"
+    ],
+    "1:primary": [
+      "Example 0: Please process entity-primary-1-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-1-oak\", \"scope\": \"org-01-opaque-9f01\"}}\nExample 1: Handle entity-primary-1-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-1-pine\", \"scope\": \"org-01-opaque-9f01\"}}\nExample 2: Could you take care of entity-primary-1-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-1-cedar\", \"scope\": \"org-01-opaque-9f01\"}}\nExample 3: I need entity-primary-1-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-1-birch\", \"scope\": \"org-01-opaque-9f01\"}}\n"
+    ],
+    "2:alternate": [
+      "Example 0: Please process entity-alternate-2-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-2-oak\", \"scope\": \"org-02-opaque-9f02\"}}\nExample 1: Handle entity-alternate-2-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-2-pine\", \"scope\": \"org-02-opaque-9f02\"}}\nExample 2: Could you take care of entity-alternate-2-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-2-cedar\", \"scope\": \"org-02-opaque-9f02\"}}\nExample 3: I need entity-alternate-2-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-2-birch\", \"scope\": \"org-02-opaque-9f02\"}}\n"
+    ],
+    "2:paraphrase": [
+      "Example 0: Please process entity-paraphrase-2-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-2-oak\", \"scope\": \"org-02-opaque-9f02\"}}\nExample 1: Handle entity-paraphrase-2-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-2-pine\", \"scope\": \"org-02-opaque-9f02\"}}\nExample 2: Could you take care of entity-paraphrase-2-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-2-cedar\", \"scope\": \"org-02-opaque-9f02\"}}\nExample 3: I need entity-paraphrase-2-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-2-birch\", \"scope\": \"org-02-opaque-9f02\"}}\n"
+    ],
+    "2:primary": [
+      "Example 0: Please process entity-primary-2-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-2-oak\", \"scope\": \"org-02-opaque-9f02\"}}\nExample 1: Handle entity-primary-2-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-2-pine\", \"scope\": \"org-02-opaque-9f02\"}}\nExample 2: Could you take care of entity-primary-2-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-2-cedar\", \"scope\": \"org-02-opaque-9f02\"}}\nExample 3: I need entity-primary-2-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-2-birch\", \"scope\": \"org-02-opaque-9f02\"}}\n"
+    ],
+    "3:alternate": [
+      "Example 0: Please process entity-alternate-3-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-3-oak\", \"scope\": \"org-03-opaque-9f03\"}}\nExample 1: Handle entity-alternate-3-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-3-pine\", \"scope\": \"org-03-opaque-9f03\"}}\nExample 2: Could you take care of entity-alternate-3-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-3-cedar\", \"scope\": \"org-03-opaque-9f03\"}}\nExample 3: I need entity-alternate-3-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-3-birch\", \"scope\": \"org-03-opaque-9f03\"}}\n"
+    ],
+    "3:paraphrase": [
+      "Example 0: Please process entity-paraphrase-3-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-3-oak\", \"scope\": \"org-03-opaque-9f03\"}}\nExample 1: Handle entity-paraphrase-3-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-3-pine\", \"scope\": \"org-03-opaque-9f03\"}}\nExample 2: Could you take care of entity-paraphrase-3-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-3-cedar\", \"scope\": \"org-03-opaque-9f03\"}}\nExample 3: I need entity-paraphrase-3-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-3-birch\", \"scope\": \"org-03-opaque-9f03\"}}\n"
+    ],
+    "3:primary": [
+      "Example 0: Please process entity-primary-3-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-3-oak\", \"scope\": \"org-03-opaque-9f03\"}}\nExample 1: Handle entity-primary-3-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-3-pine\", \"scope\": \"org-03-opaque-9f03\"}}\nExample 2: Could you take care of entity-primary-3-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-3-cedar\", \"scope\": \"org-03-opaque-9f03\"}}\nExample 3: I need entity-primary-3-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-3-birch\", \"scope\": \"org-03-opaque-9f03\"}}\n"
+    ],
+    "4:alternate": [
+      "Example 0: Please process entity-alternate-4-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-4-oak\", \"scope\": \"org-04-opaque-9f04\"}}\nExample 1: Handle entity-alternate-4-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-4-pine\", \"scope\": \"org-04-opaque-9f04\"}}\nExample 2: Could you take care of entity-alternate-4-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-4-cedar\", \"scope\": \"org-04-opaque-9f04\"}}\nExample 3: I need entity-alternate-4-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-4-birch\", \"scope\": \"org-04-opaque-9f04\"}}\n"
+    ],
+    "4:paraphrase": [
+      "Example 0: Please process entity-paraphrase-4-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-4-oak\", \"scope\": \"org-04-opaque-9f04\"}}\nExample 1: Handle entity-paraphrase-4-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-4-pine\", \"scope\": \"org-04-opaque-9f04\"}}\nExample 2: Could you take care of entity-paraphrase-4-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-4-cedar\", \"scope\": \"org-04-opaque-9f04\"}}\nExample 3: I need entity-paraphrase-4-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-4-birch\", \"scope\": \"org-04-opaque-9f04\"}}\n"
+    ],
+    "4:primary": [
+      "Example 0: Please process entity-primary-4-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-4-oak\", \"scope\": \"org-04-opaque-9f04\"}}\nExample 1: Handle entity-primary-4-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-4-pine\", \"scope\": \"org-04-opaque-9f04\"}}\nExample 2: Could you take care of entity-primary-4-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-4-cedar\", \"scope\": \"org-04-opaque-9f04\"}}\nExample 3: I need entity-primary-4-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-4-birch\", \"scope\": \"org-04-opaque-9f04\"}}\n"
+    ],
+    "5:alternate": [
+      "Example 0: Please process entity-alternate-5-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-5-oak\", \"scope\": \"org-05-opaque-9f05\"}}\nExample 1: Handle entity-alternate-5-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-5-pine\", \"scope\": \"org-05-opaque-9f05\"}}\nExample 2: Could you take care of entity-alternate-5-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-5-cedar\", \"scope\": \"org-05-opaque-9f05\"}}\nExample 3: I need entity-alternate-5-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-5-birch\", \"scope\": \"org-05-opaque-9f05\"}}\n"
+    ],
+    "5:paraphrase": [
+      "Example 0: Please process entity-paraphrase-5-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-5-oak\", \"scope\": \"org-05-opaque-9f05\"}}\nExample 1: Handle entity-paraphrase-5-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-5-pine\", \"scope\": \"org-05-opaque-9f05\"}}\nExample 2: Could you take care of entity-paraphrase-5-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-5-cedar\", \"scope\": \"org-05-opaque-9f05\"}}\nExample 3: I need entity-paraphrase-5-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-5-birch\", \"scope\": \"org-05-opaque-9f05\"}}\n"
+    ],
+    "5:primary": [
+      "Example 0: Please process entity-primary-5-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-5-oak\", \"scope\": \"org-05-opaque-9f05\"}}\nExample 1: Handle entity-primary-5-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-5-pine\", \"scope\": \"org-05-opaque-9f05\"}}\nExample 2: Could you take care of entity-primary-5-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-5-cedar\", \"scope\": \"org-05-opaque-9f05\"}}\nExample 3: I need entity-primary-5-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-5-birch\", \"scope\": \"org-05-opaque-9f05\"}}\n"
+    ],
+    "6:alternate": [
+      "Example 0: Please process entity-alternate-6-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-6-oak\", \"scope\": \"org-06-opaque-9f06\"}}\nExample 1: Handle entity-alternate-6-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-6-pine\", \"scope\": \"org-06-opaque-9f06\"}}\nExample 2: Could you take care of entity-alternate-6-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-6-cedar\", \"scope\": \"org-06-opaque-9f06\"}}\nExample 3: I need entity-alternate-6-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-6-birch\", \"scope\": \"org-06-opaque-9f06\"}}\n"
+    ],
+    "6:paraphrase": [
+      "Example 0: Please process entity-paraphrase-6-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-6-oak\", \"scope\": \"org-06-opaque-9f06\"}}\nExample 1: Handle entity-paraphrase-6-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-6-pine\", \"scope\": \"org-06-opaque-9f06\"}}\nExample 2: Could you take care of entity-paraphrase-6-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-6-cedar\", \"scope\": \"org-06-opaque-9f06\"}}\nExample 3: I need entity-paraphrase-6-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-6-birch\", \"scope\": \"org-06-opaque-9f06\"}}\n"
+    ],
+    "6:primary": [
+      "Example 0: Please process entity-primary-6-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-6-oak\", \"scope\": \"org-06-opaque-9f06\"}}\nExample 1: Handle entity-primary-6-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-6-pine\", \"scope\": \"org-06-opaque-9f06\"}}\nExample 2: Could you take care of entity-primary-6-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-6-cedar\", \"scope\": \"org-06-opaque-9f06\"}}\nExample 3: I need entity-primary-6-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-6-birch\", \"scope\": \"org-06-opaque-9f06\"}}\n"
+    ],
+    "7:alternate": [
+      "Example 0: Please process entity-alternate-7-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-7-oak\", \"scope\": \"org-07-opaque-9f07\"}}\nExample 1: Handle entity-alternate-7-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-7-pine\", \"scope\": \"org-07-opaque-9f07\"}}\nExample 2: Could you take care of entity-alternate-7-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-7-cedar\", \"scope\": \"org-07-opaque-9f07\"}}\nExample 3: I need entity-alternate-7-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-7-birch\", \"scope\": \"org-07-opaque-9f07\"}}\n"
+    ],
+    "7:paraphrase": [
+      "Example 0: Please process entity-paraphrase-7-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-7-oak\", \"scope\": \"org-07-opaque-9f07\"}}\nExample 1: Handle entity-paraphrase-7-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-7-pine\", \"scope\": \"org-07-opaque-9f07\"}}\nExample 2: Could you take care of entity-paraphrase-7-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-7-cedar\", \"scope\": \"org-07-opaque-9f07\"}}\nExample 3: I need entity-paraphrase-7-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-7-birch\", \"scope\": \"org-07-opaque-9f07\"}}\n"
+    ],
+    "7:primary": [
+      "Example 0: Please process entity-primary-7-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-7-oak\", \"scope\": \"org-07-opaque-9f07\"}}\nExample 1: Handle entity-primary-7-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-7-pine\", \"scope\": \"org-07-opaque-9f07\"}}\nExample 2: Could you take care of entity-primary-7-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-7-cedar\", \"scope\": \"org-07-opaque-9f07\"}}\nExample 3: I need entity-primary-7-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-7-birch\", \"scope\": \"org-07-opaque-9f07\"}}\n"
+    ],
+    "8:alternate": [
+      "Example 0: Please process entity-alternate-8-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-8-oak\", \"scope\": \"org-08-opaque-9f08\"}}\nExample 1: Handle entity-alternate-8-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-8-pine\", \"scope\": \"org-08-opaque-9f08\"}}\nExample 2: Could you take care of entity-alternate-8-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-8-cedar\", \"scope\": \"org-08-opaque-9f08\"}}\nExample 3: I need entity-alternate-8-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-8-birch\", \"scope\": \"org-08-opaque-9f08\"}}\n"
+    ],
+    "8:paraphrase": [
+      "Example 0: Please process entity-paraphrase-8-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-8-oak\", \"scope\": \"org-08-opaque-9f08\"}}\nExample 1: Handle entity-paraphrase-8-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-8-pine\", \"scope\": \"org-08-opaque-9f08\"}}\nExample 2: Could you take care of entity-paraphrase-8-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-8-cedar\", \"scope\": \"org-08-opaque-9f08\"}}\nExample 3: I need entity-paraphrase-8-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-8-birch\", \"scope\": \"org-08-opaque-9f08\"}}\n"
+    ],
+    "8:primary": [
+      "Example 0: Please process entity-primary-8-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-8-oak\", \"scope\": \"org-08-opaque-9f08\"}}\nExample 1: Handle entity-primary-8-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-8-pine\", \"scope\": \"org-08-opaque-9f08\"}}\nExample 2: Could you take care of entity-primary-8-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-8-cedar\", \"scope\": \"org-08-opaque-9f08\"}}\nExample 3: I need entity-primary-8-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-8-birch\", \"scope\": \"org-08-opaque-9f08\"}}\n"
+    ],
+    "9:alternate": [
+      "Example 0: Please process entity-alternate-9-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-9-oak\", \"scope\": \"org-09-opaque-9f09\"}}\nExample 1: Handle entity-alternate-9-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-9-pine\", \"scope\": \"org-09-opaque-9f09\"}}\nExample 2: Could you take care of entity-alternate-9-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-alternate-9-cedar\", \"scope\": \"org-09-opaque-9f09\"}}\nExample 3: I need entity-alternate-9-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-alternate-9-birch\", \"scope\": \"org-09-opaque-9f09\"}}\n"
+    ],
+    "9:paraphrase": [
+      "Example 0: Please process entity-paraphrase-9-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-9-oak\", \"scope\": \"org-09-opaque-9f09\"}}\nExample 1: Handle entity-paraphrase-9-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-9-pine\", \"scope\": \"org-09-opaque-9f09\"}}\nExample 2: Could you take care of entity-paraphrase-9-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-paraphrase-9-cedar\", \"scope\": \"org-09-opaque-9f09\"}}\nExample 3: I need entity-paraphrase-9-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-paraphrase-9-birch\", \"scope\": \"org-09-opaque-9f09\"}}\n"
+    ],
+    "9:primary": [
+      "Example 0: Please process entity-primary-9-oak. This request is marked urgent.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-9-oak\", \"scope\": \"org-09-opaque-9f09\"}}\nExample 1: Handle entity-primary-9-pine; the current status is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-9-pine\", \"scope\": \"org-09-opaque-9f09\"}}\nExample 2: Could you take care of entity-primary-9-cedar? It is a urgent case.\nObserved action trace: {\"action\": \"dispatch_alpha\", \"arguments\": {\"entity\": \"entity-primary-9-cedar\", \"scope\": \"org-09-opaque-9f09\"}}\nExample 3: I need entity-primary-9-birch handled today, and its priority is routine.\nObserved action trace: {\"action\": \"dispatch_beta\", \"arguments\": {\"entity\": \"entity-primary-9-birch\", \"scope\": \"org-09-opaque-9f09\"}}\n"
+    ]
+  }
+}

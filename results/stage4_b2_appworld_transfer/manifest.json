@@ -1,0 +1,4941 @@
+{
+  "appworld_commit": "efac79081936323733f68fd78260dab6981f195a",
+  "appworld_package_path": "/tmp/appworld-b0-XIZl9D",
+  "appworld_root": "/tmp/appworld-root-b0-ohMzCT",
+  "appworld_version": "0.1.3.post1",
+  "b0_fixture_sha256": "a7bbcea4c8c598170d5b8e41f65bbe6d4a9f06d69ded58b007038985b570ff21",
+  "b1_support_sha256": "c1cff6bcdc3b4b5467d8e14ab616aef3cf084e6e7f2c501031f154f428e58cb7",
+  "criteria": {
+    "canonical_equality": 0.95,
+    "counterfactual_action_state": 0.95,
+    "matched_action_binding_state": 0.95,
+    "opaque_lexical_recovery": 1.0,
+    "relational_recovery": 0.95,
+    "semantic_collisions": 0,
+    "serialization_identity": 1.0
+  },
+  "cuda_visible_devices": "2",
+  "experiment": "stage4_b2_appworld_transfer",
+  "frozen_checkpoints": [
+    {
+      "canonical_metrics": {
+        "agreement_with_deterministic_b1": 1.0,
+        "opaque_lexical_recovery": 1.0,
+        "primary_alternate_equality": 1.0,
+        "primary_paraphrase_equality": 1.0,
+        "relational_recovery": 1.0,
+        "semantic_collision_count": 0,
+        "serialization_identity": 1.0
+      },
+      "canonical_rows": [
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 0
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 1
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 2
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 3
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 4
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 5
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 6
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 7
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 8
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 9
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 10
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 11
+        }
+      ],
+      "checkpoint": "results/stage4_a2_r1_corrected_supervision/correspondence_seed_17.pt",
+      "checkpoint_sha256": "8c3cfa9d975baa2915df1010c443904bdcd7f3fa4ab6bf2c8de3d0c7f651bceb",
+      "conditions": {
+        "constant": {
+          "action_accuracy": 0.5,
+          "exact_binding_accuracy": 0.08333333333333333,
+          "state_accuracy": 1.0
+        },
+        "counterfactual": {
+          "action_accuracy": 1.0,
+          "exact_binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "lexical_shuffled": {
+          "action_accuracy": 1.0,
+          "exact_binding_accuracy": 0.0,
+          "state_accuracy": 1.0
+        },
+        "matched": {
+          "action_accuracy": 1.0,
+          "exact_binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "relation_shuffled": {
+          "action_accuracy": 0.0,
+          "exact_binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        }
+      },
+      "rows": [
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        }
+      ],
+      "seed": 17
+    },
+    {
+      "canonical_metrics": {
+        "agreement_with_deterministic_b1": 1.0,
+        "opaque_lexical_recovery": 1.0,
+        "primary_alternate_equality": 1.0,
+        "primary_paraphrase_equality": 1.0,
+        "relational_recovery": 1.0,
+        "semantic_collision_count": 0,
+        "serialization_identity": 1.0
+      },
+      "canonical_rows": [
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 0
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 1
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 2
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 3
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 4
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 5
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 6
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 7
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 8
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 9
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 10
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 11
+        }
+      ],
+      "checkpoint": "results/stage4_a2_r1_corrected_supervision/correspondence_seed_29.pt",
+      "checkpoint_sha256": "c4c7a4b623910636370e08c7506090b230281a1a94746fb5371e60f50274ed85",
+      "conditions": {
+        "constant": {
+          "action_accuracy": 0.5,
+          "exact_binding_accuracy": 0.08333333333333333,
+          "state_accuracy": 1.0
+        },
+        "counterfactual": {
+          "action_accuracy": 1.0,
+          "exact_binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "lexical_shuffled": {
+          "action_accuracy": 1.0,
+          "exact_binding_accuracy": 0.0,
+          "state_accuracy": 1.0
+        },
+        "matched": {
+          "action_accuracy": 1.0,
+          "exact_binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "relation_shuffled": {
+          "action_accuracy": 0.0,
+          "exact_binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        }
+      },
+      "rows": [
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        }
+      ],
+      "seed": 29
+    },
+    {
+      "canonical_metrics": {
+        "agreement_with_deterministic_b1": 1.0,
+        "opaque_lexical_recovery": 1.0,
+        "primary_alternate_equality": 1.0,
+        "primary_paraphrase_equality": 1.0,
+        "relational_recovery": 1.0,
+        "semantic_collision_count": 0,
+        "serialization_identity": 1.0
+      },
+      "canonical_rows": [
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 0
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 1
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 2
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 3
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 4
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 5
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 6
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 7
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 8
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 9
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 10
+        },
+        {
+          "matches_deterministic_b1": true,
+          "primary_alternate_equal": true,
+          "primary_paraphrase_equal": true,
+          "skill": 11
+        }
+      ],
+      "checkpoint": "results/stage4_a2_r1_corrected_supervision/correspondence_seed_43.pt",
+      "checkpoint_sha256": "50ac75dad3d5d03bf0737660d82540ce22cb677703ea082f7e30ac14133b321b",
+      "conditions": {
+        "constant": {
+          "action_accuracy": 0.5,
+          "exact_binding_accuracy": 0.08333333333333333,
+          "state_accuracy": 1.0
+        },
+        "counterfactual": {
+          "action_accuracy": 1.0,
+          "exact_binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "lexical_shuffled": {
+          "action_accuracy": 1.0,
+          "exact_binding_accuracy": 0.0,
+          "state_accuracy": 1.0
+        },
+        "matched": {
+          "action_accuracy": 1.0,
+          "exact_binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "relation_shuffled": {
+          "action_accuracy": 0.0,
+          "exact_binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        }
+      },
+      "rows": [
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 0,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 1,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 2,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 3,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 4,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 5,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 6,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 7,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 8,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 9,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 10,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "urgent",
+          "reload_identity": true,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "urgent",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "matched",
+          "condition_value": "routine",
+          "reload_identity": true,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": true,
+          "condition": "counterfactual",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": true,
+          "condition": "relation_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": true,
+          "binding_correct": false,
+          "condition": "lexical_shuffled",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        },
+        {
+          "action_correct": false,
+          "binding_correct": false,
+          "condition": "constant",
+          "condition_value": "routine",
+          "reload_identity": null,
+          "skill": 11,
+          "state_correct": true
+        }
+      ],
+      "seed": 43
+    }
+  ],
+  "frozen_components": [
+    "B1 support/evaluation",
+    "P0 IR",
+    "B0 resolver",
+    "serialization/canonicalization",
+    "AppWorld environment/API subset",
+    "lexical pointer/copy",
+    "causal controls"
+  ],
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "interface_audit": {
+    "accuracy": 1.0,
+    "excluded": [
+      "deterministic B1 IR",
+      "evaluator truth",
+      "skill IDs",
+      "condition labels",
+      "expected decisions"
+    ],
+    "model_inputs": [
+      "request.text",
+      "public_tool_schema",
+      "tool_call.api",
+      "tool_call.arguments",
+      "observable_result",
+      "observable_state"
+    ],
+    "rows": [
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "0:primary",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "10:primary",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "11:primary",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "1:primary",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "2:primary",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "3:primary",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "4:primary",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "5:primary",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "6:primary",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "7:primary",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "8:primary",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:alternate_entity",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:paraphrased",
+        "violations": []
+      },
+      {
+        "demo": 0,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:primary",
+        "violations": []
+      },
+      {
+        "demo": 1,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:primary",
+        "violations": []
+      },
+      {
+        "demo": 2,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:primary",
+        "violations": []
+      },
+      {
+        "demo": 3,
+        "has_observable_result": true,
+        "has_public_schema": true,
+        "has_request_text": true,
+        "has_tool_call": true,
+        "support": "9:primary",
+        "violations": []
+      }
+    ]
+  },
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "typeguard_workaround": "temporary --target distribution on PYTHONPATH; system site-packages unchanged"
+}

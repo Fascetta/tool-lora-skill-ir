@@ -1,0 +1,3084 @@
+{
+  "a0_manifest": "results/stage4_c1_a0_deterministic_effect_acquisition/manifest.json",
+  "a0_support_sha256": "b556f8c60db05a8e61739059612639a72945dfd2c1479d36216394a5e12b1ca5",
+  "canonical_equivalence": {
+    "incompatible_support_alignments": 0,
+    "primary_alternate": 1.0,
+    "primary_paraphrased": 1.0
+  },
+  "canonical_rows": [
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 0
+    },
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 1
+    },
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 2
+    },
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 3
+    },
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 4
+    },
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 5
+    },
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 6
+    },
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 7
+    },
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 8
+    },
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 9
+    },
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 10
+    },
+    {
+      "alignments": {
+        "alternate_entity": "identity",
+        "paraphrased": "identity",
+        "primary": "identity"
+      },
+      "app": "todoist",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 11
+    },
+    {
+      "alignments": {
+        "alternate_entity": "swap",
+        "paraphrased": "swap",
+        "primary": "swap"
+      },
+      "app": "simple_note",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 0
+    },
+    {
+      "alignments": {
+        "alternate_entity": "neither",
+        "paraphrased": "neither",
+        "primary": "neither"
+      },
+      "app": "simple_note",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 1
+    },
+    {
+      "alignments": {
+        "alternate_entity": "swap",
+        "paraphrased": "swap",
+        "primary": "swap"
+      },
+      "app": "simple_note",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 2
+    },
+    {
+      "alignments": {
+        "alternate_entity": "neither",
+        "paraphrased": "neither",
+        "primary": "neither"
+      },
+      "app": "simple_note",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 3
+    },
+    {
+      "alignments": {
+        "alternate_entity": "swap",
+        "paraphrased": "swap",
+        "primary": "swap"
+      },
+      "app": "simple_note",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 4
+    },
+    {
+      "alignments": {
+        "alternate_entity": "neither",
+        "paraphrased": "neither",
+        "primary": "neither"
+      },
+      "app": "simple_note",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 5
+    },
+    {
+      "alignments": {
+        "alternate_entity": "swap",
+        "paraphrased": "swap",
+        "primary": "swap"
+      },
+      "app": "simple_note",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 6
+    },
+    {
+      "alignments": {
+        "alternate_entity": "neither",
+        "paraphrased": "neither",
+        "primary": "neither"
+      },
+      "app": "simple_note",
+      "primary_alternate_equivalent": true,
+      "primary_paraphrased_equivalent": true,
+      "skill": 7
+    }
+  ],
+  "classification": "true effect-semantic acquisition failure",
+  "cuda_visible_devices": "2",
+  "equivariance_rows": [
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 7,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 8,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 9,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 10,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 11,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": true,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "relation",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "urgent",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "condition": "routine",
+      "intervention": "effect",
+      "same_binding": true,
+      "same_concrete_api": false,
+      "skill": 7,
+      "surface": "paraphrased"
+    }
+  ],
+  "execution_rerun": false,
+  "experiment": "stage4_c1_a0_g1_gauge_audit",
+  "fraction_requiring_swap": 0.2,
+  "fraction_tied_best_alignment": 0.0,
+  "frozen": [
+    "C1-A0 acquisition output",
+    "supports",
+    "C1 contract",
+    "resolver",
+    "evaluator",
+    "AppWorld fixtures",
+    "balanced lexical identities"
+  ],
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "intervention_equivariance": 0.8,
+  "learned_acquisition_used": false,
+  "permutation_invariant_effect_anchor_recovery": 1.0,
+  "permutation_invariant_full_relational_effect_recovery": 0.8,
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "predeclared_pass": {
+    "intervention_equivariance": 1.0,
+    "permutation_invariant_effect": 1.0,
+    "permutation_invariant_full_semantics": 1.0,
+    "support_equivalence": 1.0
+  },
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "raw_effect_anchor_recovery": 0.6,
+  "rows": [
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 0,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 0,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 0,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 1,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 1,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 1,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 2,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 2,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 2,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 3,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 3,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 3,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 4,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 4,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 4,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 5,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 5,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 5,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 6,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 6,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 6,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 7,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 7,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 7,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 8,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 8,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 8,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 9,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 9,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 9,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 10,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 10,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 10,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 11,
+      "surface": "primary",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 11,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "todoist",
+      "best_alignment": "identity",
+      "identity_effect_recovery": true,
+      "identity_full_recovery": true,
+      "raw_effect_anchor_recovery": true,
+      "skill": 11,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": false,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 0,
+      "surface": "primary",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 0,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 0,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 1,
+      "surface": "primary",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 1,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 1,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 2,
+      "surface": "primary",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 2,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 2,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 3,
+      "surface": "primary",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 3,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 3,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 4,
+      "surface": "primary",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 4,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 4,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 5,
+      "surface": "primary",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 5,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 5,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 6,
+      "surface": "primary",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 6,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "swap",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 6,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": true
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 7,
+      "surface": "primary",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 7,
+      "surface": "alternate_entity",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    },
+    {
+      "app": "simple_note",
+      "best_alignment": "neither",
+      "identity_effect_recovery": false,
+      "identity_full_recovery": false,
+      "raw_effect_anchor_recovery": false,
+      "skill": 7,
+      "surface": "paraphrased",
+      "swapped_effect_recovery": true,
+      "swapped_full_recovery": false
+    }
+  ]
+}

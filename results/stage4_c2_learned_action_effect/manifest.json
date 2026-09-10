@@ -1,0 +1,54 @@
+{
+  "experiment": "stage4_c2_learned_action_effect",
+  "classification": "schema memorization/generalization failure",
+  "first_result_only": true,
+  "predeclared_seeds": [17, 29, 43],
+  "completed_seeds": [17],
+  "stopped_before_seeds": [29, 43],
+  "per_seed": [
+    {
+      "seed": 17,
+      "checkpoint": "results/stage4_c2_learned_action_effect/effect_predictor_seed_17.pt",
+      "checkpoint_sha256": "e0d56fa9e18d47502961461d3e2c02429022af855bbc43438c247490fe0cbbb7",
+      "training_examples": 512,
+      "training_accuracy": 1.0,
+      "training_data_sha256": "32afd8c48a2efd7a5f2749c3509ab84b9d8b589e9ced25df90ba397ba0b6867b",
+      "failure_stage": "effect acquisition before artifact construction",
+      "failure_support": "todoist:1:primary",
+      "failure": "learned effect anchor is not distinct",
+      "predictions": {
+        "todoist__show_task": "state_mutating",
+        "todoist__update_task": "state_mutating"
+      },
+      "effect_anchor_recovery": null,
+      "full_semantic_recovery": null,
+      "execution_performed": false
+    }
+  ],
+  "learner_visible_inputs": [
+    "request text",
+    "public API schemas",
+    "concrete observed calls and arguments",
+    "observable results",
+    "before/after state"
+  ],
+  "training_api_identities": "synthetic operation names only; no Todoist or Simple Note identities",
+  "frozen": [
+    "R1 corrected evaluator",
+    "C1 Skill IR contract",
+    "relation acquisition",
+    "lexical pointer/copy",
+    "canonicalization",
+    "serialization",
+    "schema resolver",
+    "immutable supports",
+    "AppWorld fixtures",
+    "causal controls",
+    "A2/B2 models and artifacts"
+  ],
+  "execution_rerun": false,
+  "appworld_execution": "not reached",
+  "a0_support_sha256": "b556f8c60db05a8e61739059612639a72945dfd2c1479d36216394a5e12b1ca5",
+  "r1_evaluator_sha256": "bba72c6be1bcd1985f3148556f16da264abe5fc20a0d5646bb4bdfc29d045cf9",
+  "cuda_visible_devices": "2"
+}

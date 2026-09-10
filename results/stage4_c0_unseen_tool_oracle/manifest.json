@@ -1,0 +1,180 @@
+{
+  "api_doc_sha256": "53414bc70fbece5ba2ce5f1e6f5a50a41084704a410ce45597130350ab773a3f",
+  "appworld_commit": "efac79081936323733f68fd78260dab6981f195a",
+  "appworld_root": "/tmp/appworld-root-b0-ohMzCT",
+  "appworld_task": "cf6abd2_2",
+  "appworld_version": "0.1.3.post1",
+  "classification": "generic-resolver failure",
+  "cuda_visible_devices": "2",
+  "experiment": "stage4_c0_unseen_tool_oracle",
+  "fixture_sha256": "3b118aa3ddb795a4d60d10afc6af38ba4f0417b6edde4d0a45de118a12c8ef7a",
+  "frozen_components": [
+    "P0 IR",
+    "relational/lexical decomposition",
+    "serialization/canonicalization",
+    "B0 resolver",
+    "evaluator methodology",
+    "support-removal semantics",
+    "causal controls"
+  ],
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "learned_acquisition_used": false,
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "prior_stage4_api_exclusion": true,
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "representability": {
+    "all_contract_valid": true,
+    "oracle_ir_instances": 8,
+    "serialization_identity": 1.0
+  },
+  "required_outcome_conditions": [
+    "matched",
+    "counterfactual",
+    "relation_shuffled",
+    "lexical_shuffled",
+    "constant",
+    "serialization_reload"
+  ],
+  "resolver_audit": {
+    "all_expected_calls_resolved": true,
+    "failure_classification": "generic-resolver failure",
+    "resolution_accuracy": 0.0,
+    "rows": [
+      {
+        "actual_api": "todoist.show_task",
+        "api_correct": false,
+        "condition": "urgent",
+        "error": null,
+        "expected_api": "simple_note.show_note",
+        "skill": 0
+      },
+      {
+        "actual_api": "todoist.update_task",
+        "api_correct": false,
+        "condition": "routine",
+        "error": null,
+        "expected_api": "simple_note.delete_note",
+        "skill": 0
+      },
+      {
+        "actual_api": "todoist.update_task",
+        "api_correct": false,
+        "condition": "urgent",
+        "error": null,
+        "expected_api": "simple_note.delete_note",
+        "skill": 1
+      },
+      {
+        "actual_api": "todoist.show_task",
+        "api_correct": false,
+        "condition": "routine",
+        "error": null,
+        "expected_api": "simple_note.show_note",
+        "skill": 1
+      },
+      {
+        "actual_api": "todoist.show_task",
+        "api_correct": false,
+        "condition": "urgent",
+        "error": null,
+        "expected_api": "simple_note.show_note",
+        "skill": 2
+      },
+      {
+        "actual_api": "todoist.update_task",
+        "api_correct": false,
+        "condition": "routine",
+        "error": null,
+        "expected_api": "simple_note.delete_note",
+        "skill": 2
+      },
+      {
+        "actual_api": "todoist.update_task",
+        "api_correct": false,
+        "condition": "urgent",
+        "error": null,
+        "expected_api": "simple_note.delete_note",
+        "skill": 3
+      },
+      {
+        "actual_api": "todoist.show_task",
+        "api_correct": false,
+        "condition": "routine",
+        "error": null,
+        "expected_api": "simple_note.show_note",
+        "skill": 3
+      },
+      {
+        "actual_api": "todoist.show_task",
+        "api_correct": false,
+        "condition": "urgent",
+        "error": null,
+        "expected_api": "simple_note.show_note",
+        "skill": 4
+      },
+      {
+        "actual_api": "todoist.update_task",
+        "api_correct": false,
+        "condition": "routine",
+        "error": null,
+        "expected_api": "simple_note.delete_note",
+        "skill": 4
+      },
+      {
+        "actual_api": "todoist.update_task",
+        "api_correct": false,
+        "condition": "urgent",
+        "error": null,
+        "expected_api": "simple_note.delete_note",
+        "skill": 5
+      },
+      {
+        "actual_api": "todoist.show_task",
+        "api_correct": false,
+        "condition": "routine",
+        "error": null,
+        "expected_api": "simple_note.show_note",
+        "skill": 5
+      },
+      {
+        "actual_api": "todoist.show_task",
+        "api_correct": false,
+        "condition": "urgent",
+        "error": null,
+        "expected_api": "simple_note.show_note",
+        "skill": 6
+      },
+      {
+        "actual_api": "todoist.update_task",
+        "api_correct": false,
+        "condition": "routine",
+        "error": null,
+        "expected_api": "simple_note.delete_note",
+        "skill": 6
+      },
+      {
+        "actual_api": "todoist.update_task",
+        "api_correct": false,
+        "condition": "urgent",
+        "error": null,
+        "expected_api": "simple_note.delete_note",
+        "skill": 7
+      },
+      {
+        "actual_api": "todoist.show_task",
+        "api_correct": false,
+        "condition": "routine",
+        "error": null,
+        "expected_api": "simple_note.show_note",
+        "skill": 7
+      }
+    ]
+  },
+  "selected_apis": [
+    "simple_note__show_note",
+    "simple_note__delete_note"
+  ],
+  "selected_application": "simple_note",
+  "status": "blocked_at_frozen_resolver_boundary",
+  "typeguard_workaround": "temporary --target distribution on PYTHONPATH; system site-packages unchanged"
+}

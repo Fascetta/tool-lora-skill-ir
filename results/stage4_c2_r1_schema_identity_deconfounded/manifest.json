@@ -1,0 +1,421 @@
+{
+  "appworld_execution": true,
+  "architecture": "EffectPredictor unchanged; 8 input coordinates",
+  "classification": "residual schema shortcut",
+  "cuda_visible_devices": "2",
+  "d0_manifest_sha256": "12341517cfb521d310a7316ce919e437d740e94b7ffe13834072dd47c827921e",
+  "experiment": "stage4_c2_r1_schema_identity_deconfounded",
+  "fit_free_audit": {
+    "candidate_position_only_accuracy": 0.5,
+    "effect_evidence_accuracy": 1.0,
+    "passed": true,
+    "required": {
+      "effect_evidence": 1.0,
+      "identity_chance": 0.5,
+      "position_chance": 0.5
+    },
+    "schema_identity_only_accuracy": 0.5
+  },
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "heldout_schema_split": "Todoist and Simple Note concrete schemas absent from deconfounded synthetic training identities",
+  "optimizer": "Adam lr=0.03, 350 steps",
+  "original_c2_failure_preserved": "e0d56fa9e18d47502961461d3e2c02429022af855bbc43438c247490fe0cbbb7",
+  "per_seed": [
+    {
+      "checkpoint_sha256": "f19619aaee1bd6e9f52806e11d958467e6093048e7dacc5aa305c563f529572f",
+      "collision_count": 0,
+      "conditions": {
+        "constant": {
+          "action_accuracy": 0.5,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 0.8
+        },
+        "counterfactual": {
+          "action_accuracy": 1.0,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "effect_anchor_shuffled": {
+          "action_accuracy": 0.0,
+          "binding_accuracy": 0.8,
+          "state_accuracy": 0.6
+        },
+        "lexical_shuffled": {
+          "action_accuracy": 1.0,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "matched": {
+          "action_accuracy": 1.0,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "relation_shuffled": {
+          "action_accuracy": 0.0,
+          "binding_accuracy": 0.8,
+          "state_accuracy": 0.6
+        }
+      },
+      "d0": {
+        "cases": [
+          {
+            "api": "todoist__show_task",
+            "effect_probability_movement": 0.02642954414477572,
+            "effect_swap": {
+              "label": "state_preserving",
+              "logits": [
+                3.6974916458129883,
+                -4.511885166168213
+              ],
+              "probabilities": [
+                0.9997280240058899,
+                0.0002720160991884768
+              ]
+            },
+            "original": {
+              "label": "state_preserving",
+              "logits": [
+                1.547028660774231,
+                -2.0489399433135986
+              ],
+              "probabilities": [
+                0.9732984304428101,
+                0.026701560243964195
+              ]
+            },
+            "schema_probability_movement": 0.9732786510139704,
+            "schema_swap": {
+              "label": "state_mutating",
+              "logits": [
+                -5.171844482421875,
+                5.655844211578369
+              ],
+              "probabilities": [
+                1.984203299798537e-05,
+                0.9999802112579346
+              ]
+            }
+          },
+          {
+            "api": "todoist__update_task",
+            "effect_probability_movement": 9.083747863769531e-05,
+            "effect_swap": {
+              "label": "state_mutating",
+              "logits": [
+                -4.798677444458008,
+                5.227492332458496
+              ],
+              "probabilities": [
+                4.422527854330838e-05,
+                0.9999557733535767
+              ]
+            },
+            "original": {
+              "label": "state_mutating",
+              "logits": [
+                -4.181070327758789,
+                4.728267192840576
+              ],
+              "probabilities": [
+                0.00013510300777852535,
+                0.999864935874939
+              ]
+            },
+            "schema_probability_movement": 0.99978432716307,
+            "schema_swap": {
+              "label": "state_preserving",
+              "logits": [
+                4.3291754722595215,
+                -5.096648216247559
+              ],
+              "probabilities": [
+                0.9999194145202637,
+                8.060871186899021e-05
+              ]
+            }
+          }
+        ],
+        "mean_effect_probability_movement": 0.013260190811706707,
+        "mean_schema_probability_movement": 0.9865314890885202,
+        "prediction_change_effect": 0.0,
+        "prediction_change_schema": 1.0
+      },
+      "effect_anchor_recovery": 1.0,
+      "exact_lexical_recovery": 1.0,
+      "full_semantic_recovery": 1.0,
+      "primary_alternate_equality": 1.0,
+      "primary_paraphrase_equality": 1.0,
+      "seed": 17,
+      "serialization_identity": 1.0,
+      "training_accuracy": 1.0,
+      "unseen_schema_resolution": 1.0
+    },
+    {
+      "checkpoint_sha256": "cc75ed1a1e4bf435c840a29d4a5ea18872b6a698701a2f1aa817f69d3b8e7c61",
+      "collision_count": 0,
+      "conditions": {
+        "constant": {
+          "action_accuracy": 0.5,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 0.8
+        },
+        "counterfactual": {
+          "action_accuracy": 1.0,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "effect_anchor_shuffled": {
+          "action_accuracy": 0.0,
+          "binding_accuracy": 0.8,
+          "state_accuracy": 0.6
+        },
+        "lexical_shuffled": {
+          "action_accuracy": 1.0,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "matched": {
+          "action_accuracy": 1.0,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "relation_shuffled": {
+          "action_accuracy": 0.0,
+          "binding_accuracy": 0.8,
+          "state_accuracy": 0.6
+        }
+      },
+      "d0": {
+        "cases": [
+          {
+            "api": "todoist__show_task",
+            "effect_probability_movement": 0.01820919111924013,
+            "effect_swap": {
+              "label": "state_preserving",
+              "logits": [
+                4.719056129455566,
+                -5.130943298339844
+              ],
+              "probabilities": [
+                0.9999473094940186,
+                5.2744442655239254e-05
+              ]
+            },
+            "original": {
+              "label": "state_preserving",
+              "logits": [
+                2.017773389816284,
+                -1.9667322635650635
+              ],
+              "probabilities": [
+                0.9817380309104919,
+                0.01826193556189537
+              ]
+            },
+            "schema_probability_movement": 0.9817306734621525,
+            "schema_swap": {
+              "label": "state_mutating",
+              "logits": [
+                -5.24609899520874,
+                6.561431884765625
+              ],
+              "probabilities": [
+                7.4481959018157795e-06,
+                0.9999926090240479
+              ]
+            }
+          },
+          {
+            "api": "todoist__update_task",
+            "effect_probability_movement": 2.002716064453125e-05,
+            "effect_swap": {
+              "label": "state_mutating",
+              "logits": [
+                -4.111560344696045,
+                5.266988277435303
+              ],
+              "probabilities": [
+                8.451063331449404e-05,
+                0.9999154806137085
+              ]
+            },
+            "original": {
+              "label": "state_mutating",
+              "logits": [
+                -4.209761619567871,
+                5.439219951629639
+              ],
+              "probabilities": [
+                6.448708154493943e-05,
+                0.999935507774353
+              ]
+            },
+            "schema_probability_movement": 0.999858240771573,
+            "schema_swap": {
+              "label": "state_preserving",
+              "logits": [
+                4.567629814147949,
+                -4.900537014007568
+              ],
+              "probabilities": [
+                0.9999227523803711,
+                7.726700277999043e-05
+              ]
+            }
+          }
+        ],
+        "mean_effect_probability_movement": 0.009114609139942331,
+        "mean_schema_probability_movement": 0.9907944571168628,
+        "prediction_change_effect": 0.0,
+        "prediction_change_schema": 1.0
+      },
+      "effect_anchor_recovery": 1.0,
+      "exact_lexical_recovery": 1.0,
+      "full_semantic_recovery": 1.0,
+      "primary_alternate_equality": 1.0,
+      "primary_paraphrase_equality": 1.0,
+      "seed": 29,
+      "serialization_identity": 1.0,
+      "training_accuracy": 1.0,
+      "unseen_schema_resolution": 1.0
+    },
+    {
+      "checkpoint_sha256": "9c0ffe07d8b30983a8bbc99f1452a1de20bbba14f10984fbb04f0cd61bfb6405",
+      "collision_count": 0,
+      "conditions": {
+        "constant": {
+          "action_accuracy": 0.5,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 0.8
+        },
+        "counterfactual": {
+          "action_accuracy": 1.0,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "effect_anchor_shuffled": {
+          "action_accuracy": 0.0,
+          "binding_accuracy": 0.8,
+          "state_accuracy": 0.6
+        },
+        "lexical_shuffled": {
+          "action_accuracy": 1.0,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "matched": {
+          "action_accuracy": 1.0,
+          "binding_accuracy": 1.0,
+          "state_accuracy": 1.0
+        },
+        "relation_shuffled": {
+          "action_accuracy": 0.0,
+          "binding_accuracy": 0.8,
+          "state_accuracy": 0.6
+        }
+      },
+      "d0": {
+        "cases": [
+          {
+            "api": "todoist__show_task",
+            "effect_probability_movement": 0.015138990762352478,
+            "effect_swap": {
+              "label": "state_preserving",
+              "logits": [
+                4.631377220153809,
+                -4.9328107833862305
+              ],
+              "probabilities": [
+                0.9999297857284546,
+                7.019326585577801e-05
+              ]
+            },
+            "original": {
+              "label": "state_preserving",
+              "logits": [
+                2.0807299613952637,
+                -2.0897998809814453
+              ],
+              "probabilities": [
+                0.9847908616065979,
+                0.015209184028208256
+              ]
+            },
+            "schema_probability_movement": 0.9847723385319114,
+            "schema_swap": {
+              "label": "state_mutating",
+              "logits": [
+                -5.196247100830078,
+                5.699568271636963
+              ],
+              "probabilities": [
+                1.853530375228729e-05,
+                0.9999815225601196
+              ]
+            }
+          },
+          {
+            "api": "todoist__update_task",
+            "effect_probability_movement": 1.4424324035644531e-05,
+            "effect_swap": {
+              "label": "state_mutating",
+              "logits": [
+                -4.24169921875,
+                4.753823757171631
+              ],
+              "probabilities": [
+                0.00012394812074489892,
+                0.9998760223388672
+              ]
+            },
+            "original": {
+              "label": "state_mutating",
+              "logits": [
+                -4.317471504211426,
+                4.801767826080322
+              ],
+              "probabilities": [
+                0.00010952591401292011,
+                0.9998904466629028
+              ]
+            },
+            "schema_probability_movement": 0.9998230819546734,
+            "schema_swap": {
+              "label": "state_preserving",
+              "logits": [
+                4.629156589508057,
+                -4.976164817810059
+              ],
+              "probabilities": [
+                0.9999326467514038,
+                6.736470822943375e-05
+              ]
+            }
+          }
+        ],
+        "mean_effect_probability_movement": 0.007576707543194061,
+        "mean_schema_probability_movement": 0.9922977102432924,
+        "prediction_change_effect": 0.0,
+        "prediction_change_schema": 1.0
+      },
+      "effect_anchor_recovery": 1.0,
+      "exact_lexical_recovery": 1.0,
+      "full_semantic_recovery": 1.0,
+      "primary_alternate_equality": 1.0,
+      "primary_paraphrase_equality": 1.0,
+      "seed": 43,
+      "serialization_identity": 1.0,
+      "training_accuracy": 1.0,
+      "unseen_schema_resolution": 1.0
+    }
+  ],
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "r1_evaluator_sha256": "bba72c6be1bcd1985f3148556f16da264abe5fc20a0d5646bb4bdfc29d045cf9",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "training_set_sha256": "2f08f21be51c9f5a395e65cfcbbeab190cf80ed9f14d1163023c4b14ffeb6be0"
+}

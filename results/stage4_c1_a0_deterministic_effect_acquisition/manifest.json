@@ -1,0 +1,2222 @@
+{
+  "appworld_commit": "efac79081936323733f68fd78260dab6981f195a",
+  "appworld_version": "0.1.3.post1",
+  "canonical_metrics": {
+    "primary_alternate": 1.0,
+    "primary_paraphrased": 1.0,
+    "semantic_collisions": 0
+  },
+  "classification": "effect-anchor non-identifiability",
+  "cuda_visible_devices": "2",
+  "effect_anchor_recovery": 0.6,
+  "execution": {
+    "errors": [],
+    "metrics": {
+      "constant": {
+        "action_accuracy": 0.5,
+        "binding_accuracy": 0.1,
+        "state_accuracy": 0.8
+      },
+      "counterfactual": {
+        "action_accuracy": 1.0,
+        "binding_accuracy": 1.0,
+        "state_accuracy": 1.0
+      },
+      "effect_anchor_shuffled": {
+        "action_accuracy": 0.0,
+        "binding_accuracy": 0.8,
+        "state_accuracy": 0.6
+      },
+      "lexical_shuffled": {
+        "action_accuracy": 1.0,
+        "binding_accuracy": 0.0,
+        "state_accuracy": 1.0
+      },
+      "matched": {
+        "action_accuracy": 1.0,
+        "binding_accuracy": 1.0,
+        "state_accuracy": 1.0
+      },
+      "relation_shuffled": {
+        "action_accuracy": 0.0,
+        "binding_accuracy": 0.8,
+        "state_accuracy": 0.6
+      }
+    },
+    "performed": true,
+    "rows": [
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "constant",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "constant",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 8,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 9,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 10,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "todoist",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 11,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "constant",
+        "error": null,
+        "skill": 0,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "constant",
+        "error": null,
+        "skill": 0,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 1,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 1,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 2,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 2,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 3,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 3,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 4,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 4,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 5,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 5,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 6,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 6,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "matched",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "counterfactual",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "relation_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": false
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": true,
+        "condition": "effect_anchor_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": false
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "lexical_shuffled",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": true,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 7,
+        "state_correct": true
+      },
+      {
+        "action_correct": false,
+        "app": "simple_note",
+        "binding_correct": false,
+        "condition": "constant",
+        "error": null,
+        "skill": 7,
+        "state_correct": false
+      }
+    ],
+    "serialization_identity": 1.0
+  },
+  "experiment": "stage4_c1_a0_deterministic_effect_acquisition",
+  "fit_free_identifiability": 1.0,
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "learned_acquisition_used": false,
+  "lexical_recovery": 1.0,
+  "p1_fixture_sha256": "b26f7168c6ddc3c95888df664dc11bf102d7358528d34f11f81d765b83d53455",
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "relational_recovery": 1.0,
+  "support_sha256": "b556f8c60db05a8e61739059612639a72945dfd2c1479d36216394a5e12b1ca5",
+  "typeguard_workaround": "temporary --target distribution on PYTHONPATH; system site-packages unchanged"
+}

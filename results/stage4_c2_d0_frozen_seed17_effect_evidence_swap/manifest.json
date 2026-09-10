@@ -1,0 +1,238 @@
+{
+  "aggregate": {
+    "mean_mutating_probability_movement_effect_swap": 0.04634726047515869,
+    "mean_mutating_probability_movement_identity_swap": 0.5036279184278101,
+    "prediction_change_under_effect_swap": 0.0,
+    "prediction_change_under_schema_identity_swap": 0.5
+  },
+  "appworld_execution": false,
+  "cases": [
+    {
+      "api": "todoist__show_task",
+      "effect_evidence_swapped": {
+        "features": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "logits": [
+          -3.9545326232910156,
+          4.005536079406738
+        ],
+        "predicted_index": 1,
+        "predicted_label": "state_mutating",
+        "probabilities": [
+          0.00034900728496722877,
+          0.9996509552001953
+        ]
+      },
+      "feature_coordinate_checks": {
+        "dimension_effect_swap": true,
+        "dimension_identity_swap": true,
+        "dimension_original": true,
+        "finite": true
+      },
+      "original": {
+        "features": [
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "logits": [
+          -1.6924792528152466,
+          1.2411868572235107
+        ],
+        "predicted_index": 1,
+        "predicted_label": "state_mutating",
+        "probabilities": [
+          0.05051419138908386,
+          0.9494857788085938
+        ]
+      },
+      "original_to_effect_swap": {
+        "logit_delta": [
+          -2.262053370475769,
+          2.7643492221832275
+        ],
+        "prediction_changed": false,
+        "probability_delta": [
+          -0.050165184104116634,
+          0.05016517639160156
+        ]
+      },
+      "original_to_identity_swap": {
+        "logit_delta": [
+          -2.72671115398407,
+          3.2427194118499756
+        ],
+        "prediction_changed": false,
+        "probability_delta": [
+          -0.05037824272585567,
+          0.05037820339202881
+        ]
+      },
+      "other_api": "todoist__update_task",
+      "other_schema_text": "todoist__update_task Update task information.",
+      "schema_identity_swapped": {
+        "features": [
+          0.0,
+          2.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "logits": [
+          -4.419190406799316,
+          4.483906269073486
+        ],
+        "predicted_index": 1,
+        "predicted_label": "state_mutating",
+        "probabilities": [
+          0.00013594866322819144,
+          0.9998639822006226
+        ]
+      },
+      "schema_text": "todoist__show_task Show detailed information about the task."
+    },
+    {
+      "api": "todoist__update_task",
+      "effect_evidence_swapped": {
+        "features": [
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "logits": [
+          -4.584959983825684,
+          4.710897445678711
+        ],
+        "predicted_index": 1,
+        "predicted_label": "state_mutating",
+        "probabilities": [
+          9.179532207781449e-05,
+          0.9999082088470459
+        ]
+      },
+      "feature_coordinate_checks": {
+        "dimension_effect_swap": true,
+        "dimension_identity_swap": true,
+        "dimension_original": true,
+        "finite": true
+      },
+      "original": {
+        "features": [
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "logits": [
+          -1.6623917818069458,
+          1.4494569301605225
+        ],
+        "predicted_index": 1,
+        "predicted_label": "state_mutating",
+        "probabilities": [
+          0.04262114316225052,
+          0.9573788642883301
+        ]
+      },
+      "original_to_effect_swap": {
+        "logit_delta": [
+          -2.922568202018738,
+          3.2614405155181885
+        ],
+        "prediction_changed": false,
+        "probability_delta": [
+          -0.042529347840172704,
+          0.04252934455871582
+        ]
+      },
+      "original_to_identity_swap": {
+        "logit_delta": [
+          4.948304772377014,
+          -5.761486291885376
+        ],
+        "prediction_changed": true,
+        "probability_delta": [
+          0.9568775817751884,
+          -0.9568776334635913
+        ]
+      },
+      "other_api": "todoist__show_task",
+      "other_schema_text": "todoist__show_task Show detailed information about the task.",
+      "schema_identity_swapped": {
+        "features": [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "logits": [
+          3.2859129905700684,
+          -4.3120293617248535
+        ],
+        "predicted_index": 0,
+        "predicted_label": "state_preserving",
+        "probabilities": [
+          0.999498724937439,
+          0.0005012308247387409
+        ]
+      },
+      "schema_text": "todoist__update_task Update task information."
+    }
+  ],
+  "checkpoint": "results/stage4_c2_learned_action_effect/effect_predictor_seed_17.pt",
+  "checkpoint_sha256": "e0d56fa9e18d47502961461d3e2c02429022af855bbc43438c247490fe0cbbb7",
+  "classification": "schema-identity shortcut/memorization",
+  "counterfactuals": {
+    "effect_swap": "schema/API identity, request, and tool call held fixed; only observable result and before/after state replaced with generic opposite-effect evidence",
+    "feature_coordinate_convention": "frozen 8-coordinate effect_features order; no new features or reordering",
+    "schema_identity_swap": "effect-bearing result and before/after state held fixed; public schema identity replaced by the paired API schema"
+  },
+  "cuda_visible_devices": "2",
+  "evaluator_truth_used_after_prediction_only": true,
+  "experiment": "stage4_c2_d0_frozen_seed17_effect_evidence_swap",
+  "frozen": [
+    "seed-17 checkpoint",
+    "C2 feature construction",
+    "C2 training data/split",
+    "R1 evaluator",
+    "immutable supports",
+    "prior artifacts"
+  ],
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "preserved_failure_classification": "schema memorization/generalization failure",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "seeds_run": [],
+  "support_key": "todoist:1:primary",
+  "support_sha256": "b556f8c60db05a8e61739059612639a72945dfd2c1479d36216394a5e12b1ca5",
+  "training_performed": false
+}

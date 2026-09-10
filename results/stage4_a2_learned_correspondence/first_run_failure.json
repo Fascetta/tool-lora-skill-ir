@@ -1,0 +1,23 @@
+{
+  "experiment": "stage4_a2_learned_correspondence",
+  "classification": "optimization failure",
+  "status": "blocked_before_complete_evaluation",
+  "reason": "The synthetic correspondence training labels use generator condition order, while feature construction uses canonical sorted condition order.",
+  "diagnostic": {
+    "training_accuracy_by_seed": {"17": 0.515625, "29": 0.5625, "43": 0.5390625},
+    "counterfactual_acquisition": "failed with learned correspondence disagreement",
+    "frozen_contract_modified": false,
+    "second_architecture_run": false
+  },
+  "predeclared_seeds": [17, 29, 43],
+  "p0_fixture_sha256": "99962d2fe1f31ca860acc22b058ebb4702f928feaacb1a61f12bacaa2809c0a2",
+  "a1_support_evaluation_sha256": "65b317789eab6180a9f022e5c471c2ca981657e62e9cf37c0ce19d34fed321ea",
+  "checkpoint_sha256": {
+    "17": "b2312ec6297efbfa571d6510569df0f002763213ecf008cf2b4f4eab637766fc",
+    "29": "62973714cd34e130e830a4b76563e3fe88810fcaf51202820c39737c3a52c847",
+    "43": "2b5b132482d270db6e835f77483b512aaed7fe3a12b89c1decaa8e0024ca9175"
+  },
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "cuda_visible_devices": "2",
+  "typeguard_workaround": "temporary --target distribution on PYTHONPATH; system site-packages unchanged"
+}

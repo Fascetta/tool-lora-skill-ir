@@ -1,0 +1,14 @@
+{
+  "audit_accuracy": {
+    "17": 1.0,
+    "29": 1.0,
+    "43": 1.0
+  },
+  "examples_per_seed": 128,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "training_source": "synthetic anonymized structural correspondence"
+}

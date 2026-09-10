@@ -1,0 +1,1400 @@
+{
+  "canonical_metrics": {
+    "lexical_recovery": 1.0,
+    "primary_alternate_equality": 1.0,
+    "primary_paraphrase_equality": 1.0,
+    "relational_recovery": 1.0,
+    "semantic_collision_count": 0,
+    "serialization_identity": 1.0
+  },
+  "canonicalization": [
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 0
+    },
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 1
+    },
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 2
+    },
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 3
+    },
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 4
+    },
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 5
+    },
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 6
+    },
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 7
+    },
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 8
+    },
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 9
+    },
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 10
+    },
+    {
+      "primary_alternate_equal": true,
+      "primary_paraphrase_equal": true,
+      "skill": 11
+    }
+  ],
+  "conditions": {
+    "constant": {
+      "action_accuracy": 0.5,
+      "argument_accuracy": 0.0,
+      "opaque_exact": 0.0
+    },
+    "counterfactual": {
+      "action_accuracy": 1.0,
+      "argument_accuracy": 1.0,
+      "opaque_exact": 1.0
+    },
+    "lexical_shuffled": {
+      "action_accuracy": 1.0,
+      "argument_accuracy": 0.0,
+      "opaque_exact": 0.0
+    },
+    "matched": {
+      "action_accuracy": 1.0,
+      "argument_accuracy": 1.0,
+      "opaque_exact": 1.0
+    },
+    "relation_shuffled": {
+      "action_accuracy": 0.0,
+      "argument_accuracy": 1.0,
+      "opaque_exact": 1.0
+    }
+  },
+  "criteria": {
+    "counterfactual_action": 0.95,
+    "lexical_recovery": 1.0,
+    "matched_action_argument": 0.95,
+    "primary_alternate_equality": 0.95,
+    "primary_paraphrase_equality": 0.95,
+    "relational_recovery": 0.95,
+    "semantic_collisions": 0,
+    "serialization_identity": 1.0
+  },
+  "cuda_visible_devices": "2",
+  "evaluator_only": [
+    "p0_truth_ir",
+    "candidate_skill_states",
+    "identifiability_labels",
+    "expected_decisions"
+  ],
+  "experiment": "stage4_a1_learned_tool_policy",
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "heldout_surfaces_per_skill": 2,
+  "identifiability_audit": {
+    "all_unique": true,
+    "rows": [
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "0:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "0:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "0:paraphrase"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "1:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "1:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "1:paraphrase"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "2:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "2:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "2:paraphrase"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "3:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "3:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "3:paraphrase"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "4:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "4:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "4:paraphrase"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "5:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "5:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "5:paraphrase"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "6:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "6:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "6:paraphrase"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "7:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "7:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "7:paraphrase"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "8:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "8:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "8:paraphrase"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "9:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "9:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "9:paraphrase"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "10:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "10:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "10:paraphrase"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "11:primary"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "11:alternate"
+      },
+      {
+        "candidate_count": 1,
+        "intended_in_candidates": true,
+        "support": "11:paraphrase"
+      }
+    ]
+  },
+  "learner_visible": [
+    "semi_natural_support",
+    "serialized_p0_ir",
+    "held_out_request",
+    "public_tool_schema"
+  ],
+  "p0_fixture_sha256": "99962d2fe1f31ca860acc22b058ebb4702f928feaacb1a61f12bacaa2809c0a2",
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "rows": [
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 0,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 0,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 0,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 0,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 0,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 0,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 0,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 0,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 0,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 0,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 1,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 1,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 1,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 1,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 1,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 1,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 1,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 1,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 1,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 1,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 2,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 2,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 2,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 2,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 2,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 2,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 2,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 2,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 2,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 2,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 3,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 3,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 3,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 3,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 3,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 3,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 3,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 3,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 3,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 3,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 4,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 4,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 4,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 4,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 4,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 4,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 4,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 4,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 4,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 4,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 5,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 5,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 5,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 5,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 5,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 5,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 5,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 5,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 5,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 5,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 6,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 6,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 6,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 6,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 6,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 6,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 6,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 6,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 6,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 6,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 7,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 7,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 7,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 7,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 7,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 7,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 7,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 7,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 7,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 7,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 8,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 8,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 8,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 8,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 8,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 8,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 8,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 8,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 8,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 8,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 9,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 9,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 9,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 9,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 9,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 9,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 9,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 9,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 9,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 9,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 10,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 10,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 10,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 10,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 10,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 10,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 10,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 10,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 10,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 10,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 11,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 11,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 11,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 11,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 11,
+      "surface": "urgent"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "matched",
+      "opaque_exact": true,
+      "reload_identity": true,
+      "skill": 11,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": true,
+      "condition": "counterfactual",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 11,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": true,
+      "condition": "relation_shuffled",
+      "opaque_exact": true,
+      "reload_identity": null,
+      "skill": 11,
+      "surface": "routine"
+    },
+    {
+      "action_correct": true,
+      "argument_correct": false,
+      "condition": "lexical_shuffled",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 11,
+      "surface": "routine"
+    },
+    {
+      "action_correct": false,
+      "argument_correct": false,
+      "condition": "constant",
+      "opaque_exact": false,
+      "reload_identity": null,
+      "skill": 11,
+      "surface": "routine"
+    }
+  ],
+  "seed": 410,
+  "skill_count": 12,
+  "support_evaluation_sha256": "65b317789eab6180a9f022e5c471c2ca981657e62e9cf37c0ce19d34fed321ea",
+  "support_sets_per_skill": 3,
+  "typeguard_workaround": "temporary --target distribution on PYTHONPATH; system site-packages remained unchanged"
+}

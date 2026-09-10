@@ -1,0 +1,521 @@
+{
+  "fixture_format": "stage4_p0_oracle_fixture_v1",
+  "skills": [
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "urgent"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-00-opaque-9f00"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "routine"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-01-opaque-9f01"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "urgent"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-02-opaque-9f02"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "routine"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-03-opaque-9f03"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "urgent"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-04-opaque-9f04"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "routine"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-05-opaque-9f05"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "urgent"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-06-opaque-9f06"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "routine"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-07-opaque-9f07"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "urgent"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-08-opaque-9f08"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "routine"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-09-opaque-9f09"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "urgent"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-10-opaque-9f10"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "action": "dispatch_beta",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        },
+        {
+          "action": "dispatch_alpha",
+          "arguments": [
+            {
+              "name": "entity",
+              "source": "entity"
+            },
+            {
+              "name": "scope",
+              "source": "literal",
+              "value": "scope"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "key": "priority",
+        "value": "routine"
+      },
+      "format": "stage4_p0_generic_policy_ir_v1",
+      "lexical_bindings": [
+        {
+          "key": "scope",
+          "value": "org-11-opaque-9f11"
+        }
+      ]
+    }
+  ]
+}

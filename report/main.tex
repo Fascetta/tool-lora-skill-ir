@@ -6,12 +6,12 @@
 \usepackage{amssymb}
 \usepackage[accepted]{dlaiml2026}
 
-\dlaititlerunning{Persistent Skill IR}
+\dlaititlerunning{Persistent Skill Representations}
 
 \begin{document}
 
 \twocolumn[
-\dlaititle{Persistent Skill IR for Tool-Using Language Models}
+\dlaititle{From Generated Adapters to Persistent Skill Representations for Tool Use}
 
 \begin{center}\today\end{center}
 
@@ -27,68 +27,75 @@
 \printAffiliationsAndNotice{}
 
 \begin{abstract}
-A tool-use skill maps a user request and prior observations to a structured tool call. We study whether demonstrations of such a skill can be replaced by a persistent intermediate representation that remains sufficient for execution after the demonstrations are deleted. We call this representation \emph{Skill IR}. Skill IR stores request-to-output relations and a lexical sidecar for opaque identifiers; it stores neither demonstrations nor adapter parameters. A deterministic resolver maps Skill IR to a frozen compiler, which creates a temporary LoRA adapter for a frozen language model. On an immutable 72-case controlled benchmark, the learned correspondence model P6-R1 retains the ground-truth permutation in every case and identifies it uniquely in 95.83\% of cases. An exact matcher identifies the ground-truth permutation uniquely in every case when all components are observable. In contrast, direct LoRA generation reaches 79.36\% correct-tool accuracy, below nearest-neighbor adapter retrieval at 94.31\%. These results establish execution-sufficient persistence in the controlled domain, but not recovery of the evaluator's predefined semantic factors.
+We investigate whether demonstrations of a tool-use skill can be replaced by a persistent representation that remains executable after the demonstrations are deleted. We first study low-rank adaptation (LoRA) parameters as the representation. Generated adapters reach 79.36\% correct-tool accuracy, below nearest-neighbor adapter retrieval at 94.31\%. Multi-seed and free-latent controls show that the limitation is not explained solely by semantic conditioning: independently trained adapters are not unique parameter targets, while shared generators fit training behavior but generalize poorly. We therefore introduce \emph{Skill IR}, a serialized intermediate representation of request-to-action relations, operation effects, and opaque lexical identifiers. On a controlled 72-case benchmark, a learned correspondence model retains the correct transformation in every case and identifies it uniquely in 95.83\%. Skill IR also reconnects to evaluated AppWorld tools when operation effects disambiguate public schemas. However, learned effect acquisition remains sensitive to schema wording. The project thus establishes controlled execution-sufficient persistence while identifying adapter non-identifiability and schema shortcuts as distinct barriers to general tool-skill acquisition.
 \end{abstract}
 
 \section{Introduction}
 
-Low-rank adaptation (LoRA) modifies a frozen model weight matrix $W_0$ as $W=W_0+BA$, where $W$ is the adapted weight matrix, $A$ and $B$ are trainable low-rank matrices, and $BA$ is the effective weight update \cite{hu2022lora}. Here, \emph{frozen} means that a parameter is not updated during training. A \emph{hypernetwork}, defined as a neural network that generates parameters for another network, can generate $A$ and $B$ from a task description \cite{charakorn2025text}. This approach is attractive for tool use because one hypernetwork could specialize a language model for many tools.
+A \emph{tool-use skill} is a rule that maps a user request and observable environment state to a structured tool call. A \emph{support set} is the set of demonstrations available while that rule is learned. Our question is whether a support set can be replaced by a persistent object that remains sufficient for execution after the support set is deleted.
 
-However, LoRA parameters are not unique semantic identifiers. Let $R$ be any invertible matrix with dimensions compatible with $A$ and $B$. Then $(BR)(R^{-1}A)=BA$; therefore, different factor pairs implement the same update. Independently trained adapters may also implement similar behavior while occupying different parameter regions. Our experiments consequently distinguish two objects. \emph{Skill IR} is the persistent representation learned from demonstrations. The \emph{execution adapter} is the temporary LoRA adapter used by the frozen language model. Only Skill IR is treated as the persistent representation.
+We evaluate two candidate objects. An \emph{execution adapter} is a temporary LoRA applied to a language model. \emph{Skill IR} is a serialized intermediate representation learned from the support set. Skill IR, rather than the execution adapter, is the final persistent object.
 
-The research question is whether learner-visible demonstrations can produce one deterministic Skill IR that remains executable after demonstration deletion, without providing the learner with the evaluator's predefined semantic factor names. Code and frozen results are available at \url{https://github.com/Fascetta/tool-lora-skill-ir}.
+LoRA modifies a frozen weight matrix $W_0$ as $W=W_0+BA$, where $W$ is the adapted matrix and $A$ and $B$ are trainable low-rank matrices \cite{hu2022lora}. Hypernetworks can generate these matrices from task descriptions \cite{charakorn2025text}. However, for any compatible invertible matrix $R$, $(BR)(R^{-1}A)=BA$. Thus, the factors are non-unique even when the effective update $BA$ is fixed. This ambiguity motivates our progression from generated execution adapters to structured Skill IR. Code and frozen results are available at \url{https://github.com/Fascetta/tool-lora-skill-ir}.
 
-\section{Method}
+\section{Experimental progression}
 
-Let $\mathcal{D}$ denote the support set, i.e., the demonstrations available during acquisition. The maintained pipeline is
-\begin{center}
-\small
-$\mathcal{D}\!\rightarrow\!\text{relations}\!\rightarrow\!\text{correspondence}$\\
-$\rightarrow\!\text{Skill IR}\!\rightarrow\!\text{resolver}\!\rightarrow\!\text{compiler}$.
-\end{center}
-
-\paragraph{Relation acquisition.}
-The system extracts observable relations between request fields and tool-call fields. An \emph{exact} relation copies a value, an \emph{enumerated} relation binds a request value to an opaque literal, and a \emph{transformed} relation reorders structured components.
-
-\paragraph{Correspondence.}
-P6-R1 is a frozen correspondence model with 13,281 parameters. It encodes source and target byte strings with a bidirectional gated recurrent unit and scores each source--target component pair. A one-to-one assignment selects a permutation $\pi$, where $j$ denotes a target position and $\pi(j)$ denotes the source position assigned to it. Thus, $\text{target}[j]=\text{source}[\pi(j)]$. The \emph{exact matcher} is a deterministic method that enumerates permutations and returns the unique permutation consistent with the observed target.
-
-\paragraph{Skill IR and execution.}
-\emph{Canonicalization} combines correspondence evidence from multiple demonstrations into one deterministic result using evidence count, assignment score, and confidence margin; the confidence margin is the difference between the best and second-best assignment scores. The resulting Skill IR stores relational records and a \emph{lexical sidecar}, defined as a table of opaque API names and literals. Skill IR excludes $\mathcal{D}$. After $\mathcal{D}$ is deleted, the \emph{resolver} deterministically maps Skill IR to fields expected by the frozen compiler. The compiler creates an \emph{execution adapter}, defined as the temporary LoRA adapter applied to the frozen language model, Qwen3-0.6B \cite{yang2025qwen3}.
-
-\section{Experimental protocol}
-
-The immutable benchmark contains 24 skill groups and three conditions per group. The \emph{matched} condition uses the same skill configuration during acquisition and evaluation. The \emph{alternate} condition changes examples while preserving the skill. The \emph{counterfactual} condition changes the component transformation. This design yields 72 cases.
-
-We report four metrics. The \emph{ground-truth permutation} is the permutation specified by the benchmark. \emph{Any correct} means that the predicted set contains the ground-truth permutation. \emph{Unique correct} means that the ground-truth permutation is the only member of the predicted set. \emph{Reload} measures exact Skill-IR preservation after serialization. \emph{Time/case} is mean central-processing-unit latency in the recorded run. The \emph{deterministic acquisition control} extracts observable relations directly without using P6-R1.
+\paragraph{Generated execution adapters.}
+The inherited evaluation framework provides a 15-tool comparison: nearest-neighbor adapter retrieval reuses the adapter associated with the most similar training tool, whereas a per-tool adapter is trained directly for each evaluation tool. Table~\ref{tab:adapter} shows that the strongest generated adapter remains 14.95 percentage points below retrieval in correct-tool accuracy.
 
 \begin{table}[t]
-\caption{Correspondence evaluation on 72 cases. Values except latency are percentages.}
-\label{tab:components}
+\caption{Inherited adapter baselines and the strongest generated-adapter result. Accuracy is the fraction of calls naming the required tool.}
+\label{tab:adapter}
 \centering
 \small
-\begin{tabular}{lrrrr}
+\begin{tabular}{lr}
 \toprule
-Method & Any & Unique & Reload & ms/case \\
+Execution strategy & Accuracy (\%) \\
 \midrule
-P6-R1 & 100 & 95.83 & 100 & 4.12 \\
-Exact matcher & 100 & 100 & 100 & 0.45 \\
-Deterministic acquisition & 100 & 100 & 100 & 0.34 \\
+Generated adapter & 79.36 \\
+Nearest-neighbor retrieval & 94.31 \\
+Per-tool trained adapter & 99.34 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\section{Results}
+We then isolate the failure. First, an \emph{adapter-identifiability audit} trains multiple adapters for the same tool. These adapters preserve tool identity while their effective updates remain weakly aligned; therefore, one independently trained update is not a unique semantic target. Second, a \emph{free-latent generator} replaces semantic input with one learned vector per training tool. It fits training behavior but remains below the per-tool validation ceiling, locating the dominant error after semantic encoding. Third, output-norm regularization, functional distillation, explicit singular-value generation, fixed-$A$/generated-$B$, and data-diversity controls do not reliably close the gap. The fixed-$A$/generated-$B$ control keeps $A$ constant and generates only $B$, reducing factor non-identifiability. These results reject generated adapter parameters as the persistent representation in the tested setting.
 
-Table~\ref{tab:components} shows that every method retains a correct correspondence and preserves Skill IR exactly across reload. P6-R1 leaves three cases ambiguous. The exact matcher removes these ambiguities, but assumes that every source component occurs visibly in the target. Hence, it is a restricted method rather than a general replacement for P6-R1.
+\paragraph{Controlled Skill IR.}
+Skill IR stores three field types: \emph{relations} specify how request values determine tool-call values; an \emph{effect anchor} records whether an operation preserves or changes environment state; and a \emph{lexical sidecar} stores opaque API names and literals. During acquisition, correspondence evidence from the support set is canonicalized into one deterministic Skill IR. The support set is then deleted, Skill IR is serialized and reloaded, and a deterministic resolver maps it to a tool call.
 
-The adapter-generation study provides the motivating negative result. The strongest generated execution adapter obtains 79.36\% correct-tool accuracy, defined as the fraction of calls that name the required tool. Nearest-neighbor adapter retrieval, which reuses the adapter of the most similar training tool, obtains 94.31\%. An independently trained adapter for each evaluated tool obtains 99.34\%. Output-norm regularization, explicit singular-value generation, and a control that fixes $A$ while generating $B$ do not close this gap. Prior work also reports that $A$ and $B$ have different optimization roles \cite{zhu2024asymmetry}. In our setting, the result supports treating adapter parameters as execution state rather than Skill IR.
+The frozen correspondence model P6-R1 has 13,281 parameters. It encodes source and target byte strings, scores every source--target component pair, and predicts a one-to-one permutation. An \emph{exact matcher} enumerates permutations and applies only when every source component remains observable in the target.
 
-\section{Discussion and conclusion}
+The controlled benchmark contains 24 skill groups under matched, alternate, and counterfactual conditions, yielding 72 cases. \emph{Any} means that the prediction set contains the benchmark permutation; \emph{unique} means that this permutation is the only prediction; \emph{reload} means exact preservation after serialization.
 
-The experiment establishes an information-sufficiency result: in the controlled protocol domain, $\mathcal{D}$ contains enough information to construct a canonical Skill IR that preserves relational structure and opaque lexical identity, survives deletion of $\mathcal{D}$, and reconnects to the frozen execution pipeline.
+\begin{table}[t]
+\caption{Controlled correspondence evaluation. Except latency, values are percentages.}
+\label{tab:correspondence}
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Method & Any & Unique & Reload & ms \\
+\midrule
+P6-R1 & 100 & 95.83 & 100 & 4.12 \\
+Exact matcher & 100 & 100 & 100 & 0.45 \\
+Rule-based acquisition & 100 & 100 & 100 & 0.34 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-The claim is intentionally limited. A \emph{semantic ontology} is the evaluator's predefined decomposition of a skill into named semantic factors. The learner does not receive these names, but the results do not show that it independently discovers the same decomposition. Additional intervention experiments produce stable statistical groups without independently controllable or compositional factors. Future evaluation should therefore use real demonstrations with opaque correspondences and should avoid using independently optimized LoRA parameters as semantic targets.
+P6-R1 retains the correct permutation in all cases and returns it uniquely in 69 of 72. The exact and rule-based controls solve all cases, showing that the controlled benchmark exposes sufficient observable structure for symbolic inference. The result establishes persistence and information sufficiency, not discovery of an evaluator-defined semantic decomposition.
+
+\paragraph{AppWorld transfer.}
+We next transfer Skill IR to public tool schemas derived from AppWorld. Oracle Skill IR and deterministic acquisition obtain 100\% matched and counterfactual action, argument-binding, and state accuracy on the evaluated Todoist fixtures. Learned correspondence also passes the predefined controls across three random seeds after correcting an evaluator coordinate convention.
+
+Testing previously excluded Simple Note tools exposes a new failure. Two public APIs are structurally compatible with the same abstract action roles, so the generic resolver has 0\% mapping accuracy despite perfect representation serialization. We call this \emph{resolver-interface non-identifiability}: the resolver input does not contain enough information to select one mapping. Adding the effect anchor makes the mapping unique and restores 100\% matched and counterfactual execution in the evaluated fixtures.
+
+Finally, we train an effect predictor from requests, public schemas, calls, results, and state transitions. It reaches 100\% synthetic training accuracy but fails on held-out concrete schemas. Deconfounded training restores 100\% matched execution for seeds 17, 29, and 43. Nevertheless, the latest intervention audit shows that semantic schema wording still influences predictions. We therefore classify the final learned-acquisition result as a \emph{residual schema shortcut}, rather than zero-shot schema invariance.
+
+\section{Conclusion}
+
+The complete project supports a conditional conclusion. Generated LoRA parameters are neither uniquely identifiable semantic targets nor a competitive persistent representation in our experiments. Skill IR succeeds when observable demonstrations identify the relations, effects, and lexical values required for execution: it survives support-set deletion and reconnects to controlled and selected AppWorld tools. The remaining problem is acquisition, not serialization or execution. Future work should evaluate effect learning under paraphrased and implicit schemas, missing observations, and genuinely unseen applications, while retaining causal interventions that distinguish semantic evidence from schema shortcuts.
 
 \section{Statement on the use of AI}
 

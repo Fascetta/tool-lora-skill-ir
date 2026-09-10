@@ -1,0 +1,4447 @@
+{
+  "classification": "D0 schema-semantic/identity conflation",
+  "cuda_visible_devices": "2",
+  "diagnostic_pairs_sha256": "d143fff251463f3ff0e3b7d1babfe91dcd8f8d357d1182df02465388a4e3d5e2",
+  "experiment": "stage4_c2_r1_d1_in_distribution_schema_channel_audit",
+  "frozen_checkpoints": true,
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "mechanical_pair_audit": true,
+  "original_r1_manifest_sha256": "7da1068c2a02c2cbf8ba178fedd40d09d4cfcc4ba5954be1f9d0593003ff286e",
+  "pair_counts": {
+    "effect_bearing_evidence": 8,
+    "opaque_schema_identity": 8,
+    "public_semantic_schema_content": 8
+  },
+  "per_seed": [
+    {
+      "checkpoint_sha256": "f19619aaee1bd6e9f52806e11d958467e6093048e7dacc5aa305c563f529572f",
+      "pairs": [
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "source_indices": [
+            0,
+            18
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "source_indices": [
+            3,
+            19
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            3,
+            2
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            3,
+            2
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "source_indices": [
+            6,
+            21
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            6,
+            4
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            6,
+            4
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "source_indices": [
+            8,
+            22
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            8,
+            5
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            8,
+            5
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "source_indices": [
+            14,
+            23
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            14,
+            7
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            14,
+            7
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "source_indices": [
+            15,
+            24
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            15,
+            9
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            15,
+            9
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "source_indices": [
+            16,
+            25
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            16,
+            10
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            16,
+            10
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "source_indices": [
+            17,
+            27
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            17,
+            11
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.218116760253906,
+              -5.101819038391113
+            ],
+            "probabilities": [
+              0.9999103546142578,
+              8.96116325748153e-05
+            ]
+          },
+          "logit_delta": [
+            -8.680720806121826,
+            9.96549654006958
+          ],
+          "probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.46260404586792,
+              4.863677501678467
+            ],
+            "probabilities": [
+              8.90448282007128e-05,
+              0.9999109506607056
+            ]
+          },
+          "source_indices": [
+            17,
+            11
+          ]
+        }
+      ],
+      "seed": 17,
+      "summary": {
+        "effect_bearing_evidence": {
+          "argmax_flip_rate": 1.0,
+          "count": 8,
+          "mean_abs_probability_movement": 0.9998213390281308,
+          "mean_probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ]
+        },
+        "opaque_schema_identity": {
+          "argmax_flip_rate": 0.0,
+          "count": 8,
+          "mean_abs_probability_movement": 0.0,
+          "mean_probability_delta": [
+            0.0,
+            0.0
+          ]
+        },
+        "public_semantic_schema_content": {
+          "argmax_flip_rate": 1.0,
+          "count": 8,
+          "mean_abs_probability_movement": 0.9998213390281308,
+          "mean_probability_delta": [
+            -0.9998213097860571,
+            0.9998213390281308
+          ]
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": "cc75ed1a1e4bf435c840a29d4a5ea18872b6a698701a2f1aa817f69d3b8e7c61",
+      "pairs": [
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "source_indices": [
+            0,
+            18
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "source_indices": [
+            3,
+            19
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            3,
+            2
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            3,
+            2
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "source_indices": [
+            6,
+            21
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            6,
+            4
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            6,
+            4
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "source_indices": [
+            8,
+            22
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            8,
+            5
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            8,
+            5
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "source_indices": [
+            14,
+            23
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            14,
+            7
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            14,
+            7
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "source_indices": [
+            15,
+            24
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            15,
+            9
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            15,
+            9
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "source_indices": [
+            16,
+            25
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            16,
+            10
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            16,
+            10
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "source_indices": [
+            17,
+            27
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            17,
+            11
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.653738021850586,
+              -5.075783729553223
+            ],
+            "probabilities": [
+              0.9999405145645142,
+              5.9497204347280785e-05
+            ]
+          },
+          "logit_delta": [
+            -8.957399845123291,
+            10.536446571350098
+          ],
+          "probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.303661823272705,
+              5.460662841796875
+            ],
+            "probabilities": [
+              5.7462289987597615e-05,
+              0.9999425411224365
+            ]
+          },
+          "source_indices": [
+            17,
+            11
+          ]
+        }
+      ],
+      "seed": 29,
+      "summary": {
+        "effect_bearing_evidence": {
+          "argmax_flip_rate": 1.0,
+          "count": 8,
+          "mean_abs_probability_movement": 0.9998830439180892,
+          "mean_probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ]
+        },
+        "opaque_schema_identity": {
+          "argmax_flip_rate": 0.0,
+          "count": 8,
+          "mean_abs_probability_movement": 0.0,
+          "mean_probability_delta": [
+            0.0,
+            0.0
+          ]
+        },
+        "public_semantic_schema_content": {
+          "argmax_flip_rate": 1.0,
+          "count": 8,
+          "mean_abs_probability_movement": 0.9998830439180892,
+          "mean_probability_delta": [
+            -0.9998830522745266,
+            0.9998830439180892
+          ]
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": "9c0ffe07d8b30983a8bbc99f1452a1de20bbba14f10984fbb04f0cd61bfb6405",
+      "pairs": [
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "source_indices": [
+            0,
+            18
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "source_indices": [
+            3,
+            19
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            3,
+            2
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            3,
+            2
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "source_indices": [
+            6,
+            21
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            6,
+            4
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            6,
+            4
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "source_indices": [
+            8,
+            22
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            8,
+            5
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            8,
+            5
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "source_indices": [
+            14,
+            23
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            14,
+            7
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            14,
+            7
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "source_indices": [
+            15,
+            24
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            15,
+            9
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            15,
+            9
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "source_indices": [
+            16,
+            25
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            16,
+            10
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            16,
+            10
+          ]
+        },
+        {
+          "argmax_flip": false,
+          "family": "opaque_schema_identity",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            0.0,
+            0.0
+          ],
+          "probability_delta": [
+            0.0,
+            0.0
+          ],
+          "right": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "source_indices": [
+            17,
+            27
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "effect_bearing_evidence",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            17,
+            11
+          ]
+        },
+        {
+          "argmax_flip": true,
+          "family": "public_semantic_schema_content",
+          "left": {
+            "argmax": 0,
+            "features": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "label": "state_preserving",
+            "logits": [
+              4.55887508392334,
+              -4.970743179321289
+            ],
+            "probabilities": [
+              0.999927282333374,
+              7.26620783098042e-05
+            ]
+          },
+          "logit_delta": [
+            -9.025641441345215,
+            9.881806373596191
+          ],
+          "probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ],
+          "right": {
+            "argmax": 1,
+            "features": [
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "label": "state_mutating",
+            "logits": [
+              -4.466766357421875,
+              4.911063194274902
+            ],
+            "probabilities": [
+              8.457143121631816e-05,
+              0.9999154806137085
+            ]
+          },
+          "source_indices": [
+            17,
+            11
+          ]
+        }
+      ],
+      "seed": 43,
+      "summary": {
+        "effect_bearing_evidence": {
+          "argmax_flip_rate": 1.0,
+          "count": 8,
+          "mean_abs_probability_movement": 0.9998428185353987,
+          "mean_probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ]
+        },
+        "opaque_schema_identity": {
+          "argmax_flip_rate": 0.0,
+          "count": 8,
+          "mean_abs_probability_movement": 0.0,
+          "mean_probability_delta": [
+            0.0,
+            0.0
+          ]
+        },
+        "public_semantic_schema_content": {
+          "argmax_flip_rate": 1.0,
+          "count": 8,
+          "mean_abs_probability_movement": 0.9998428185353987,
+          "mean_probability_delta": [
+            -0.9998427109021577,
+            0.9998428185353987
+          ]
+        }
+      }
+    }
+  ],
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "prior_classifications_preserved": true,
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "training_performed": false,
+  "training_set_sha256": "2f08f21be51c9f5a395e65cfcbbeab190cf80ed9f14d1163023c4b14ffeb6be0"
+}

@@ -1,0 +1,3862 @@
+{
+  "a0_manifest_sha256": "52f5b2da29e03f14cd8558f65737cca4a77764b50a4d8cc29eca4fce8a5a7e2e",
+  "a0_support_sha256": "b556f8c60db05a8e61739059612639a72945dfd2c1479d36216394a5e12b1ca5",
+  "by_surface": {
+    "alternate_entity": {
+      "count": 20,
+      "evaluator_consistency": 0.8,
+      "evaluator_j1_disagreement_fraction": 0.2,
+      "evaluator_role_accuracy": 0.8,
+      "j1_consistency": 1.0,
+      "j1_role_accuracy": 1.0
+    },
+    "paraphrased": {
+      "count": 20,
+      "evaluator_consistency": 0.8,
+      "evaluator_j1_disagreement_fraction": 0.2,
+      "evaluator_role_accuracy": 0.8,
+      "j1_consistency": 1.0,
+      "j1_role_accuracy": 1.0
+    },
+    "primary": {
+      "count": 20,
+      "evaluator_consistency": 0.8,
+      "evaluator_j1_disagreement_fraction": 0.2,
+      "evaluator_role_accuracy": 0.8,
+      "j1_consistency": 1.0,
+      "j1_role_accuracy": 1.0
+    }
+  },
+  "classification": "evaluator joint-coordinate defect",
+  "cuda_visible_devices": "2",
+  "execution_rerun": false,
+  "experiment": "stage4_c1_a0_j2_evaluator_consistency_audit",
+  "frozen": [
+    "A0 acquisition",
+    "C1 representation",
+    "resolver",
+    "AppWorld fixtures",
+    "immutable supports",
+    "J1 outputs",
+    "evaluator artifacts"
+  ],
+  "g1_incorrect_count": 12,
+  "g1_incorrect_subset": {
+    "count": 12,
+    "evaluator_consistency": 0.0,
+    "evaluator_j1_disagreement_fraction": 1.0,
+    "evaluator_role_accuracy": 0.0,
+    "j1_consistency": 1.0,
+    "j1_role_accuracy": 1.0
+  },
+  "g1_manifest_sha256": "4e26e110cd64efaefd0dfa6ac12b6d0b78a6fa74a8a1873dd18c8d1f67648996",
+  "git_commit": "ca9b86bcd0540fb3ac0affa6896e33ce2ae85a9f",
+  "j1_manifest_sha256": "7ecdcf57c4fba1e2fbb6eea85f88ccb0316556ac5a2cc1fd1e194b9458118ac1",
+  "ordering_convention_exactly_predicts_disagreements": true,
+  "ordering_provenance": {
+    "A0_application_order": [
+      "todoist",
+      "simple_note"
+    ],
+    "A0_canonical_condition_order": "sorted(observed_conditions, reverse=True) -> urgent, routine",
+    "A0_schema_candidate_order": "sorted compatible public schema names; role_by_api index 0 -> dispatch_alpha, index 1 -> dispatch_beta",
+    "C0_condition_order": "c0_ir: condition_value is always urgent; show_first alternates by index parity",
+    "evaluator_effect_construction": "C1 P0 anchored(): branch action dispatch_alpha -> state_preserving, dispatch_beta -> state_mutating",
+    "generator_condition_order": "P0 make_ir: even index -> condition_value urgent and first alpha; odd index -> condition_value routine and first beta",
+    "j1_effect_construction": "unique mapping from each condition's observed concrete API to infer_effect(public schema)"
+  },
+  "ordering_rows": [
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 7,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 8,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 8,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 8,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 9,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 9,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 9,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 10,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 10,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 10,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 11,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 11,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 11,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": false,
+      "ordering_predicts_disagreement": false,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "observed_disagreement": true,
+      "ordering_predicts_disagreement": true,
+      "skill": 7,
+      "surface": "paraphrased"
+    }
+  ],
+  "overall": {
+    "count": 60,
+    "evaluator_consistency": 0.8,
+    "evaluator_j1_disagreement_fraction": 0.2,
+    "evaluator_role_accuracy": 0.8,
+    "j1_consistency": 1.0,
+    "j1_role_accuracy": 1.0
+  },
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "rows": [
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 7,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 8,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 8,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 8,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 9,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 9,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 9,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 10,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 10,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 10,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 11,
+      "surface": "primary"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 11,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "todoist",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 11,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 0,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 0,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 0,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 1,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 1,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 1,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 2,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 2,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 2,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 3,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 3,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 3,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 4,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 4,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 4,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 5,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 5,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 5,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 6,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 6,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "evaluator_consistent": true,
+      "evaluator_j1_disagree": false,
+      "evaluator_role_accuracy": 1.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": true,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_beta"
+        },
+        "urgent": {
+          "consistent": true,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_alpha"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": false,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": false,
+      "skill": 6,
+      "surface": "paraphrased"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 7,
+      "surface": "primary"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 7,
+      "surface": "alternate_entity"
+    },
+    {
+      "app": "simple_note",
+      "evaluator_canonical_condition_effects": {
+        "routine": "state_preserving",
+        "urgent": "state_mutating"
+      },
+      "evaluator_consistent": false,
+      "evaluator_j1_disagree": true,
+      "evaluator_role_accuracy": 0.0,
+      "evaluator_trace": {
+        "routine": {
+          "consistent": false,
+          "evaluator_effect": "state_preserving",
+          "evidence_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": false,
+          "evaluator_effect": "state_mutating",
+          "evidence_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "evidence_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "g1_incorrect_under_both_permutations": true,
+      "j1_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "j1_consistent": true,
+      "j1_role_accuracy": 1.0,
+      "j1_trace": {
+        "routine": {
+          "consistent": true,
+          "evidence_effect": "state_mutating",
+          "j1_effect": "state_mutating",
+          "role": "dispatch_alpha"
+        },
+        "urgent": {
+          "consistent": true,
+          "evidence_effect": "state_preserving",
+          "j1_effect": "state_preserving",
+          "role": "dispatch_beta"
+        }
+      },
+      "ordering_predicted_canonical_condition_effects": {
+        "routine": "state_mutating",
+        "urgent": "state_preserving"
+      },
+      "ordering_predicts_evaluator_j1_disagreement": true,
+      "skill": 7,
+      "surface": "paraphrased"
+    }
+  ]
+}
