@@ -353,5 +353,3 @@ See `docs/AUTHORSHIP.md` for the detailed provenance and exclusion policy.
 Code in this standalone repository is released under the **MIT License**.
 
 Qwen, AppWorld, external datasets, and the inherited `tool-lora-hypernet` implementation are not redistributed.
-
-```
