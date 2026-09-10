@@ -1,4 +1,3 @@
-````markdown
 # Persistent Skill Representations for Language-Model Tool Use
 
 Course project by **Christian Bianchi** for **Deep Learning and Applied AI, Sapienza University of Rome (2026)**.
@@ -355,7 +354,4 @@ Code in this standalone repository is released under the **MIT License**.
 
 Qwen, AppWorld, external datasets, and the inherited `tool-lora-hypernet` implementation are not redistributed.
 
-```
-
-I would use this as the public-facing README and also update `report/main.tex` in the repository to the exact source used for the submitted PDF, so the repository and submission cannot disagree.
 ```
