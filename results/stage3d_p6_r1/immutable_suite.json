@@ -1,0 +1,4226 @@
+[
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_6apu",
+        "enum_names": {
+          "celsius": "ev_9imo",
+          "fahrenheit": "ev_zhij"
+        },
+        "field_names": {
+          "city": "arg_kx1a",
+          "date": "arg_5a95",
+          "units": "arg_fqn5"
+        },
+        "operation_names": {
+          "forecast": "fn_bmgv",
+          "weather": "fn_ykof"
+        },
+        "protocol_id": "validation-0"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for London using Celsius.\nDemonstration 1 response:\n{\"fn_ykof\":{\"arg_fqn5\":\"ev_9imo\",\"arg_kx1a\":\"London\"}}\n\nDemonstration 2 request:\nGet the current weather for Sofia using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ykof\":{\"arg_fqn5\":\"ev_zhij\",\"arg_kx1a\":\"Sofia\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Oslo on 2027-06-18.\nDemonstration 3 response:\n{\"fn_bmgv\":{\"arg_5a95\":\"06sx_6apu18sx_6apu2027\",\"arg_fqn5\":\"ev_9imo\",\"arg_kx1a\":\"Oslo\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Vienna on 2027-04-25.\nDemonstration 4 response:\n{\"fn_bmgv\":{\"arg_5a95\":\"04sx_6apu25sx_6apu2027\",\"arg_fqn5\":\"ev_zhij\",\"arg_kx1a\":\"Vienna\"}}",
+      "support_values": [
+        "04sx_6apu25sx_6apu2027",
+        "06sx_6apu18sx_6apu2027",
+        "London",
+        "Oslo",
+        "Sofia",
+        "Vienna",
+        "ev_9imo",
+        "ev_zhij"
+      ],
+      "target_call": {
+        "fn_bmgv": {
+          "arg_5a95": "03sx_6apu17sx_6apu2027",
+          "arg_fqn5": "ev_zhij",
+          "arg_kx1a": "Naples"
+        }
+      },
+      "target_text": "{\"fn_bmgv\":{\"arg_5a95\":\"03sx_6apu17sx_6apu2027\",\"arg_fqn5\":\"ev_zhij\",\"arg_kx1a\":\"Naples\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_n26i",
+        "enum_names": {
+          "celsius": "ev_4f5w",
+          "fahrenheit": "ev_lccq"
+        },
+        "field_names": {
+          "city": "arg_aqh8",
+          "date": "arg_z0ai",
+          "units": "arg_pck5"
+        },
+        "operation_names": {
+          "forecast": "fn_jwvm",
+          "weather": "fn_pouq"
+        },
+        "protocol_id": "validation-2"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Vienna using Celsius.\nDemonstration 1 response:\n{\"fn_pouq\":{\"arg_aqh8\":\"Vienna\",\"arg_pck5\":\"ev_4f5w\"}}\n\nDemonstration 2 request:\nGet the current weather for Madrid using Fahrenheit.\nDemonstration 2 response:\n{\"fn_pouq\":{\"arg_aqh8\":\"Madrid\",\"arg_pck5\":\"ev_lccq\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Dublin on 2027-11-09.\nDemonstration 3 response:\n{\"fn_jwvm\":{\"arg_aqh8\":\"Dublin\",\"arg_pck5\":\"ev_4f5w\",\"arg_z0ai\":\"09sx_n26i11sx_n26i2027\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Athens on 2027-06-18.\nDemonstration 4 response:\n{\"fn_jwvm\":{\"arg_aqh8\":\"Athens\",\"arg_pck5\":\"ev_lccq\",\"arg_z0ai\":\"18sx_n26i06sx_n26i2027\"}}",
+      "support_values": [
+        "09sx_n26i11sx_n26i2027",
+        "18sx_n26i06sx_n26i2027",
+        "Athens",
+        "Dublin",
+        "Madrid",
+        "Vienna",
+        "ev_4f5w",
+        "ev_lccq"
+      ],
+      "target_call": {
+        "fn_jwvm": {
+          "arg_aqh8": "Naples",
+          "arg_pck5": "ev_lccq",
+          "arg_z0ai": "17sx_n26i03sx_n26i2027"
+        }
+      },
+      "target_text": "{\"fn_jwvm\":{\"arg_aqh8\":\"Naples\",\"arg_pck5\":\"ev_lccq\",\"arg_z0ai\":\"17sx_n26i03sx_n26i2027\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_n26i",
+      "enum_names": {
+        "celsius": "ev_4f5w",
+        "fahrenheit": "ev_lccq"
+      },
+      "field_names": {
+        "city": "arg_aqh8",
+        "date": "arg_z0ai",
+        "units": "arg_pck5"
+      },
+      "operation_names": {
+        "forecast": "fn_jwvm",
+        "weather": "fn_pouq"
+      },
+      "protocol_id": "validation-2"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_6apu",
+        "enum_names": {
+          "celsius": "ev_9imo",
+          "fahrenheit": "ev_zhij"
+        },
+        "field_names": {
+          "city": "arg_kx1a",
+          "date": "arg_5a95",
+          "units": "arg_fqn5"
+        },
+        "operation_names": {
+          "forecast": "fn_bmgv",
+          "weather": "fn_ykof"
+        },
+        "protocol_id": "validation-0"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Berlin using Celsius.\nDemonstration 1 response:\n{\"fn_ykof\":{\"arg_fqn5\":\"ev_9imo\",\"arg_kx1a\":\"Berlin\"}}\n\nDemonstration 2 request:\nGet the current weather for Lisbon using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ykof\":{\"arg_fqn5\":\"ev_zhij\",\"arg_kx1a\":\"Lisbon\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Paris on 2027-11-09.\nDemonstration 3 response:\n{\"fn_bmgv\":{\"arg_5a95\":\"11sx_6apu09sx_6apu2027\",\"arg_fqn5\":\"ev_9imo\",\"arg_kx1a\":\"Paris\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Tokyo on 2026-08-20.\nDemonstration 4 response:\n{\"fn_bmgv\":{\"arg_5a95\":\"08sx_6apu20sx_6apu2026\",\"arg_fqn5\":\"ev_zhij\",\"arg_kx1a\":\"Tokyo\"}}",
+      "support_values": [
+        "08sx_6apu20sx_6apu2026",
+        "11sx_6apu09sx_6apu2027",
+        "Berlin",
+        "Lisbon",
+        "Paris",
+        "Tokyo",
+        "ev_9imo",
+        "ev_zhij"
+      ],
+      "target_call": {
+        "fn_bmgv": {
+          "arg_5a95": "03sx_6apu17sx_6apu2027",
+          "arg_fqn5": "ev_zhij",
+          "arg_kx1a": "Naples"
+        }
+      },
+      "target_text": "{\"fn_bmgv\":{\"arg_5a95\":\"03sx_6apu17sx_6apu2027\",\"arg_fqn5\":\"ev_zhij\",\"arg_kx1a\":\"Naples\"}}\n"
+    },
+    "protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_6apu",
+      "enum_names": {
+        "celsius": "ev_9imo",
+        "fahrenheit": "ev_zhij"
+      },
+      "field_names": {
+        "city": "arg_kx1a",
+        "date": "arg_5a95",
+        "units": "arg_fqn5"
+      },
+      "operation_names": {
+        "forecast": "fn_bmgv",
+        "weather": "fn_ykof"
+      },
+      "protocol_id": "validation-0"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_3pl0",
+        "enum_names": {
+          "celsius": "ev_x9v7",
+          "fahrenheit": "ev_j6du"
+        },
+        "field_names": {
+          "city": "arg_gc4g",
+          "date": "arg_3n0s",
+          "units": "arg_xhvn"
+        },
+        "operation_names": {
+          "forecast": "fn_l98x",
+          "weather": "fn_xhwz"
+        },
+        "protocol_id": "validation-3"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Vienna using Celsius.\nDemonstration 1 response:\n{\"fn_xhwz\":{\"arg_gc4g\":\"Vienna\",\"arg_xhvn\":\"ev_x9v7\"}}\n\nDemonstration 2 request:\nGet the current weather for Oslo using Fahrenheit.\nDemonstration 2 response:\n{\"fn_xhwz\":{\"arg_gc4g\":\"Oslo\",\"arg_xhvn\":\"ev_j6du\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Berlin on 2026-10-14.\nDemonstration 3 response:\n{\"fn_l98x\":{\"arg_3n0s\":\"2026sx_3pl010sx_3pl014\",\"arg_gc4g\":\"Berlin\",\"arg_xhvn\":\"ev_x9v7\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Sofia on 2027-01-12.\nDemonstration 4 response:\n{\"fn_l98x\":{\"arg_3n0s\":\"2027sx_3pl001sx_3pl012\",\"arg_gc4g\":\"Sofia\",\"arg_xhvn\":\"ev_j6du\"}}",
+      "support_values": [
+        "2026sx_3pl010sx_3pl014",
+        "2027sx_3pl001sx_3pl012",
+        "Berlin",
+        "Oslo",
+        "Sofia",
+        "Vienna",
+        "ev_j6du",
+        "ev_x9v7"
+      ],
+      "target_call": {
+        "fn_l98x": {
+          "arg_3n0s": "2027sx_3pl003sx_3pl017",
+          "arg_gc4g": "Naples",
+          "arg_xhvn": "ev_j6du"
+        }
+      },
+      "target_text": "{\"fn_l98x\":{\"arg_3n0s\":\"2027sx_3pl003sx_3pl017\",\"arg_gc4g\":\"Naples\",\"arg_xhvn\":\"ev_j6du\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_xycc",
+        "enum_names": {
+          "celsius": "ev_k7vo",
+          "fahrenheit": "ev_bv31"
+        },
+        "field_names": {
+          "city": "arg_2q6y",
+          "date": "arg_gay6",
+          "units": "arg_lwpp"
+        },
+        "operation_names": {
+          "forecast": "fn_sjfs",
+          "weather": "fn_ydxy"
+        },
+        "protocol_id": "validation-5"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Sofia using Celsius.\nDemonstration 1 response:\n{\"fn_ydxy\":{\"arg_2q6y\":\"Sofia\",\"arg_lwpp\":\"ev_k7vo\"}}\n\nDemonstration 2 request:\nGet the current weather for Dublin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ydxy\":{\"arg_2q6y\":\"Dublin\",\"arg_lwpp\":\"ev_bv31\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Tokyo on 2028-07-21.\nDemonstration 3 response:\n{\"fn_sjfs\":{\"arg_2q6y\":\"Tokyo\",\"arg_gay6\":\"2028sx_xycc07sx_xycc21\",\"arg_lwpp\":\"ev_k7vo\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Vienna on 2026-08-20.\nDemonstration 4 response:\n{\"fn_sjfs\":{\"arg_2q6y\":\"Vienna\",\"arg_gay6\":\"2026sx_xycc08sx_xycc20\",\"arg_lwpp\":\"ev_bv31\"}}",
+      "support_values": [
+        "2026sx_xycc08sx_xycc20",
+        "2028sx_xycc07sx_xycc21",
+        "Dublin",
+        "Sofia",
+        "Tokyo",
+        "Vienna",
+        "ev_bv31",
+        "ev_k7vo"
+      ],
+      "target_call": {
+        "fn_sjfs": {
+          "arg_2q6y": "Naples",
+          "arg_gay6": "2027sx_xycc03sx_xycc17",
+          "arg_lwpp": "ev_bv31"
+        }
+      },
+      "target_text": "{\"fn_sjfs\":{\"arg_2q6y\":\"Naples\",\"arg_gay6\":\"2027sx_xycc03sx_xycc17\",\"arg_lwpp\":\"ev_bv31\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_xycc",
+      "enum_names": {
+        "celsius": "ev_k7vo",
+        "fahrenheit": "ev_bv31"
+      },
+      "field_names": {
+        "city": "arg_2q6y",
+        "date": "arg_gay6",
+        "units": "arg_lwpp"
+      },
+      "operation_names": {
+        "forecast": "fn_sjfs",
+        "weather": "fn_ydxy"
+      },
+      "protocol_id": "validation-5"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_3pl0",
+        "enum_names": {
+          "celsius": "ev_x9v7",
+          "fahrenheit": "ev_j6du"
+        },
+        "field_names": {
+          "city": "arg_gc4g",
+          "date": "arg_3n0s",
+          "units": "arg_xhvn"
+        },
+        "operation_names": {
+          "forecast": "fn_l98x",
+          "weather": "fn_xhwz"
+        },
+        "protocol_id": "validation-3"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Berlin using Celsius.\nDemonstration 1 response:\n{\"fn_xhwz\":{\"arg_gc4g\":\"Berlin\",\"arg_xhvn\":\"ev_x9v7\"}}\n\nDemonstration 2 request:\nGet the current weather for Madrid using Fahrenheit.\nDemonstration 2 response:\n{\"fn_xhwz\":{\"arg_gc4g\":\"Madrid\",\"arg_xhvn\":\"ev_j6du\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Vienna on 2028-02-16.\nDemonstration 3 response:\n{\"fn_l98x\":{\"arg_3n0s\":\"2028sx_3pl002sx_3pl016\",\"arg_gc4g\":\"Vienna\",\"arg_xhvn\":\"ev_x9v7\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for London on 2027-04-25.\nDemonstration 4 response:\n{\"fn_l98x\":{\"arg_3n0s\":\"2027sx_3pl004sx_3pl025\",\"arg_gc4g\":\"London\",\"arg_xhvn\":\"ev_j6du\"}}",
+      "support_values": [
+        "2027sx_3pl004sx_3pl025",
+        "2028sx_3pl002sx_3pl016",
+        "Berlin",
+        "London",
+        "Madrid",
+        "Vienna",
+        "ev_j6du",
+        "ev_x9v7"
+      ],
+      "target_call": {
+        "fn_l98x": {
+          "arg_3n0s": "2027sx_3pl003sx_3pl017",
+          "arg_gc4g": "Naples",
+          "arg_xhvn": "ev_j6du"
+        }
+      },
+      "target_text": "{\"fn_l98x\":{\"arg_3n0s\":\"2027sx_3pl003sx_3pl017\",\"arg_gc4g\":\"Naples\",\"arg_xhvn\":\"ev_j6du\"}}\n"
+    },
+    "protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_3pl0",
+      "enum_names": {
+        "celsius": "ev_x9v7",
+        "fahrenheit": "ev_j6du"
+      },
+      "field_names": {
+        "city": "arg_gc4g",
+        "date": "arg_3n0s",
+        "units": "arg_xhvn"
+      },
+      "operation_names": {
+        "forecast": "fn_l98x",
+        "weather": "fn_xhwz"
+      },
+      "protocol_id": "validation-3"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_0bfq",
+        "enum_names": {
+          "celsius": "ev_f8he",
+          "fahrenheit": "ev_lo4a"
+        },
+        "field_names": {
+          "city": "arg_ptdc",
+          "date": "arg_r2po",
+          "units": "arg_kx1a"
+        },
+        "operation_names": {
+          "forecast": "fn_ovqy",
+          "weather": "fn_41ht"
+        },
+        "protocol_id": "validation-6"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Dublin using Celsius.\nDemonstration 1 response:\n{\"fn_41ht\":{\"arg_kx1a\":\"ev_f8he\",\"arg_ptdc\":\"Dublin\"}}\n\nDemonstration 2 request:\nGet the current weather for Paris using Fahrenheit.\nDemonstration 2 response:\n{\"fn_41ht\":{\"arg_kx1a\":\"ev_lo4a\",\"arg_ptdc\":\"Paris\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Sofia on 2028-02-16.\nDemonstration 3 response:\n{\"fn_ovqy\":{\"arg_kx1a\":\"ev_f8he\",\"arg_ptdc\":\"Sofia\",\"arg_r2po\":\"2028sx_0bfq02sx_0bfq16\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Prague on 2026-10-14.\nDemonstration 4 response:\n{\"fn_ovqy\":{\"arg_kx1a\":\"ev_lo4a\",\"arg_ptdc\":\"Prague\",\"arg_r2po\":\"2026sx_0bfq10sx_0bfq14\"}}",
+      "support_values": [
+        "2026sx_0bfq10sx_0bfq14",
+        "2028sx_0bfq02sx_0bfq16",
+        "Dublin",
+        "Paris",
+        "Prague",
+        "Sofia",
+        "ev_f8he",
+        "ev_lo4a"
+      ],
+      "target_call": {
+        "fn_ovqy": {
+          "arg_kx1a": "ev_lo4a",
+          "arg_ptdc": "Naples",
+          "arg_r2po": "2027sx_0bfq03sx_0bfq17"
+        }
+      },
+      "target_text": "{\"fn_ovqy\":{\"arg_kx1a\":\"ev_lo4a\",\"arg_ptdc\":\"Naples\",\"arg_r2po\":\"2027sx_0bfq03sx_0bfq17\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_s1gk",
+        "enum_names": {
+          "celsius": "ev_eyvp",
+          "fahrenheit": "ev_9imo"
+        },
+        "field_names": {
+          "city": "arg_crfm",
+          "date": "arg_uibk",
+          "units": "arg_d8ov"
+        },
+        "operation_names": {
+          "forecast": "fn_jiw9",
+          "weather": "fn_x653"
+        },
+        "protocol_id": "validation-8"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Athens using Celsius.\nDemonstration 1 response:\n{\"fn_x653\":{\"arg_crfm\":\"Athens\",\"arg_d8ov\":\"ev_eyvp\"}}\n\nDemonstration 2 request:\nGet the current weather for Sofia using Fahrenheit.\nDemonstration 2 response:\n{\"fn_x653\":{\"arg_crfm\":\"Sofia\",\"arg_d8ov\":\"ev_9imo\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Oslo on 2027-04-25.\nDemonstration 3 response:\n{\"fn_jiw9\":{\"arg_crfm\":\"Oslo\",\"arg_d8ov\":\"ev_eyvp\",\"arg_uibk\":\"25sx_s1gk04sx_s1gk2027\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Dublin on 2027-06-18.\nDemonstration 4 response:\n{\"fn_jiw9\":{\"arg_crfm\":\"Dublin\",\"arg_d8ov\":\"ev_9imo\",\"arg_uibk\":\"18sx_s1gk06sx_s1gk2027\"}}",
+      "support_values": [
+        "18sx_s1gk06sx_s1gk2027",
+        "25sx_s1gk04sx_s1gk2027",
+        "Athens",
+        "Dublin",
+        "Oslo",
+        "Sofia",
+        "ev_9imo",
+        "ev_eyvp"
+      ],
+      "target_call": {
+        "fn_jiw9": {
+          "arg_crfm": "Naples",
+          "arg_d8ov": "ev_9imo",
+          "arg_uibk": "17sx_s1gk03sx_s1gk2027"
+        }
+      },
+      "target_text": "{\"fn_jiw9\":{\"arg_crfm\":\"Naples\",\"arg_d8ov\":\"ev_9imo\",\"arg_uibk\":\"17sx_s1gk03sx_s1gk2027\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_s1gk",
+      "enum_names": {
+        "celsius": "ev_eyvp",
+        "fahrenheit": "ev_9imo"
+      },
+      "field_names": {
+        "city": "arg_crfm",
+        "date": "arg_uibk",
+        "units": "arg_d8ov"
+      },
+      "operation_names": {
+        "forecast": "fn_jiw9",
+        "weather": "fn_x653"
+      },
+      "protocol_id": "validation-8"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_0bfq",
+        "enum_names": {
+          "celsius": "ev_f8he",
+          "fahrenheit": "ev_lo4a"
+        },
+        "field_names": {
+          "city": "arg_ptdc",
+          "date": "arg_r2po",
+          "units": "arg_kx1a"
+        },
+        "operation_names": {
+          "forecast": "fn_ovqy",
+          "weather": "fn_41ht"
+        },
+        "protocol_id": "validation-6"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Oslo using Celsius.\nDemonstration 1 response:\n{\"fn_41ht\":{\"arg_kx1a\":\"ev_f8he\",\"arg_ptdc\":\"Oslo\"}}\n\nDemonstration 2 request:\nGet the current weather for Prague using Fahrenheit.\nDemonstration 2 response:\n{\"fn_41ht\":{\"arg_kx1a\":\"ev_lo4a\",\"arg_ptdc\":\"Prague\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Vienna on 2027-01-12.\nDemonstration 3 response:\n{\"fn_ovqy\":{\"arg_kx1a\":\"ev_f8he\",\"arg_ptdc\":\"Vienna\",\"arg_r2po\":\"2027sx_0bfq01sx_0bfq12\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Tokyo on 2028-07-21.\nDemonstration 4 response:\n{\"fn_ovqy\":{\"arg_kx1a\":\"ev_lo4a\",\"arg_ptdc\":\"Tokyo\",\"arg_r2po\":\"2028sx_0bfq07sx_0bfq21\"}}",
+      "support_values": [
+        "2027sx_0bfq01sx_0bfq12",
+        "2028sx_0bfq07sx_0bfq21",
+        "Oslo",
+        "Prague",
+        "Tokyo",
+        "Vienna",
+        "ev_f8he",
+        "ev_lo4a"
+      ],
+      "target_call": {
+        "fn_ovqy": {
+          "arg_kx1a": "ev_lo4a",
+          "arg_ptdc": "Naples",
+          "arg_r2po": "2027sx_0bfq03sx_0bfq17"
+        }
+      },
+      "target_text": "{\"fn_ovqy\":{\"arg_kx1a\":\"ev_lo4a\",\"arg_ptdc\":\"Naples\",\"arg_r2po\":\"2027sx_0bfq03sx_0bfq17\"}}\n"
+    },
+    "protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_0bfq",
+      "enum_names": {
+        "celsius": "ev_f8he",
+        "fahrenheit": "ev_lo4a"
+      },
+      "field_names": {
+        "city": "arg_ptdc",
+        "date": "arg_r2po",
+        "units": "arg_kx1a"
+      },
+      "operation_names": {
+        "forecast": "fn_ovqy",
+        "weather": "fn_41ht"
+      },
+      "protocol_id": "validation-6"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_0u0v",
+        "enum_names": {
+          "celsius": "ev_x0y1",
+          "fahrenheit": "ev_xnwf"
+        },
+        "field_names": {
+          "city": "arg_7r7t",
+          "date": "arg_zzig",
+          "units": "arg_fqn5"
+        },
+        "operation_names": {
+          "forecast": "fn_ovqy",
+          "weather": "fn_ikf8"
+        },
+        "protocol_id": "validation-9"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Prague using Celsius.\nDemonstration 1 response:\n{\"fn_ikf8\":{\"arg_7r7t\":\"Prague\",\"arg_fqn5\":\"ev_x0y1\"}}\n\nDemonstration 2 request:\nGet the current weather for Sofia using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ikf8\":{\"arg_7r7t\":\"Sofia\",\"arg_fqn5\":\"ev_xnwf\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Athens on 2028-02-16.\nDemonstration 3 response:\n{\"fn_ovqy\":{\"arg_7r7t\":\"Athens\",\"arg_fqn5\":\"ev_x0y1\",\"arg_zzig\":\"02sx_0u0v16sx_0u0v2028\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for London on 2027-04-25.\nDemonstration 4 response:\n{\"fn_ovqy\":{\"arg_7r7t\":\"London\",\"arg_fqn5\":\"ev_xnwf\",\"arg_zzig\":\"04sx_0u0v25sx_0u0v2027\"}}",
+      "support_values": [
+        "02sx_0u0v16sx_0u0v2028",
+        "04sx_0u0v25sx_0u0v2027",
+        "Athens",
+        "London",
+        "Prague",
+        "Sofia",
+        "ev_x0y1",
+        "ev_xnwf"
+      ],
+      "target_call": {
+        "fn_ovqy": {
+          "arg_7r7t": "Naples",
+          "arg_fqn5": "ev_xnwf",
+          "arg_zzig": "03sx_0u0v17sx_0u0v2027"
+        }
+      },
+      "target_text": "{\"fn_ovqy\":{\"arg_7r7t\":\"Naples\",\"arg_fqn5\":\"ev_xnwf\",\"arg_zzig\":\"03sx_0u0v17sx_0u0v2027\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_wb3h",
+        "enum_names": {
+          "celsius": "ev_qibj",
+          "fahrenheit": "ev_c0zu"
+        },
+        "field_names": {
+          "city": "arg_7bmh",
+          "date": "arg_yvkl",
+          "units": "arg_gc4g"
+        },
+        "operation_names": {
+          "forecast": "fn_804k",
+          "weather": "fn_5gpu"
+        },
+        "protocol_id": "validation-11"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for London using Celsius.\nDemonstration 1 response:\n{\"fn_5gpu\":{\"arg_7bmh\":\"London\",\"arg_gc4g\":\"ev_qibj\"}}\n\nDemonstration 2 request:\nGet the current weather for Prague using Fahrenheit.\nDemonstration 2 response:\n{\"fn_5gpu\":{\"arg_7bmh\":\"Prague\",\"arg_gc4g\":\"ev_c0zu\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Vienna on 2028-07-21.\nDemonstration 3 response:\n{\"fn_804k\":{\"arg_7bmh\":\"Vienna\",\"arg_gc4g\":\"ev_qibj\",\"arg_yvkl\":\"21sx_wb3h07sx_wb3h2028\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Lisbon on 2028-02-16.\nDemonstration 4 response:\n{\"fn_804k\":{\"arg_7bmh\":\"Lisbon\",\"arg_gc4g\":\"ev_c0zu\",\"arg_yvkl\":\"16sx_wb3h02sx_wb3h2028\"}}",
+      "support_values": [
+        "16sx_wb3h02sx_wb3h2028",
+        "21sx_wb3h07sx_wb3h2028",
+        "Lisbon",
+        "London",
+        "Prague",
+        "Vienna",
+        "ev_c0zu",
+        "ev_qibj"
+      ],
+      "target_call": {
+        "fn_804k": {
+          "arg_7bmh": "Naples",
+          "arg_gc4g": "ev_c0zu",
+          "arg_yvkl": "17sx_wb3h03sx_wb3h2027"
+        }
+      },
+      "target_text": "{\"fn_804k\":{\"arg_7bmh\":\"Naples\",\"arg_gc4g\":\"ev_c0zu\",\"arg_yvkl\":\"17sx_wb3h03sx_wb3h2027\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_wb3h",
+      "enum_names": {
+        "celsius": "ev_qibj",
+        "fahrenheit": "ev_c0zu"
+      },
+      "field_names": {
+        "city": "arg_7bmh",
+        "date": "arg_yvkl",
+        "units": "arg_gc4g"
+      },
+      "operation_names": {
+        "forecast": "fn_804k",
+        "weather": "fn_5gpu"
+      },
+      "protocol_id": "validation-11"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_0u0v",
+        "enum_names": {
+          "celsius": "ev_x0y1",
+          "fahrenheit": "ev_xnwf"
+        },
+        "field_names": {
+          "city": "arg_7r7t",
+          "date": "arg_zzig",
+          "units": "arg_fqn5"
+        },
+        "operation_names": {
+          "forecast": "fn_ovqy",
+          "weather": "fn_ikf8"
+        },
+        "protocol_id": "validation-9"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for London using Celsius.\nDemonstration 1 response:\n{\"fn_ikf8\":{\"arg_7r7t\":\"London\",\"arg_fqn5\":\"ev_x0y1\"}}\n\nDemonstration 2 request:\nGet the current weather for Oslo using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ikf8\":{\"arg_7r7t\":\"Oslo\",\"arg_fqn5\":\"ev_xnwf\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Madrid on 2026-10-14.\nDemonstration 3 response:\n{\"fn_ovqy\":{\"arg_7r7t\":\"Madrid\",\"arg_fqn5\":\"ev_x0y1\",\"arg_zzig\":\"10sx_0u0v14sx_0u0v2026\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Dublin on 2028-02-16.\nDemonstration 4 response:\n{\"fn_ovqy\":{\"arg_7r7t\":\"Dublin\",\"arg_fqn5\":\"ev_xnwf\",\"arg_zzig\":\"02sx_0u0v16sx_0u0v2028\"}}",
+      "support_values": [
+        "02sx_0u0v16sx_0u0v2028",
+        "10sx_0u0v14sx_0u0v2026",
+        "Dublin",
+        "London",
+        "Madrid",
+        "Oslo",
+        "ev_x0y1",
+        "ev_xnwf"
+      ],
+      "target_call": {
+        "fn_ovqy": {
+          "arg_7r7t": "Naples",
+          "arg_fqn5": "ev_xnwf",
+          "arg_zzig": "03sx_0u0v17sx_0u0v2027"
+        }
+      },
+      "target_text": "{\"fn_ovqy\":{\"arg_7r7t\":\"Naples\",\"arg_fqn5\":\"ev_xnwf\",\"arg_zzig\":\"03sx_0u0v17sx_0u0v2027\"}}\n"
+    },
+    "protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_0u0v",
+      "enum_names": {
+        "celsius": "ev_x0y1",
+        "fahrenheit": "ev_xnwf"
+      },
+      "field_names": {
+        "city": "arg_7r7t",
+        "date": "arg_zzig",
+        "units": "arg_fqn5"
+      },
+      "operation_names": {
+        "forecast": "fn_ovqy",
+        "weather": "fn_ikf8"
+      },
+      "protocol_id": "validation-9"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_nj73",
+        "enum_names": {
+          "celsius": "ev_2vvs",
+          "fahrenheit": "ev_mg6m"
+        },
+        "field_names": {
+          "city": "arg_1p94",
+          "date": "arg_s8au",
+          "units": "arg_7lg7"
+        },
+        "operation_names": {
+          "forecast": "fn_lkto",
+          "weather": "fn_ykhq"
+        },
+        "protocol_id": "validation-12"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Sofia using Celsius.\nDemonstration 1 response:\n{\"fn_ykhq\":{\"arg_1p94\":\"Sofia\",\"arg_7lg7\":\"ev_2vvs\"}}\n\nDemonstration 2 request:\nGet the current weather for Dublin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ykhq\":{\"arg_1p94\":\"Dublin\",\"arg_7lg7\":\"ev_mg6m\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Berlin on 2028-07-21.\nDemonstration 3 response:\n{\"fn_lkto\":{\"arg_1p94\":\"Berlin\",\"arg_7lg7\":\"ev_2vvs\",\"arg_s8au\":\"2028sx_nj7307sx_nj7321\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Paris on 2028-02-16.\nDemonstration 4 response:\n{\"fn_lkto\":{\"arg_1p94\":\"Paris\",\"arg_7lg7\":\"ev_mg6m\",\"arg_s8au\":\"2028sx_nj7302sx_nj7316\"}}",
+      "support_values": [
+        "2028sx_nj7302sx_nj7316",
+        "2028sx_nj7307sx_nj7321",
+        "Berlin",
+        "Dublin",
+        "Paris",
+        "Sofia",
+        "ev_2vvs",
+        "ev_mg6m"
+      ],
+      "target_call": {
+        "fn_lkto": {
+          "arg_1p94": "Naples",
+          "arg_7lg7": "ev_mg6m",
+          "arg_s8au": "2027sx_nj7303sx_nj7317"
+        }
+      },
+      "target_text": "{\"fn_lkto\":{\"arg_1p94\":\"Naples\",\"arg_7lg7\":\"ev_mg6m\",\"arg_s8au\":\"2027sx_nj7303sx_nj7317\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_31g3",
+        "enum_names": {
+          "celsius": "ev_ypg4",
+          "fahrenheit": "ev_xnwf"
+        },
+        "field_names": {
+          "city": "arg_qh9r",
+          "date": "arg_dtrz",
+          "units": "arg_lwpp"
+        },
+        "operation_names": {
+          "forecast": "fn_1d2x",
+          "weather": "fn_5ujo"
+        },
+        "protocol_id": "validation-14"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Madrid using Celsius.\nDemonstration 1 response:\n{\"fn_5ujo\":{\"arg_lwpp\":\"ev_ypg4\",\"arg_qh9r\":\"Madrid\"}}\n\nDemonstration 2 request:\nGet the current weather for Sofia using Fahrenheit.\nDemonstration 2 response:\n{\"fn_5ujo\":{\"arg_lwpp\":\"ev_xnwf\",\"arg_qh9r\":\"Sofia\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Athens on 2027-01-12.\nDemonstration 3 response:\n{\"fn_1d2x\":{\"arg_dtrz\":\"01sx_31g312sx_31g32027\",\"arg_lwpp\":\"ev_ypg4\",\"arg_qh9r\":\"Athens\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Lisbon on 2028-07-21.\nDemonstration 4 response:\n{\"fn_1d2x\":{\"arg_dtrz\":\"07sx_31g321sx_31g32028\",\"arg_lwpp\":\"ev_xnwf\",\"arg_qh9r\":\"Lisbon\"}}",
+      "support_values": [
+        "01sx_31g312sx_31g32027",
+        "07sx_31g321sx_31g32028",
+        "Athens",
+        "Lisbon",
+        "Madrid",
+        "Sofia",
+        "ev_xnwf",
+        "ev_ypg4"
+      ],
+      "target_call": {
+        "fn_1d2x": {
+          "arg_dtrz": "03sx_31g317sx_31g32027",
+          "arg_lwpp": "ev_xnwf",
+          "arg_qh9r": "Naples"
+        }
+      },
+      "target_text": "{\"fn_1d2x\":{\"arg_dtrz\":\"03sx_31g317sx_31g32027\",\"arg_lwpp\":\"ev_xnwf\",\"arg_qh9r\":\"Naples\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_31g3",
+      "enum_names": {
+        "celsius": "ev_ypg4",
+        "fahrenheit": "ev_xnwf"
+      },
+      "field_names": {
+        "city": "arg_qh9r",
+        "date": "arg_dtrz",
+        "units": "arg_lwpp"
+      },
+      "operation_names": {
+        "forecast": "fn_1d2x",
+        "weather": "fn_5ujo"
+      },
+      "protocol_id": "validation-14"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_nj73",
+        "enum_names": {
+          "celsius": "ev_2vvs",
+          "fahrenheit": "ev_mg6m"
+        },
+        "field_names": {
+          "city": "arg_1p94",
+          "date": "arg_s8au",
+          "units": "arg_7lg7"
+        },
+        "operation_names": {
+          "forecast": "fn_lkto",
+          "weather": "fn_ykhq"
+        },
+        "protocol_id": "validation-12"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Paris using Celsius.\nDemonstration 1 response:\n{\"fn_ykhq\":{\"arg_1p94\":\"Paris\",\"arg_7lg7\":\"ev_2vvs\"}}\n\nDemonstration 2 request:\nGet the current weather for Athens using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ykhq\":{\"arg_1p94\":\"Athens\",\"arg_7lg7\":\"ev_mg6m\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Vienna on 2027-01-12.\nDemonstration 3 response:\n{\"fn_lkto\":{\"arg_1p94\":\"Vienna\",\"arg_7lg7\":\"ev_2vvs\",\"arg_s8au\":\"2027sx_nj7301sx_nj7312\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Dublin on 2028-02-16.\nDemonstration 4 response:\n{\"fn_lkto\":{\"arg_1p94\":\"Dublin\",\"arg_7lg7\":\"ev_mg6m\",\"arg_s8au\":\"2028sx_nj7302sx_nj7316\"}}",
+      "support_values": [
+        "2027sx_nj7301sx_nj7312",
+        "2028sx_nj7302sx_nj7316",
+        "Athens",
+        "Dublin",
+        "Paris",
+        "Vienna",
+        "ev_2vvs",
+        "ev_mg6m"
+      ],
+      "target_call": {
+        "fn_lkto": {
+          "arg_1p94": "Naples",
+          "arg_7lg7": "ev_mg6m",
+          "arg_s8au": "2027sx_nj7303sx_nj7317"
+        }
+      },
+      "target_text": "{\"fn_lkto\":{\"arg_1p94\":\"Naples\",\"arg_7lg7\":\"ev_mg6m\",\"arg_s8au\":\"2027sx_nj7303sx_nj7317\"}}\n"
+    },
+    "protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_nj73",
+      "enum_names": {
+        "celsius": "ev_2vvs",
+        "fahrenheit": "ev_mg6m"
+      },
+      "field_names": {
+        "city": "arg_1p94",
+        "date": "arg_s8au",
+        "units": "arg_7lg7"
+      },
+      "operation_names": {
+        "forecast": "fn_lkto",
+        "weather": "fn_ykhq"
+      },
+      "protocol_id": "validation-12"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_bab1",
+        "enum_names": {
+          "celsius": "ev_n9fm",
+          "fahrenheit": "ev_thsg"
+        },
+        "field_names": {
+          "city": "arg_q9eh",
+          "date": "arg_0cah",
+          "units": "arg_aqh8"
+        },
+        "operation_names": {
+          "forecast": "fn_kjoj",
+          "weather": "fn_8ddy"
+        },
+        "protocol_id": "validation-15"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Prague using Celsius.\nDemonstration 1 response:\n{\"fn_8ddy\":{\"arg_aqh8\":\"ev_n9fm\",\"arg_q9eh\":\"Prague\"}}\n\nDemonstration 2 request:\nGet the current weather for Paris using Fahrenheit.\nDemonstration 2 response:\n{\"fn_8ddy\":{\"arg_aqh8\":\"ev_thsg\",\"arg_q9eh\":\"Paris\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Berlin on 2026-10-14.\nDemonstration 3 response:\n{\"fn_kjoj\":{\"arg_0cah\":\"2026sx_bab110sx_bab114\",\"arg_aqh8\":\"ev_n9fm\",\"arg_q9eh\":\"Berlin\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Madrid on 2028-07-21.\nDemonstration 4 response:\n{\"fn_kjoj\":{\"arg_0cah\":\"2028sx_bab107sx_bab121\",\"arg_aqh8\":\"ev_thsg\",\"arg_q9eh\":\"Madrid\"}}",
+      "support_values": [
+        "2026sx_bab110sx_bab114",
+        "2028sx_bab107sx_bab121",
+        "Berlin",
+        "Madrid",
+        "Paris",
+        "Prague",
+        "ev_n9fm",
+        "ev_thsg"
+      ],
+      "target_call": {
+        "fn_kjoj": {
+          "arg_0cah": "2027sx_bab103sx_bab117",
+          "arg_aqh8": "ev_thsg",
+          "arg_q9eh": "Naples"
+        }
+      },
+      "target_text": "{\"fn_kjoj\":{\"arg_0cah\":\"2027sx_bab103sx_bab117\",\"arg_aqh8\":\"ev_thsg\",\"arg_q9eh\":\"Naples\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_xiyd",
+        "enum_names": {
+          "celsius": "ev_ypg4",
+          "fahrenheit": "ev_xnwf"
+        },
+        "field_names": {
+          "city": "arg_1ncm",
+          "date": "arg_wcl6",
+          "units": "arg_orkq"
+        },
+        "operation_names": {
+          "forecast": "fn_udfb",
+          "weather": "fn_012c"
+        },
+        "protocol_id": "validation-17"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Prague using Celsius.\nDemonstration 1 response:\n{\"fn_012c\":{\"arg_1ncm\":\"Prague\",\"arg_orkq\":\"ev_ypg4\"}}\n\nDemonstration 2 request:\nGet the current weather for Dublin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_012c\":{\"arg_1ncm\":\"Dublin\",\"arg_orkq\":\"ev_xnwf\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for London on 2028-02-16.\nDemonstration 3 response:\n{\"fn_udfb\":{\"arg_1ncm\":\"London\",\"arg_orkq\":\"ev_ypg4\",\"arg_wcl6\":\"02sx_xiyd16sx_xiyd2028\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Lisbon on 2028-07-21.\nDemonstration 4 response:\n{\"fn_udfb\":{\"arg_1ncm\":\"Lisbon\",\"arg_orkq\":\"ev_xnwf\",\"arg_wcl6\":\"07sx_xiyd21sx_xiyd2028\"}}",
+      "support_values": [
+        "02sx_xiyd16sx_xiyd2028",
+        "07sx_xiyd21sx_xiyd2028",
+        "Dublin",
+        "Lisbon",
+        "London",
+        "Prague",
+        "ev_xnwf",
+        "ev_ypg4"
+      ],
+      "target_call": {
+        "fn_udfb": {
+          "arg_1ncm": "Naples",
+          "arg_orkq": "ev_xnwf",
+          "arg_wcl6": "03sx_xiyd17sx_xiyd2027"
+        }
+      },
+      "target_text": "{\"fn_udfb\":{\"arg_1ncm\":\"Naples\",\"arg_orkq\":\"ev_xnwf\",\"arg_wcl6\":\"03sx_xiyd17sx_xiyd2027\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_xiyd",
+      "enum_names": {
+        "celsius": "ev_ypg4",
+        "fahrenheit": "ev_xnwf"
+      },
+      "field_names": {
+        "city": "arg_1ncm",
+        "date": "arg_wcl6",
+        "units": "arg_orkq"
+      },
+      "operation_names": {
+        "forecast": "fn_udfb",
+        "weather": "fn_012c"
+      },
+      "protocol_id": "validation-17"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_bab1",
+        "enum_names": {
+          "celsius": "ev_n9fm",
+          "fahrenheit": "ev_thsg"
+        },
+        "field_names": {
+          "city": "arg_q9eh",
+          "date": "arg_0cah",
+          "units": "arg_aqh8"
+        },
+        "operation_names": {
+          "forecast": "fn_kjoj",
+          "weather": "fn_8ddy"
+        },
+        "protocol_id": "validation-15"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Dublin using Celsius.\nDemonstration 1 response:\n{\"fn_8ddy\":{\"arg_aqh8\":\"ev_n9fm\",\"arg_q9eh\":\"Dublin\"}}\n\nDemonstration 2 request:\nGet the current weather for Oslo using Fahrenheit.\nDemonstration 2 response:\n{\"fn_8ddy\":{\"arg_aqh8\":\"ev_thsg\",\"arg_q9eh\":\"Oslo\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Tokyo on 2026-10-14.\nDemonstration 3 response:\n{\"fn_kjoj\":{\"arg_0cah\":\"2026sx_bab110sx_bab114\",\"arg_aqh8\":\"ev_n9fm\",\"arg_q9eh\":\"Tokyo\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Berlin on 2026-08-20.\nDemonstration 4 response:\n{\"fn_kjoj\":{\"arg_0cah\":\"2026sx_bab108sx_bab120\",\"arg_aqh8\":\"ev_thsg\",\"arg_q9eh\":\"Berlin\"}}",
+      "support_values": [
+        "2026sx_bab108sx_bab120",
+        "2026sx_bab110sx_bab114",
+        "Berlin",
+        "Dublin",
+        "Oslo",
+        "Tokyo",
+        "ev_n9fm",
+        "ev_thsg"
+      ],
+      "target_call": {
+        "fn_kjoj": {
+          "arg_0cah": "2027sx_bab103sx_bab117",
+          "arg_aqh8": "ev_thsg",
+          "arg_q9eh": "Naples"
+        }
+      },
+      "target_text": "{\"fn_kjoj\":{\"arg_0cah\":\"2027sx_bab103sx_bab117\",\"arg_aqh8\":\"ev_thsg\",\"arg_q9eh\":\"Naples\"}}\n"
+    },
+    "protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_bab1",
+      "enum_names": {
+        "celsius": "ev_n9fm",
+        "fahrenheit": "ev_thsg"
+      },
+      "field_names": {
+        "city": "arg_q9eh",
+        "date": "arg_0cah",
+        "units": "arg_aqh8"
+      },
+      "operation_names": {
+        "forecast": "fn_kjoj",
+        "weather": "fn_8ddy"
+      },
+      "protocol_id": "validation-15"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_2ps8",
+        "enum_names": {
+          "celsius": "ev_p9ty",
+          "fahrenheit": "ev_qibj"
+        },
+        "field_names": {
+          "city": "arg_yvkl",
+          "date": "arg_l0dy",
+          "units": "arg_rdro"
+        },
+        "operation_names": {
+          "forecast": "fn_4j2g",
+          "weather": "fn_ggyh"
+        },
+        "protocol_id": "validation-18"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Oslo using Celsius.\nDemonstration 1 response:\n{\"fn_ggyh\":{\"arg_rdro\":\"ev_p9ty\",\"arg_yvkl\":\"Oslo\"}}\n\nDemonstration 2 request:\nGet the current weather for Paris using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ggyh\":{\"arg_rdro\":\"ev_qibj\",\"arg_yvkl\":\"Paris\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Dublin on 2026-08-20.\nDemonstration 3 response:\n{\"fn_4j2g\":{\"arg_l0dy\":\"20sx_2ps808sx_2ps82026\",\"arg_rdro\":\"ev_p9ty\",\"arg_yvkl\":\"Dublin\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Berlin on 2027-04-25.\nDemonstration 4 response:\n{\"fn_4j2g\":{\"arg_l0dy\":\"25sx_2ps804sx_2ps82027\",\"arg_rdro\":\"ev_qibj\",\"arg_yvkl\":\"Berlin\"}}",
+      "support_values": [
+        "20sx_2ps808sx_2ps82026",
+        "25sx_2ps804sx_2ps82027",
+        "Berlin",
+        "Dublin",
+        "Oslo",
+        "Paris",
+        "ev_p9ty",
+        "ev_qibj"
+      ],
+      "target_call": {
+        "fn_4j2g": {
+          "arg_l0dy": "17sx_2ps803sx_2ps82027",
+          "arg_rdro": "ev_qibj",
+          "arg_yvkl": "Naples"
+        }
+      },
+      "target_text": "{\"fn_4j2g\":{\"arg_l0dy\":\"17sx_2ps803sx_2ps82027\",\"arg_rdro\":\"ev_qibj\",\"arg_yvkl\":\"Naples\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_zqck",
+        "enum_names": {
+          "celsius": "ev_5neb",
+          "fahrenheit": "ev_1378"
+        },
+        "field_names": {
+          "city": "arg_0cah",
+          "date": "arg_g47z",
+          "units": "arg_d8ov"
+        },
+        "operation_names": {
+          "forecast": "fn_ezzq",
+          "weather": "fn_eu6u"
+        },
+        "protocol_id": "validation-20"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Sofia using Celsius.\nDemonstration 1 response:\n{\"fn_eu6u\":{\"arg_0cah\":\"Sofia\",\"arg_d8ov\":\"ev_5neb\"}}\n\nDemonstration 2 request:\nGet the current weather for Berlin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_eu6u\":{\"arg_0cah\":\"Berlin\",\"arg_d8ov\":\"ev_1378\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for London on 2027-01-12.\nDemonstration 3 response:\n{\"fn_ezzq\":{\"arg_0cah\":\"London\",\"arg_d8ov\":\"ev_5neb\",\"arg_g47z\":\"2027sx_zqck01sx_zqck12\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Vienna on 2027-11-09.\nDemonstration 4 response:\n{\"fn_ezzq\":{\"arg_0cah\":\"Vienna\",\"arg_d8ov\":\"ev_1378\",\"arg_g47z\":\"2027sx_zqck11sx_zqck09\"}}",
+      "support_values": [
+        "2027sx_zqck01sx_zqck12",
+        "2027sx_zqck11sx_zqck09",
+        "Berlin",
+        "London",
+        "Sofia",
+        "Vienna",
+        "ev_1378",
+        "ev_5neb"
+      ],
+      "target_call": {
+        "fn_ezzq": {
+          "arg_0cah": "Naples",
+          "arg_d8ov": "ev_1378",
+          "arg_g47z": "2027sx_zqck03sx_zqck17"
+        }
+      },
+      "target_text": "{\"fn_ezzq\":{\"arg_0cah\":\"Naples\",\"arg_d8ov\":\"ev_1378\",\"arg_g47z\":\"2027sx_zqck03sx_zqck17\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_zqck",
+      "enum_names": {
+        "celsius": "ev_5neb",
+        "fahrenheit": "ev_1378"
+      },
+      "field_names": {
+        "city": "arg_0cah",
+        "date": "arg_g47z",
+        "units": "arg_d8ov"
+      },
+      "operation_names": {
+        "forecast": "fn_ezzq",
+        "weather": "fn_eu6u"
+      },
+      "protocol_id": "validation-20"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_2ps8",
+        "enum_names": {
+          "celsius": "ev_p9ty",
+          "fahrenheit": "ev_qibj"
+        },
+        "field_names": {
+          "city": "arg_yvkl",
+          "date": "arg_l0dy",
+          "units": "arg_rdro"
+        },
+        "operation_names": {
+          "forecast": "fn_4j2g",
+          "weather": "fn_ggyh"
+        },
+        "protocol_id": "validation-18"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Tokyo using Celsius.\nDemonstration 1 response:\n{\"fn_ggyh\":{\"arg_rdro\":\"ev_p9ty\",\"arg_yvkl\":\"Tokyo\"}}\n\nDemonstration 2 request:\nGet the current weather for Dublin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ggyh\":{\"arg_rdro\":\"ev_qibj\",\"arg_yvkl\":\"Dublin\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Oslo on 2027-01-12.\nDemonstration 3 response:\n{\"fn_4j2g\":{\"arg_l0dy\":\"12sx_2ps801sx_2ps82027\",\"arg_rdro\":\"ev_p9ty\",\"arg_yvkl\":\"Oslo\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Madrid on 2026-08-20.\nDemonstration 4 response:\n{\"fn_4j2g\":{\"arg_l0dy\":\"20sx_2ps808sx_2ps82026\",\"arg_rdro\":\"ev_qibj\",\"arg_yvkl\":\"Madrid\"}}",
+      "support_values": [
+        "12sx_2ps801sx_2ps82027",
+        "20sx_2ps808sx_2ps82026",
+        "Dublin",
+        "Madrid",
+        "Oslo",
+        "Tokyo",
+        "ev_p9ty",
+        "ev_qibj"
+      ],
+      "target_call": {
+        "fn_4j2g": {
+          "arg_l0dy": "17sx_2ps803sx_2ps82027",
+          "arg_rdro": "ev_qibj",
+          "arg_yvkl": "Naples"
+        }
+      },
+      "target_text": "{\"fn_4j2g\":{\"arg_l0dy\":\"17sx_2ps803sx_2ps82027\",\"arg_rdro\":\"ev_qibj\",\"arg_yvkl\":\"Naples\"}}\n"
+    },
+    "protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_2ps8",
+      "enum_names": {
+        "celsius": "ev_p9ty",
+        "fahrenheit": "ev_qibj"
+      },
+      "field_names": {
+        "city": "arg_yvkl",
+        "date": "arg_l0dy",
+        "units": "arg_rdro"
+      },
+      "operation_names": {
+        "forecast": "fn_4j2g",
+        "weather": "fn_ggyh"
+      },
+      "protocol_id": "validation-18"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_dyvw",
+        "enum_names": {
+          "celsius": "ev_ii7o",
+          "fahrenheit": "ev_dp41"
+        },
+        "field_names": {
+          "city": "arg_zgxk",
+          "date": "arg_d8ov",
+          "units": "arg_xcmn"
+        },
+        "operation_names": {
+          "forecast": "fn_us4d",
+          "weather": "fn_g9hv"
+        },
+        "protocol_id": "validation-21"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Prague using Celsius.\nDemonstration 1 response:\n{\"fn_g9hv\":{\"arg_xcmn\":\"ev_ii7o\",\"arg_zgxk\":\"Prague\"}}\n\nDemonstration 2 request:\nGet the current weather for Dublin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_g9hv\":{\"arg_xcmn\":\"ev_dp41\",\"arg_zgxk\":\"Dublin\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Paris on 2026-10-14.\nDemonstration 3 response:\n{\"fn_us4d\":{\"arg_d8ov\":\"10sx_dyvw14sx_dyvw2026\",\"arg_xcmn\":\"ev_ii7o\",\"arg_zgxk\":\"Paris\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Berlin on 2027-11-09.\nDemonstration 4 response:\n{\"fn_us4d\":{\"arg_d8ov\":\"11sx_dyvw09sx_dyvw2027\",\"arg_xcmn\":\"ev_dp41\",\"arg_zgxk\":\"Berlin\"}}",
+      "support_values": [
+        "10sx_dyvw14sx_dyvw2026",
+        "11sx_dyvw09sx_dyvw2027",
+        "Berlin",
+        "Dublin",
+        "Paris",
+        "Prague",
+        "ev_dp41",
+        "ev_ii7o"
+      ],
+      "target_call": {
+        "fn_us4d": {
+          "arg_d8ov": "03sx_dyvw17sx_dyvw2027",
+          "arg_xcmn": "ev_dp41",
+          "arg_zgxk": "Naples"
+        }
+      },
+      "target_text": "{\"fn_us4d\":{\"arg_d8ov\":\"03sx_dyvw17sx_dyvw2027\",\"arg_xcmn\":\"ev_dp41\",\"arg_zgxk\":\"Naples\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_6ece",
+        "enum_names": {
+          "celsius": "ev_n9fm",
+          "fahrenheit": "ev_5neb"
+        },
+        "field_names": {
+          "city": "arg_5a95",
+          "date": "arg_n6vj",
+          "units": "arg_s8au"
+        },
+        "operation_names": {
+          "forecast": "fn_qsz2",
+          "weather": "fn_oqa3"
+        },
+        "protocol_id": "validation-23"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Sofia using Celsius.\nDemonstration 1 response:\n{\"fn_oqa3\":{\"arg_5a95\":\"Sofia\",\"arg_s8au\":\"ev_n9fm\"}}\n\nDemonstration 2 request:\nGet the current weather for Paris using Fahrenheit.\nDemonstration 2 response:\n{\"fn_oqa3\":{\"arg_5a95\":\"Paris\",\"arg_s8au\":\"ev_5neb\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Vienna on 2027-06-18.\nDemonstration 3 response:\n{\"fn_qsz2\":{\"arg_5a95\":\"Vienna\",\"arg_n6vj\":\"18sx_6ece06sx_6ece2027\",\"arg_s8au\":\"ev_n9fm\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for London on 2027-01-12.\nDemonstration 4 response:\n{\"fn_qsz2\":{\"arg_5a95\":\"London\",\"arg_n6vj\":\"12sx_6ece01sx_6ece2027\",\"arg_s8au\":\"ev_5neb\"}}",
+      "support_values": [
+        "12sx_6ece01sx_6ece2027",
+        "18sx_6ece06sx_6ece2027",
+        "London",
+        "Paris",
+        "Sofia",
+        "Vienna",
+        "ev_5neb",
+        "ev_n9fm"
+      ],
+      "target_call": {
+        "fn_qsz2": {
+          "arg_5a95": "Naples",
+          "arg_n6vj": "17sx_6ece03sx_6ece2027",
+          "arg_s8au": "ev_5neb"
+        }
+      },
+      "target_text": "{\"fn_qsz2\":{\"arg_5a95\":\"Naples\",\"arg_n6vj\":\"17sx_6ece03sx_6ece2027\",\"arg_s8au\":\"ev_5neb\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_6ece",
+      "enum_names": {
+        "celsius": "ev_n9fm",
+        "fahrenheit": "ev_5neb"
+      },
+      "field_names": {
+        "city": "arg_5a95",
+        "date": "arg_n6vj",
+        "units": "arg_s8au"
+      },
+      "operation_names": {
+        "forecast": "fn_qsz2",
+        "weather": "fn_oqa3"
+      },
+      "protocol_id": "validation-23"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_dyvw",
+        "enum_names": {
+          "celsius": "ev_ii7o",
+          "fahrenheit": "ev_dp41"
+        },
+        "field_names": {
+          "city": "arg_zgxk",
+          "date": "arg_d8ov",
+          "units": "arg_xcmn"
+        },
+        "operation_names": {
+          "forecast": "fn_us4d",
+          "weather": "fn_g9hv"
+        },
+        "protocol_id": "validation-21"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Athens using Celsius.\nDemonstration 1 response:\n{\"fn_g9hv\":{\"arg_xcmn\":\"ev_ii7o\",\"arg_zgxk\":\"Athens\"}}\n\nDemonstration 2 request:\nGet the current weather for Sofia using Fahrenheit.\nDemonstration 2 response:\n{\"fn_g9hv\":{\"arg_xcmn\":\"ev_dp41\",\"arg_zgxk\":\"Sofia\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for London on 2027-11-09.\nDemonstration 3 response:\n{\"fn_us4d\":{\"arg_d8ov\":\"11sx_dyvw09sx_dyvw2027\",\"arg_xcmn\":\"ev_ii7o\",\"arg_zgxk\":\"London\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Dublin on 2026-08-20.\nDemonstration 4 response:\n{\"fn_us4d\":{\"arg_d8ov\":\"08sx_dyvw20sx_dyvw2026\",\"arg_xcmn\":\"ev_dp41\",\"arg_zgxk\":\"Dublin\"}}",
+      "support_values": [
+        "08sx_dyvw20sx_dyvw2026",
+        "11sx_dyvw09sx_dyvw2027",
+        "Athens",
+        "Dublin",
+        "London",
+        "Sofia",
+        "ev_dp41",
+        "ev_ii7o"
+      ],
+      "target_call": {
+        "fn_us4d": {
+          "arg_d8ov": "03sx_dyvw17sx_dyvw2027",
+          "arg_xcmn": "ev_dp41",
+          "arg_zgxk": "Naples"
+        }
+      },
+      "target_text": "{\"fn_us4d\":{\"arg_d8ov\":\"03sx_dyvw17sx_dyvw2027\",\"arg_xcmn\":\"ev_dp41\",\"arg_zgxk\":\"Naples\"}}\n"
+    },
+    "protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_dyvw",
+      "enum_names": {
+        "celsius": "ev_ii7o",
+        "fahrenheit": "ev_dp41"
+      },
+      "field_names": {
+        "city": "arg_zgxk",
+        "date": "arg_d8ov",
+        "units": "arg_xcmn"
+      },
+      "operation_names": {
+        "forecast": "fn_us4d",
+        "weather": "fn_g9hv"
+      },
+      "protocol_id": "validation-21"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_xbj4",
+        "enum_names": {
+          "celsius": "ev_ub7a",
+          "fahrenheit": "ev_agkp"
+        },
+        "field_names": {
+          "city": "arg_iitg",
+          "date": "arg_5quw",
+          "units": "arg_5a95"
+        },
+        "operation_names": {
+          "forecast": "fn_sjfs",
+          "weather": "fn_ixgh"
+        },
+        "protocol_id": "validation-24"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for London using Celsius.\nDemonstration 1 response:\n{\"fn_ixgh\":{\"arg_5a95\":\"ev_ub7a\",\"arg_iitg\":\"London\"}}\n\nDemonstration 2 request:\nGet the current weather for Dublin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ixgh\":{\"arg_5a95\":\"ev_agkp\",\"arg_iitg\":\"Dublin\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Lisbon on 2026-08-20.\nDemonstration 3 response:\n{\"fn_sjfs\":{\"arg_5a95\":\"ev_ub7a\",\"arg_5quw\":\"08sx_xbj420sx_xbj42026\",\"arg_iitg\":\"Lisbon\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Oslo on 2028-02-16.\nDemonstration 4 response:\n{\"fn_sjfs\":{\"arg_5a95\":\"ev_agkp\",\"arg_5quw\":\"02sx_xbj416sx_xbj42028\",\"arg_iitg\":\"Oslo\"}}",
+      "support_values": [
+        "02sx_xbj416sx_xbj42028",
+        "08sx_xbj420sx_xbj42026",
+        "Dublin",
+        "Lisbon",
+        "London",
+        "Oslo",
+        "ev_agkp",
+        "ev_ub7a"
+      ],
+      "target_call": {
+        "fn_sjfs": {
+          "arg_5a95": "ev_agkp",
+          "arg_5quw": "03sx_xbj417sx_xbj42027",
+          "arg_iitg": "Naples"
+        }
+      },
+      "target_text": "{\"fn_sjfs\":{\"arg_5a95\":\"ev_agkp\",\"arg_5quw\":\"03sx_xbj417sx_xbj42027\",\"arg_iitg\":\"Naples\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_x7l3",
+        "enum_names": {
+          "celsius": "ev_ypg4",
+          "fahrenheit": "ev_d06s"
+        },
+        "field_names": {
+          "city": "arg_j4da",
+          "date": "arg_ej7i",
+          "units": "arg_wor3"
+        },
+        "operation_names": {
+          "forecast": "fn_ykof",
+          "weather": "fn_pouq"
+        },
+        "protocol_id": "validation-26"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Madrid using Celsius.\nDemonstration 1 response:\n{\"fn_pouq\":{\"arg_j4da\":\"Madrid\",\"arg_wor3\":\"ev_ypg4\"}}\n\nDemonstration 2 request:\nGet the current weather for Athens using Fahrenheit.\nDemonstration 2 response:\n{\"fn_pouq\":{\"arg_j4da\":\"Athens\",\"arg_wor3\":\"ev_d06s\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Oslo on 2028-07-21.\nDemonstration 3 response:\n{\"fn_ykof\":{\"arg_ej7i\":\"21sx_x7l307sx_x7l32028\",\"arg_j4da\":\"Oslo\",\"arg_wor3\":\"ev_ypg4\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Berlin on 2027-11-09.\nDemonstration 4 response:\n{\"fn_ykof\":{\"arg_ej7i\":\"09sx_x7l311sx_x7l32027\",\"arg_j4da\":\"Berlin\",\"arg_wor3\":\"ev_d06s\"}}",
+      "support_values": [
+        "09sx_x7l311sx_x7l32027",
+        "21sx_x7l307sx_x7l32028",
+        "Athens",
+        "Berlin",
+        "Madrid",
+        "Oslo",
+        "ev_d06s",
+        "ev_ypg4"
+      ],
+      "target_call": {
+        "fn_ykof": {
+          "arg_ej7i": "17sx_x7l303sx_x7l32027",
+          "arg_j4da": "Naples",
+          "arg_wor3": "ev_d06s"
+        }
+      },
+      "target_text": "{\"fn_ykof\":{\"arg_ej7i\":\"17sx_x7l303sx_x7l32027\",\"arg_j4da\":\"Naples\",\"arg_wor3\":\"ev_d06s\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_x7l3",
+      "enum_names": {
+        "celsius": "ev_ypg4",
+        "fahrenheit": "ev_d06s"
+      },
+      "field_names": {
+        "city": "arg_j4da",
+        "date": "arg_ej7i",
+        "units": "arg_wor3"
+      },
+      "operation_names": {
+        "forecast": "fn_ykof",
+        "weather": "fn_pouq"
+      },
+      "protocol_id": "validation-26"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_xbj4",
+        "enum_names": {
+          "celsius": "ev_ub7a",
+          "fahrenheit": "ev_agkp"
+        },
+        "field_names": {
+          "city": "arg_iitg",
+          "date": "arg_5quw",
+          "units": "arg_5a95"
+        },
+        "operation_names": {
+          "forecast": "fn_sjfs",
+          "weather": "fn_ixgh"
+        },
+        "protocol_id": "validation-24"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Oslo using Celsius.\nDemonstration 1 response:\n{\"fn_ixgh\":{\"arg_5a95\":\"ev_ub7a\",\"arg_iitg\":\"Oslo\"}}\n\nDemonstration 2 request:\nGet the current weather for Prague using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ixgh\":{\"arg_5a95\":\"ev_agkp\",\"arg_iitg\":\"Prague\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Vienna on 2027-04-25.\nDemonstration 3 response:\n{\"fn_sjfs\":{\"arg_5a95\":\"ev_ub7a\",\"arg_5quw\":\"04sx_xbj425sx_xbj42027\",\"arg_iitg\":\"Vienna\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Lisbon on 2027-11-09.\nDemonstration 4 response:\n{\"fn_sjfs\":{\"arg_5a95\":\"ev_agkp\",\"arg_5quw\":\"11sx_xbj409sx_xbj42027\",\"arg_iitg\":\"Lisbon\"}}",
+      "support_values": [
+        "04sx_xbj425sx_xbj42027",
+        "11sx_xbj409sx_xbj42027",
+        "Lisbon",
+        "Oslo",
+        "Prague",
+        "Vienna",
+        "ev_agkp",
+        "ev_ub7a"
+      ],
+      "target_call": {
+        "fn_sjfs": {
+          "arg_5a95": "ev_agkp",
+          "arg_5quw": "03sx_xbj417sx_xbj42027",
+          "arg_iitg": "Naples"
+        }
+      },
+      "target_text": "{\"fn_sjfs\":{\"arg_5a95\":\"ev_agkp\",\"arg_5quw\":\"03sx_xbj417sx_xbj42027\",\"arg_iitg\":\"Naples\"}}\n"
+    },
+    "protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_xbj4",
+      "enum_names": {
+        "celsius": "ev_ub7a",
+        "fahrenheit": "ev_agkp"
+      },
+      "field_names": {
+        "city": "arg_iitg",
+        "date": "arg_5quw",
+        "units": "arg_5a95"
+      },
+      "operation_names": {
+        "forecast": "fn_sjfs",
+        "weather": "fn_ixgh"
+      },
+      "protocol_id": "validation-24"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_lwpf",
+        "enum_names": {
+          "celsius": "ev_uav5",
+          "fahrenheit": "ev_f6p7"
+        },
+        "field_names": {
+          "city": "arg_gc4g",
+          "date": "arg_i0ki",
+          "units": "arg_d8ov"
+        },
+        "operation_names": {
+          "forecast": "fn_5za0",
+          "weather": "fn_jiw9"
+        },
+        "protocol_id": "validation-27"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Oslo using Celsius.\nDemonstration 1 response:\n{\"fn_jiw9\":{\"arg_d8ov\":\"ev_uav5\",\"arg_gc4g\":\"Oslo\"}}\n\nDemonstration 2 request:\nGet the current weather for Lisbon using Fahrenheit.\nDemonstration 2 response:\n{\"fn_jiw9\":{\"arg_d8ov\":\"ev_f6p7\",\"arg_gc4g\":\"Lisbon\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Prague on 2026-08-20.\nDemonstration 3 response:\n{\"fn_5za0\":{\"arg_d8ov\":\"ev_uav5\",\"arg_gc4g\":\"Prague\",\"arg_i0ki\":\"08sx_lwpf20sx_lwpf2026\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Madrid on 2026-10-14.\nDemonstration 4 response:\n{\"fn_5za0\":{\"arg_d8ov\":\"ev_f6p7\",\"arg_gc4g\":\"Madrid\",\"arg_i0ki\":\"10sx_lwpf14sx_lwpf2026\"}}",
+      "support_values": [
+        "08sx_lwpf20sx_lwpf2026",
+        "10sx_lwpf14sx_lwpf2026",
+        "Lisbon",
+        "Madrid",
+        "Oslo",
+        "Prague",
+        "ev_f6p7",
+        "ev_uav5"
+      ],
+      "target_call": {
+        "fn_5za0": {
+          "arg_d8ov": "ev_f6p7",
+          "arg_gc4g": "Naples",
+          "arg_i0ki": "03sx_lwpf17sx_lwpf2027"
+        }
+      },
+      "target_text": "{\"fn_5za0\":{\"arg_d8ov\":\"ev_f6p7\",\"arg_gc4g\":\"Naples\",\"arg_i0ki\":\"03sx_lwpf17sx_lwpf2027\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_dyvw",
+        "enum_names": {
+          "celsius": "ev_mg6m",
+          "fahrenheit": "ev_9szi"
+        },
+        "field_names": {
+          "city": "arg_8my9",
+          "date": "arg_9ssd",
+          "units": "arg_kx1a"
+        },
+        "operation_names": {
+          "forecast": "fn_qsz2",
+          "weather": "fn_udfb"
+        },
+        "protocol_id": "validation-29"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Sofia using Celsius.\nDemonstration 1 response:\n{\"fn_udfb\":{\"arg_8my9\":\"Sofia\",\"arg_kx1a\":\"ev_mg6m\"}}\n\nDemonstration 2 request:\nGet the current weather for London using Fahrenheit.\nDemonstration 2 response:\n{\"fn_udfb\":{\"arg_8my9\":\"London\",\"arg_kx1a\":\"ev_9szi\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Tokyo on 2026-10-14.\nDemonstration 3 response:\n{\"fn_qsz2\":{\"arg_8my9\":\"Tokyo\",\"arg_9ssd\":\"10sx_dyvw14sx_dyvw2026\",\"arg_kx1a\":\"ev_mg6m\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Dublin on 2027-04-25.\nDemonstration 4 response:\n{\"fn_qsz2\":{\"arg_8my9\":\"Dublin\",\"arg_9ssd\":\"04sx_dyvw25sx_dyvw2027\",\"arg_kx1a\":\"ev_9szi\"}}",
+      "support_values": [
+        "04sx_dyvw25sx_dyvw2027",
+        "10sx_dyvw14sx_dyvw2026",
+        "Dublin",
+        "London",
+        "Sofia",
+        "Tokyo",
+        "ev_9szi",
+        "ev_mg6m"
+      ],
+      "target_call": {
+        "fn_qsz2": {
+          "arg_8my9": "Naples",
+          "arg_9ssd": "03sx_dyvw17sx_dyvw2027",
+          "arg_kx1a": "ev_9szi"
+        }
+      },
+      "target_text": "{\"fn_qsz2\":{\"arg_8my9\":\"Naples\",\"arg_9ssd\":\"03sx_dyvw17sx_dyvw2027\",\"arg_kx1a\":\"ev_9szi\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_dyvw",
+      "enum_names": {
+        "celsius": "ev_mg6m",
+        "fahrenheit": "ev_9szi"
+      },
+      "field_names": {
+        "city": "arg_8my9",
+        "date": "arg_9ssd",
+        "units": "arg_kx1a"
+      },
+      "operation_names": {
+        "forecast": "fn_qsz2",
+        "weather": "fn_udfb"
+      },
+      "protocol_id": "validation-29"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_lwpf",
+        "enum_names": {
+          "celsius": "ev_uav5",
+          "fahrenheit": "ev_f6p7"
+        },
+        "field_names": {
+          "city": "arg_gc4g",
+          "date": "arg_i0ki",
+          "units": "arg_d8ov"
+        },
+        "operation_names": {
+          "forecast": "fn_5za0",
+          "weather": "fn_jiw9"
+        },
+        "protocol_id": "validation-27"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Oslo using Celsius.\nDemonstration 1 response:\n{\"fn_jiw9\":{\"arg_d8ov\":\"ev_uav5\",\"arg_gc4g\":\"Oslo\"}}\n\nDemonstration 2 request:\nGet the current weather for Tokyo using Fahrenheit.\nDemonstration 2 response:\n{\"fn_jiw9\":{\"arg_d8ov\":\"ev_f6p7\",\"arg_gc4g\":\"Tokyo\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Madrid on 2026-10-14.\nDemonstration 3 response:\n{\"fn_5za0\":{\"arg_d8ov\":\"ev_uav5\",\"arg_gc4g\":\"Madrid\",\"arg_i0ki\":\"10sx_lwpf14sx_lwpf2026\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Paris on 2027-01-12.\nDemonstration 4 response:\n{\"fn_5za0\":{\"arg_d8ov\":\"ev_f6p7\",\"arg_gc4g\":\"Paris\",\"arg_i0ki\":\"01sx_lwpf12sx_lwpf2027\"}}",
+      "support_values": [
+        "01sx_lwpf12sx_lwpf2027",
+        "10sx_lwpf14sx_lwpf2026",
+        "Madrid",
+        "Oslo",
+        "Paris",
+        "Tokyo",
+        "ev_f6p7",
+        "ev_uav5"
+      ],
+      "target_call": {
+        "fn_5za0": {
+          "arg_d8ov": "ev_f6p7",
+          "arg_gc4g": "Naples",
+          "arg_i0ki": "03sx_lwpf17sx_lwpf2027"
+        }
+      },
+      "target_text": "{\"fn_5za0\":{\"arg_d8ov\":\"ev_f6p7\",\"arg_gc4g\":\"Naples\",\"arg_i0ki\":\"03sx_lwpf17sx_lwpf2027\"}}\n"
+    },
+    "protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_lwpf",
+      "enum_names": {
+        "celsius": "ev_uav5",
+        "fahrenheit": "ev_f6p7"
+      },
+      "field_names": {
+        "city": "arg_gc4g",
+        "date": "arg_i0ki",
+        "units": "arg_d8ov"
+      },
+      "operation_names": {
+        "forecast": "fn_5za0",
+        "weather": "fn_jiw9"
+      },
+      "protocol_id": "validation-27"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_skuj",
+        "enum_names": {
+          "celsius": "ev_hxf6",
+          "fahrenheit": "ev_nyqo"
+        },
+        "field_names": {
+          "city": "arg_7lg7",
+          "date": "arg_zi6n",
+          "units": "arg_ad0k"
+        },
+        "operation_names": {
+          "forecast": "fn_kjrl",
+          "weather": "fn_h19b"
+        },
+        "protocol_id": "validation-30"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Dublin using Celsius.\nDemonstration 1 response:\n{\"fn_h19b\":{\"arg_7lg7\":\"Dublin\",\"arg_ad0k\":\"ev_hxf6\"}}\n\nDemonstration 2 request:\nGet the current weather for Tokyo using Fahrenheit.\nDemonstration 2 response:\n{\"fn_h19b\":{\"arg_7lg7\":\"Tokyo\",\"arg_ad0k\":\"ev_nyqo\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Lisbon on 2027-01-12.\nDemonstration 3 response:\n{\"fn_kjrl\":{\"arg_7lg7\":\"Lisbon\",\"arg_ad0k\":\"ev_hxf6\",\"arg_zi6n\":\"2027sx_skuj01sx_skuj12\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Oslo on 2028-02-16.\nDemonstration 4 response:\n{\"fn_kjrl\":{\"arg_7lg7\":\"Oslo\",\"arg_ad0k\":\"ev_nyqo\",\"arg_zi6n\":\"2028sx_skuj02sx_skuj16\"}}",
+      "support_values": [
+        "2027sx_skuj01sx_skuj12",
+        "2028sx_skuj02sx_skuj16",
+        "Dublin",
+        "Lisbon",
+        "Oslo",
+        "Tokyo",
+        "ev_hxf6",
+        "ev_nyqo"
+      ],
+      "target_call": {
+        "fn_kjrl": {
+          "arg_7lg7": "Naples",
+          "arg_ad0k": "ev_nyqo",
+          "arg_zi6n": "2027sx_skuj03sx_skuj17"
+        }
+      },
+      "target_text": "{\"fn_kjrl\":{\"arg_7lg7\":\"Naples\",\"arg_ad0k\":\"ev_nyqo\",\"arg_zi6n\":\"2027sx_skuj03sx_skuj17\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_7lzq",
+        "enum_names": {
+          "celsius": "ev_4f5w",
+          "fahrenheit": "ev_j6du"
+        },
+        "field_names": {
+          "city": "arg_qh9r",
+          "date": "arg_iki9",
+          "units": "arg_c7z7"
+        },
+        "operation_names": {
+          "forecast": "fn_8swn",
+          "weather": "fn_udfb"
+        },
+        "protocol_id": "validation-32"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Oslo using Celsius.\nDemonstration 1 response:\n{\"fn_udfb\":{\"arg_c7z7\":\"ev_4f5w\",\"arg_qh9r\":\"Oslo\"}}\n\nDemonstration 2 request:\nGet the current weather for Berlin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_udfb\":{\"arg_c7z7\":\"ev_j6du\",\"arg_qh9r\":\"Berlin\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Tokyo on 2027-11-09.\nDemonstration 3 response:\n{\"fn_8swn\":{\"arg_c7z7\":\"ev_4f5w\",\"arg_iki9\":\"11sx_7lzq09sx_7lzq2027\",\"arg_qh9r\":\"Tokyo\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Paris on 2026-10-14.\nDemonstration 4 response:\n{\"fn_8swn\":{\"arg_c7z7\":\"ev_j6du\",\"arg_iki9\":\"10sx_7lzq14sx_7lzq2026\",\"arg_qh9r\":\"Paris\"}}",
+      "support_values": [
+        "10sx_7lzq14sx_7lzq2026",
+        "11sx_7lzq09sx_7lzq2027",
+        "Berlin",
+        "Oslo",
+        "Paris",
+        "Tokyo",
+        "ev_4f5w",
+        "ev_j6du"
+      ],
+      "target_call": {
+        "fn_8swn": {
+          "arg_c7z7": "ev_j6du",
+          "arg_iki9": "03sx_7lzq17sx_7lzq2027",
+          "arg_qh9r": "Naples"
+        }
+      },
+      "target_text": "{\"fn_8swn\":{\"arg_c7z7\":\"ev_j6du\",\"arg_iki9\":\"03sx_7lzq17sx_7lzq2027\",\"arg_qh9r\":\"Naples\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_7lzq",
+      "enum_names": {
+        "celsius": "ev_4f5w",
+        "fahrenheit": "ev_j6du"
+      },
+      "field_names": {
+        "city": "arg_qh9r",
+        "date": "arg_iki9",
+        "units": "arg_c7z7"
+      },
+      "operation_names": {
+        "forecast": "fn_8swn",
+        "weather": "fn_udfb"
+      },
+      "protocol_id": "validation-32"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_skuj",
+        "enum_names": {
+          "celsius": "ev_hxf6",
+          "fahrenheit": "ev_nyqo"
+        },
+        "field_names": {
+          "city": "arg_7lg7",
+          "date": "arg_zi6n",
+          "units": "arg_ad0k"
+        },
+        "operation_names": {
+          "forecast": "fn_kjrl",
+          "weather": "fn_h19b"
+        },
+        "protocol_id": "validation-30"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Paris using Celsius.\nDemonstration 1 response:\n{\"fn_h19b\":{\"arg_7lg7\":\"Paris\",\"arg_ad0k\":\"ev_hxf6\"}}\n\nDemonstration 2 request:\nGet the current weather for Berlin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_h19b\":{\"arg_7lg7\":\"Berlin\",\"arg_ad0k\":\"ev_nyqo\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for London on 2026-10-14.\nDemonstration 3 response:\n{\"fn_kjrl\":{\"arg_7lg7\":\"London\",\"arg_ad0k\":\"ev_hxf6\",\"arg_zi6n\":\"2026sx_skuj10sx_skuj14\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Lisbon on 2027-04-25.\nDemonstration 4 response:\n{\"fn_kjrl\":{\"arg_7lg7\":\"Lisbon\",\"arg_ad0k\":\"ev_nyqo\",\"arg_zi6n\":\"2027sx_skuj04sx_skuj25\"}}",
+      "support_values": [
+        "2026sx_skuj10sx_skuj14",
+        "2027sx_skuj04sx_skuj25",
+        "Berlin",
+        "Lisbon",
+        "London",
+        "Paris",
+        "ev_hxf6",
+        "ev_nyqo"
+      ],
+      "target_call": {
+        "fn_kjrl": {
+          "arg_7lg7": "Naples",
+          "arg_ad0k": "ev_nyqo",
+          "arg_zi6n": "2027sx_skuj03sx_skuj17"
+        }
+      },
+      "target_text": "{\"fn_kjrl\":{\"arg_7lg7\":\"Naples\",\"arg_ad0k\":\"ev_nyqo\",\"arg_zi6n\":\"2027sx_skuj03sx_skuj17\"}}\n"
+    },
+    "protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_skuj",
+      "enum_names": {
+        "celsius": "ev_hxf6",
+        "fahrenheit": "ev_nyqo"
+      },
+      "field_names": {
+        "city": "arg_7lg7",
+        "date": "arg_zi6n",
+        "units": "arg_ad0k"
+      },
+      "operation_names": {
+        "forecast": "fn_kjrl",
+        "weather": "fn_h19b"
+      },
+      "protocol_id": "validation-30"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_3kzs",
+        "enum_names": {
+          "celsius": "ev_smcw",
+          "fahrenheit": "ev_mg6m"
+        },
+        "field_names": {
+          "city": "arg_i0ki",
+          "date": "arg_9ssd",
+          "units": "arg_1p94"
+        },
+        "operation_names": {
+          "forecast": "fn_ykof",
+          "weather": "fn_bvvi"
+        },
+        "protocol_id": "validation-33"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Madrid using Celsius.\nDemonstration 1 response:\n{\"fn_bvvi\":{\"arg_1p94\":\"ev_smcw\",\"arg_i0ki\":\"Madrid\"}}\n\nDemonstration 2 request:\nGet the current weather for Athens using Fahrenheit.\nDemonstration 2 response:\n{\"fn_bvvi\":{\"arg_1p94\":\"ev_mg6m\",\"arg_i0ki\":\"Athens\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Prague on 2028-02-16.\nDemonstration 3 response:\n{\"fn_ykof\":{\"arg_1p94\":\"ev_smcw\",\"arg_9ssd\":\"2028sx_3kzs02sx_3kzs16\",\"arg_i0ki\":\"Prague\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Berlin on 2027-04-25.\nDemonstration 4 response:\n{\"fn_ykof\":{\"arg_1p94\":\"ev_mg6m\",\"arg_9ssd\":\"2027sx_3kzs04sx_3kzs25\",\"arg_i0ki\":\"Berlin\"}}",
+      "support_values": [
+        "2027sx_3kzs04sx_3kzs25",
+        "2028sx_3kzs02sx_3kzs16",
+        "Athens",
+        "Berlin",
+        "Madrid",
+        "Prague",
+        "ev_mg6m",
+        "ev_smcw"
+      ],
+      "target_call": {
+        "fn_ykof": {
+          "arg_1p94": "ev_mg6m",
+          "arg_9ssd": "2027sx_3kzs03sx_3kzs17",
+          "arg_i0ki": "Naples"
+        }
+      },
+      "target_text": "{\"fn_ykof\":{\"arg_1p94\":\"ev_mg6m\",\"arg_9ssd\":\"2027sx_3kzs03sx_3kzs17\",\"arg_i0ki\":\"Naples\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_et0f",
+        "enum_names": {
+          "celsius": "ev_sk27",
+          "fahrenheit": "ev_d06s"
+        },
+        "field_names": {
+          "city": "arg_vgf6",
+          "date": "arg_iitg",
+          "units": "arg_dtrz"
+        },
+        "operation_names": {
+          "forecast": "fn_sjhs",
+          "weather": "fn_x653"
+        },
+        "protocol_id": "validation-35"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Sofia using Celsius.\nDemonstration 1 response:\n{\"fn_x653\":{\"arg_dtrz\":\"ev_sk27\",\"arg_vgf6\":\"Sofia\"}}\n\nDemonstration 2 request:\nGet the current weather for Prague using Fahrenheit.\nDemonstration 2 response:\n{\"fn_x653\":{\"arg_dtrz\":\"ev_d06s\",\"arg_vgf6\":\"Prague\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Lisbon on 2027-11-09.\nDemonstration 3 response:\n{\"fn_sjhs\":{\"arg_dtrz\":\"ev_sk27\",\"arg_iitg\":\"11sx_et0f09sx_et0f2027\",\"arg_vgf6\":\"Lisbon\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Berlin on 2026-10-14.\nDemonstration 4 response:\n{\"fn_sjhs\":{\"arg_dtrz\":\"ev_d06s\",\"arg_iitg\":\"10sx_et0f14sx_et0f2026\",\"arg_vgf6\":\"Berlin\"}}",
+      "support_values": [
+        "10sx_et0f14sx_et0f2026",
+        "11sx_et0f09sx_et0f2027",
+        "Berlin",
+        "Lisbon",
+        "Prague",
+        "Sofia",
+        "ev_d06s",
+        "ev_sk27"
+      ],
+      "target_call": {
+        "fn_sjhs": {
+          "arg_dtrz": "ev_d06s",
+          "arg_iitg": "03sx_et0f17sx_et0f2027",
+          "arg_vgf6": "Naples"
+        }
+      },
+      "target_text": "{\"fn_sjhs\":{\"arg_dtrz\":\"ev_d06s\",\"arg_iitg\":\"03sx_et0f17sx_et0f2027\",\"arg_vgf6\":\"Naples\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_et0f",
+      "enum_names": {
+        "celsius": "ev_sk27",
+        "fahrenheit": "ev_d06s"
+      },
+      "field_names": {
+        "city": "arg_vgf6",
+        "date": "arg_iitg",
+        "units": "arg_dtrz"
+      },
+      "operation_names": {
+        "forecast": "fn_sjhs",
+        "weather": "fn_x653"
+      },
+      "protocol_id": "validation-35"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_3kzs",
+        "enum_names": {
+          "celsius": "ev_smcw",
+          "fahrenheit": "ev_mg6m"
+        },
+        "field_names": {
+          "city": "arg_i0ki",
+          "date": "arg_9ssd",
+          "units": "arg_1p94"
+        },
+        "operation_names": {
+          "forecast": "fn_ykof",
+          "weather": "fn_bvvi"
+        },
+        "protocol_id": "validation-33"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Tokyo using Celsius.\nDemonstration 1 response:\n{\"fn_bvvi\":{\"arg_1p94\":\"ev_smcw\",\"arg_i0ki\":\"Tokyo\"}}\n\nDemonstration 2 request:\nGet the current weather for London using Fahrenheit.\nDemonstration 2 response:\n{\"fn_bvvi\":{\"arg_1p94\":\"ev_mg6m\",\"arg_i0ki\":\"London\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Berlin on 2028-07-21.\nDemonstration 3 response:\n{\"fn_ykof\":{\"arg_1p94\":\"ev_smcw\",\"arg_9ssd\":\"2028sx_3kzs07sx_3kzs21\",\"arg_i0ki\":\"Berlin\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Vienna on 2027-01-12.\nDemonstration 4 response:\n{\"fn_ykof\":{\"arg_1p94\":\"ev_mg6m\",\"arg_9ssd\":\"2027sx_3kzs01sx_3kzs12\",\"arg_i0ki\":\"Vienna\"}}",
+      "support_values": [
+        "2027sx_3kzs01sx_3kzs12",
+        "2028sx_3kzs07sx_3kzs21",
+        "Berlin",
+        "London",
+        "Tokyo",
+        "Vienna",
+        "ev_mg6m",
+        "ev_smcw"
+      ],
+      "target_call": {
+        "fn_ykof": {
+          "arg_1p94": "ev_mg6m",
+          "arg_9ssd": "2027sx_3kzs03sx_3kzs17",
+          "arg_i0ki": "Naples"
+        }
+      },
+      "target_text": "{\"fn_ykof\":{\"arg_1p94\":\"ev_mg6m\",\"arg_9ssd\":\"2027sx_3kzs03sx_3kzs17\",\"arg_i0ki\":\"Naples\"}}\n"
+    },
+    "protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_3kzs",
+      "enum_names": {
+        "celsius": "ev_smcw",
+        "fahrenheit": "ev_mg6m"
+      },
+      "field_names": {
+        "city": "arg_i0ki",
+        "date": "arg_9ssd",
+        "units": "arg_1p94"
+      },
+      "operation_names": {
+        "forecast": "fn_ykof",
+        "weather": "fn_bvvi"
+      },
+      "protocol_id": "validation-33"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_ij05",
+        "enum_names": {
+          "celsius": "ev_21fp",
+          "fahrenheit": "ev_6v74"
+        },
+        "field_names": {
+          "city": "arg_o3fj",
+          "date": "arg_kx1a",
+          "units": "arg_xmsf"
+        },
+        "operation_names": {
+          "forecast": "fn_udfb",
+          "weather": "fn_me9z"
+        },
+        "protocol_id": "validation-36"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Lisbon using Celsius.\nDemonstration 1 response:\n{\"fn_me9z\":{\"arg_o3fj\":\"Lisbon\",\"arg_xmsf\":\"ev_21fp\"}}\n\nDemonstration 2 request:\nGet the current weather for Tokyo using Fahrenheit.\nDemonstration 2 response:\n{\"fn_me9z\":{\"arg_o3fj\":\"Tokyo\",\"arg_xmsf\":\"ev_6v74\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Dublin on 2027-04-25.\nDemonstration 3 response:\n{\"fn_udfb\":{\"arg_kx1a\":\"2027sx_ij0504sx_ij0525\",\"arg_o3fj\":\"Dublin\",\"arg_xmsf\":\"ev_21fp\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Madrid on 2028-07-21.\nDemonstration 4 response:\n{\"fn_udfb\":{\"arg_kx1a\":\"2028sx_ij0507sx_ij0521\",\"arg_o3fj\":\"Madrid\",\"arg_xmsf\":\"ev_6v74\"}}",
+      "support_values": [
+        "2027sx_ij0504sx_ij0525",
+        "2028sx_ij0507sx_ij0521",
+        "Dublin",
+        "Lisbon",
+        "Madrid",
+        "Tokyo",
+        "ev_21fp",
+        "ev_6v74"
+      ],
+      "target_call": {
+        "fn_udfb": {
+          "arg_kx1a": "2027sx_ij0503sx_ij0517",
+          "arg_o3fj": "Naples",
+          "arg_xmsf": "ev_6v74"
+        }
+      },
+      "target_text": "{\"fn_udfb\":{\"arg_kx1a\":\"2027sx_ij0503sx_ij0517\",\"arg_o3fj\":\"Naples\",\"arg_xmsf\":\"ev_6v74\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_ave4",
+        "enum_names": {
+          "celsius": "ev_x0y1",
+          "fahrenheit": "ev_6lw7"
+        },
+        "field_names": {
+          "city": "arg_4n1z",
+          "date": "arg_006i",
+          "units": "arg_9ssd"
+        },
+        "operation_names": {
+          "forecast": "fn_lkto",
+          "weather": "fn_jx02"
+        },
+        "protocol_id": "validation-38"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Oslo using Celsius.\nDemonstration 1 response:\n{\"fn_jx02\":{\"arg_4n1z\":\"Oslo\",\"arg_9ssd\":\"ev_x0y1\"}}\n\nDemonstration 2 request:\nGet the current weather for Madrid using Fahrenheit.\nDemonstration 2 response:\n{\"fn_jx02\":{\"arg_4n1z\":\"Madrid\",\"arg_9ssd\":\"ev_6lw7\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Sofia on 2027-01-12.\nDemonstration 3 response:\n{\"fn_lkto\":{\"arg_006i\":\"12sx_ave401sx_ave42027\",\"arg_4n1z\":\"Sofia\",\"arg_9ssd\":\"ev_x0y1\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Athens on 2027-04-25.\nDemonstration 4 response:\n{\"fn_lkto\":{\"arg_006i\":\"25sx_ave404sx_ave42027\",\"arg_4n1z\":\"Athens\",\"arg_9ssd\":\"ev_6lw7\"}}",
+      "support_values": [
+        "12sx_ave401sx_ave42027",
+        "25sx_ave404sx_ave42027",
+        "Athens",
+        "Madrid",
+        "Oslo",
+        "Sofia",
+        "ev_6lw7",
+        "ev_x0y1"
+      ],
+      "target_call": {
+        "fn_lkto": {
+          "arg_006i": "17sx_ave403sx_ave42027",
+          "arg_4n1z": "Naples",
+          "arg_9ssd": "ev_6lw7"
+        }
+      },
+      "target_text": "{\"fn_lkto\":{\"arg_006i\":\"17sx_ave403sx_ave42027\",\"arg_4n1z\":\"Naples\",\"arg_9ssd\":\"ev_6lw7\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_ave4",
+      "enum_names": {
+        "celsius": "ev_x0y1",
+        "fahrenheit": "ev_6lw7"
+      },
+      "field_names": {
+        "city": "arg_4n1z",
+        "date": "arg_006i",
+        "units": "arg_9ssd"
+      },
+      "operation_names": {
+        "forecast": "fn_lkto",
+        "weather": "fn_jx02"
+      },
+      "protocol_id": "validation-38"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_ij05",
+        "enum_names": {
+          "celsius": "ev_21fp",
+          "fahrenheit": "ev_6v74"
+        },
+        "field_names": {
+          "city": "arg_o3fj",
+          "date": "arg_kx1a",
+          "units": "arg_xmsf"
+        },
+        "operation_names": {
+          "forecast": "fn_udfb",
+          "weather": "fn_me9z"
+        },
+        "protocol_id": "validation-36"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for London using Celsius.\nDemonstration 1 response:\n{\"fn_me9z\":{\"arg_o3fj\":\"London\",\"arg_xmsf\":\"ev_21fp\"}}\n\nDemonstration 2 request:\nGet the current weather for Athens using Fahrenheit.\nDemonstration 2 response:\n{\"fn_me9z\":{\"arg_o3fj\":\"Athens\",\"arg_xmsf\":\"ev_6v74\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Berlin on 2027-11-09.\nDemonstration 3 response:\n{\"fn_udfb\":{\"arg_kx1a\":\"2027sx_ij0511sx_ij0509\",\"arg_o3fj\":\"Berlin\",\"arg_xmsf\":\"ev_21fp\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Dublin on 2027-04-25.\nDemonstration 4 response:\n{\"fn_udfb\":{\"arg_kx1a\":\"2027sx_ij0504sx_ij0525\",\"arg_o3fj\":\"Dublin\",\"arg_xmsf\":\"ev_6v74\"}}",
+      "support_values": [
+        "2027sx_ij0504sx_ij0525",
+        "2027sx_ij0511sx_ij0509",
+        "Athens",
+        "Berlin",
+        "Dublin",
+        "London",
+        "ev_21fp",
+        "ev_6v74"
+      ],
+      "target_call": {
+        "fn_udfb": {
+          "arg_kx1a": "2027sx_ij0503sx_ij0517",
+          "arg_o3fj": "Naples",
+          "arg_xmsf": "ev_6v74"
+        }
+      },
+      "target_text": "{\"fn_udfb\":{\"arg_kx1a\":\"2027sx_ij0503sx_ij0517\",\"arg_o3fj\":\"Naples\",\"arg_xmsf\":\"ev_6v74\"}}\n"
+    },
+    "protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_ij05",
+      "enum_names": {
+        "celsius": "ev_21fp",
+        "fahrenheit": "ev_6v74"
+      },
+      "field_names": {
+        "city": "arg_o3fj",
+        "date": "arg_kx1a",
+        "units": "arg_xmsf"
+      },
+      "operation_names": {
+        "forecast": "fn_udfb",
+        "weather": "fn_me9z"
+      },
+      "protocol_id": "validation-36"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_s2w6",
+        "enum_names": {
+          "celsius": "ev_oonp",
+          "fahrenheit": "ev_k7vo"
+        },
+        "field_names": {
+          "city": "arg_4n1z",
+          "date": "arg_0ruw",
+          "units": "arg_wcl6"
+        },
+        "operation_names": {
+          "forecast": "fn_kczr",
+          "weather": "fn_bvvi"
+        },
+        "protocol_id": "validation-39"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Tokyo using Celsius.\nDemonstration 1 response:\n{\"fn_bvvi\":{\"arg_4n1z\":\"Tokyo\",\"arg_wcl6\":\"ev_oonp\"}}\n\nDemonstration 2 request:\nGet the current weather for Vienna using Fahrenheit.\nDemonstration 2 response:\n{\"fn_bvvi\":{\"arg_4n1z\":\"Vienna\",\"arg_wcl6\":\"ev_k7vo\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for London on 2027-01-12.\nDemonstration 3 response:\n{\"fn_kczr\":{\"arg_0ruw\":\"01sx_s2w612sx_s2w62027\",\"arg_4n1z\":\"London\",\"arg_wcl6\":\"ev_oonp\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Athens on 2027-11-09.\nDemonstration 4 response:\n{\"fn_kczr\":{\"arg_0ruw\":\"11sx_s2w609sx_s2w62027\",\"arg_4n1z\":\"Athens\",\"arg_wcl6\":\"ev_k7vo\"}}",
+      "support_values": [
+        "01sx_s2w612sx_s2w62027",
+        "11sx_s2w609sx_s2w62027",
+        "Athens",
+        "London",
+        "Tokyo",
+        "Vienna",
+        "ev_k7vo",
+        "ev_oonp"
+      ],
+      "target_call": {
+        "fn_kczr": {
+          "arg_0ruw": "03sx_s2w617sx_s2w62027",
+          "arg_4n1z": "Naples",
+          "arg_wcl6": "ev_k7vo"
+        }
+      },
+      "target_text": "{\"fn_kczr\":{\"arg_0ruw\":\"03sx_s2w617sx_s2w62027\",\"arg_4n1z\":\"Naples\",\"arg_wcl6\":\"ev_k7vo\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_u033",
+        "enum_names": {
+          "celsius": "ev_w6h7",
+          "fahrenheit": "ev_f6p7"
+        },
+        "field_names": {
+          "city": "arg_l0dy",
+          "date": "arg_wxuj",
+          "units": "arg_1ncm"
+        },
+        "operation_names": {
+          "forecast": "fn_71p0",
+          "weather": "fn_5za0"
+        },
+        "protocol_id": "validation-41"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Sofia using Celsius.\nDemonstration 1 response:\n{\"fn_5za0\":{\"arg_1ncm\":\"ev_w6h7\",\"arg_l0dy\":\"Sofia\"}}\n\nDemonstration 2 request:\nGet the current weather for Tokyo using Fahrenheit.\nDemonstration 2 response:\n{\"fn_5za0\":{\"arg_1ncm\":\"ev_f6p7\",\"arg_l0dy\":\"Tokyo\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for London on 2027-06-18.\nDemonstration 3 response:\n{\"fn_71p0\":{\"arg_1ncm\":\"ev_w6h7\",\"arg_l0dy\":\"London\",\"arg_wxuj\":\"06sx_u03318sx_u0332027\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Dublin on 2028-07-21.\nDemonstration 4 response:\n{\"fn_71p0\":{\"arg_1ncm\":\"ev_f6p7\",\"arg_l0dy\":\"Dublin\",\"arg_wxuj\":\"07sx_u03321sx_u0332028\"}}",
+      "support_values": [
+        "06sx_u03318sx_u0332027",
+        "07sx_u03321sx_u0332028",
+        "Dublin",
+        "London",
+        "Sofia",
+        "Tokyo",
+        "ev_f6p7",
+        "ev_w6h7"
+      ],
+      "target_call": {
+        "fn_71p0": {
+          "arg_1ncm": "ev_f6p7",
+          "arg_l0dy": "Naples",
+          "arg_wxuj": "03sx_u03317sx_u0332027"
+        }
+      },
+      "target_text": "{\"fn_71p0\":{\"arg_1ncm\":\"ev_f6p7\",\"arg_l0dy\":\"Naples\",\"arg_wxuj\":\"03sx_u03317sx_u0332027\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_u033",
+      "enum_names": {
+        "celsius": "ev_w6h7",
+        "fahrenheit": "ev_f6p7"
+      },
+      "field_names": {
+        "city": "arg_l0dy",
+        "date": "arg_wxuj",
+        "units": "arg_1ncm"
+      },
+      "operation_names": {
+        "forecast": "fn_71p0",
+        "weather": "fn_5za0"
+      },
+      "protocol_id": "validation-41"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_s2w6",
+        "enum_names": {
+          "celsius": "ev_oonp",
+          "fahrenheit": "ev_k7vo"
+        },
+        "field_names": {
+          "city": "arg_4n1z",
+          "date": "arg_0ruw",
+          "units": "arg_wcl6"
+        },
+        "operation_names": {
+          "forecast": "fn_kczr",
+          "weather": "fn_bvvi"
+        },
+        "protocol_id": "validation-39"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Paris using Celsius.\nDemonstration 1 response:\n{\"fn_bvvi\":{\"arg_4n1z\":\"Paris\",\"arg_wcl6\":\"ev_oonp\"}}\n\nDemonstration 2 request:\nGet the current weather for Berlin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_bvvi\":{\"arg_4n1z\":\"Berlin\",\"arg_wcl6\":\"ev_k7vo\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Sofia on 2027-06-18.\nDemonstration 3 response:\n{\"fn_kczr\":{\"arg_0ruw\":\"06sx_s2w618sx_s2w62027\",\"arg_4n1z\":\"Sofia\",\"arg_wcl6\":\"ev_oonp\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Madrid on 2027-01-12.\nDemonstration 4 response:\n{\"fn_kczr\":{\"arg_0ruw\":\"01sx_s2w612sx_s2w62027\",\"arg_4n1z\":\"Madrid\",\"arg_wcl6\":\"ev_k7vo\"}}",
+      "support_values": [
+        "01sx_s2w612sx_s2w62027",
+        "06sx_s2w618sx_s2w62027",
+        "Berlin",
+        "Madrid",
+        "Paris",
+        "Sofia",
+        "ev_k7vo",
+        "ev_oonp"
+      ],
+      "target_call": {
+        "fn_kczr": {
+          "arg_0ruw": "03sx_s2w617sx_s2w62027",
+          "arg_4n1z": "Naples",
+          "arg_wcl6": "ev_k7vo"
+        }
+      },
+      "target_text": "{\"fn_kczr\":{\"arg_0ruw\":\"03sx_s2w617sx_s2w62027\",\"arg_4n1z\":\"Naples\",\"arg_wcl6\":\"ev_k7vo\"}}\n"
+    },
+    "protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_s2w6",
+      "enum_names": {
+        "celsius": "ev_oonp",
+        "fahrenheit": "ev_k7vo"
+      },
+      "field_names": {
+        "city": "arg_4n1z",
+        "date": "arg_0ruw",
+        "units": "arg_wcl6"
+      },
+      "operation_names": {
+        "forecast": "fn_kczr",
+        "weather": "fn_bvvi"
+      },
+      "protocol_id": "validation-39"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_kzof",
+        "enum_names": {
+          "celsius": "ev_nyqo",
+          "fahrenheit": "ev_piay"
+        },
+        "field_names": {
+          "city": "arg_2t84",
+          "date": "arg_orkq",
+          "units": "arg_ptdc"
+        },
+        "operation_names": {
+          "forecast": "fn_8swn",
+          "weather": "fn_x653"
+        },
+        "protocol_id": "validation-42"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Athens using Celsius.\nDemonstration 1 response:\n{\"fn_x653\":{\"arg_2t84\":\"Athens\",\"arg_ptdc\":\"ev_nyqo\"}}\n\nDemonstration 2 request:\nGet the current weather for London using Fahrenheit.\nDemonstration 2 response:\n{\"fn_x653\":{\"arg_2t84\":\"London\",\"arg_ptdc\":\"ev_piay\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Tokyo on 2027-06-18.\nDemonstration 3 response:\n{\"fn_8swn\":{\"arg_2t84\":\"Tokyo\",\"arg_orkq\":\"06sx_kzof18sx_kzof2027\",\"arg_ptdc\":\"ev_nyqo\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Lisbon on 2028-02-16.\nDemonstration 4 response:\n{\"fn_8swn\":{\"arg_2t84\":\"Lisbon\",\"arg_orkq\":\"02sx_kzof16sx_kzof2028\",\"arg_ptdc\":\"ev_piay\"}}",
+      "support_values": [
+        "02sx_kzof16sx_kzof2028",
+        "06sx_kzof18sx_kzof2027",
+        "Athens",
+        "Lisbon",
+        "London",
+        "Tokyo",
+        "ev_nyqo",
+        "ev_piay"
+      ],
+      "target_call": {
+        "fn_8swn": {
+          "arg_2t84": "Naples",
+          "arg_orkq": "03sx_kzof17sx_kzof2027",
+          "arg_ptdc": "ev_piay"
+        }
+      },
+      "target_text": "{\"fn_8swn\":{\"arg_2t84\":\"Naples\",\"arg_orkq\":\"03sx_kzof17sx_kzof2027\",\"arg_ptdc\":\"ev_piay\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_kzof",
+        "enum_names": {
+          "celsius": "ev_272z",
+          "fahrenheit": "ev_ii7o"
+        },
+        "field_names": {
+          "city": "arg_pck5",
+          "date": "arg_l0dy",
+          "units": "arg_dtrz"
+        },
+        "operation_names": {
+          "forecast": "fn_1npn",
+          "weather": "fn_l98x"
+        },
+        "protocol_id": "validation-44"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Madrid using Celsius.\nDemonstration 1 response:\n{\"fn_l98x\":{\"arg_dtrz\":\"ev_272z\",\"arg_pck5\":\"Madrid\"}}\n\nDemonstration 2 request:\nGet the current weather for Berlin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_l98x\":{\"arg_dtrz\":\"ev_ii7o\",\"arg_pck5\":\"Berlin\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Dublin on 2026-10-14.\nDemonstration 3 response:\n{\"fn_1npn\":{\"arg_dtrz\":\"ev_272z\",\"arg_l0dy\":\"10sx_kzof14sx_kzof2026\",\"arg_pck5\":\"Dublin\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Tokyo on 2027-11-09.\nDemonstration 4 response:\n{\"fn_1npn\":{\"arg_dtrz\":\"ev_ii7o\",\"arg_l0dy\":\"11sx_kzof09sx_kzof2027\",\"arg_pck5\":\"Tokyo\"}}",
+      "support_values": [
+        "10sx_kzof14sx_kzof2026",
+        "11sx_kzof09sx_kzof2027",
+        "Berlin",
+        "Dublin",
+        "Madrid",
+        "Tokyo",
+        "ev_272z",
+        "ev_ii7o"
+      ],
+      "target_call": {
+        "fn_1npn": {
+          "arg_dtrz": "ev_ii7o",
+          "arg_l0dy": "03sx_kzof17sx_kzof2027",
+          "arg_pck5": "Naples"
+        }
+      },
+      "target_text": "{\"fn_1npn\":{\"arg_dtrz\":\"ev_ii7o\",\"arg_l0dy\":\"03sx_kzof17sx_kzof2027\",\"arg_pck5\":\"Naples\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_kzof",
+      "enum_names": {
+        "celsius": "ev_272z",
+        "fahrenheit": "ev_ii7o"
+      },
+      "field_names": {
+        "city": "arg_pck5",
+        "date": "arg_l0dy",
+        "units": "arg_dtrz"
+      },
+      "operation_names": {
+        "forecast": "fn_1npn",
+        "weather": "fn_l98x"
+      },
+      "protocol_id": "validation-44"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_kzof",
+        "enum_names": {
+          "celsius": "ev_nyqo",
+          "fahrenheit": "ev_piay"
+        },
+        "field_names": {
+          "city": "arg_2t84",
+          "date": "arg_orkq",
+          "units": "arg_ptdc"
+        },
+        "operation_names": {
+          "forecast": "fn_8swn",
+          "weather": "fn_x653"
+        },
+        "protocol_id": "validation-42"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Sofia using Celsius.\nDemonstration 1 response:\n{\"fn_x653\":{\"arg_2t84\":\"Sofia\",\"arg_ptdc\":\"ev_nyqo\"}}\n\nDemonstration 2 request:\nGet the current weather for Dublin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_x653\":{\"arg_2t84\":\"Dublin\",\"arg_ptdc\":\"ev_piay\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Paris on 2027-01-12.\nDemonstration 3 response:\n{\"fn_8swn\":{\"arg_2t84\":\"Paris\",\"arg_orkq\":\"01sx_kzof12sx_kzof2027\",\"arg_ptdc\":\"ev_nyqo\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Oslo on 2027-04-25.\nDemonstration 4 response:\n{\"fn_8swn\":{\"arg_2t84\":\"Oslo\",\"arg_orkq\":\"04sx_kzof25sx_kzof2027\",\"arg_ptdc\":\"ev_piay\"}}",
+      "support_values": [
+        "01sx_kzof12sx_kzof2027",
+        "04sx_kzof25sx_kzof2027",
+        "Dublin",
+        "Oslo",
+        "Paris",
+        "Sofia",
+        "ev_nyqo",
+        "ev_piay"
+      ],
+      "target_call": {
+        "fn_8swn": {
+          "arg_2t84": "Naples",
+          "arg_orkq": "03sx_kzof17sx_kzof2027",
+          "arg_ptdc": "ev_piay"
+        }
+      },
+      "target_text": "{\"fn_8swn\":{\"arg_2t84\":\"Naples\",\"arg_orkq\":\"03sx_kzof17sx_kzof2027\",\"arg_ptdc\":\"ev_piay\"}}\n"
+    },
+    "protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_kzof",
+      "enum_names": {
+        "celsius": "ev_nyqo",
+        "fahrenheit": "ev_piay"
+      },
+      "field_names": {
+        "city": "arg_2t84",
+        "date": "arg_orkq",
+        "units": "arg_ptdc"
+      },
+      "operation_names": {
+        "forecast": "fn_8swn",
+        "weather": "fn_x653"
+      },
+      "protocol_id": "validation-42"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_97ei",
+        "enum_names": {
+          "celsius": "ev_9izr",
+          "fahrenheit": "ev_bmzw"
+        },
+        "field_names": {
+          "city": "arg_4n1z",
+          "date": "arg_kkxv",
+          "units": "arg_0yjk"
+        },
+        "operation_names": {
+          "forecast": "fn_ezzq",
+          "weather": "fn_ggyh"
+        },
+        "protocol_id": "validation-45"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Prague using Celsius.\nDemonstration 1 response:\n{\"fn_ggyh\":{\"arg_0yjk\":\"ev_9izr\",\"arg_4n1z\":\"Prague\"}}\n\nDemonstration 2 request:\nGet the current weather for Tokyo using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ggyh\":{\"arg_0yjk\":\"ev_bmzw\",\"arg_4n1z\":\"Tokyo\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Berlin on 2028-02-16.\nDemonstration 3 response:\n{\"fn_ezzq\":{\"arg_0yjk\":\"ev_9izr\",\"arg_4n1z\":\"Berlin\",\"arg_kkxv\":\"16sx_97ei02sx_97ei2028\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Oslo on 2027-01-12.\nDemonstration 4 response:\n{\"fn_ezzq\":{\"arg_0yjk\":\"ev_bmzw\",\"arg_4n1z\":\"Oslo\",\"arg_kkxv\":\"12sx_97ei01sx_97ei2027\"}}",
+      "support_values": [
+        "12sx_97ei01sx_97ei2027",
+        "16sx_97ei02sx_97ei2028",
+        "Berlin",
+        "Oslo",
+        "Prague",
+        "Tokyo",
+        "ev_9izr",
+        "ev_bmzw"
+      ],
+      "target_call": {
+        "fn_ezzq": {
+          "arg_0yjk": "ev_bmzw",
+          "arg_4n1z": "Naples",
+          "arg_kkxv": "17sx_97ei03sx_97ei2027"
+        }
+      },
+      "target_text": "{\"fn_ezzq\":{\"arg_0yjk\":\"ev_bmzw\",\"arg_4n1z\":\"Naples\",\"arg_kkxv\":\"17sx_97ei03sx_97ei2027\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_elpc",
+        "enum_names": {
+          "celsius": "ev_d8gp",
+          "fahrenheit": "ev_x0y1"
+        },
+        "field_names": {
+          "city": "arg_aqh8",
+          "date": "arg_5quw",
+          "units": "arg_l0dy"
+        },
+        "operation_names": {
+          "forecast": "fn_41ht",
+          "weather": "fn_xhwz"
+        },
+        "protocol_id": "validation-47"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Oslo using Celsius.\nDemonstration 1 response:\n{\"fn_xhwz\":{\"arg_aqh8\":\"Oslo\",\"arg_l0dy\":\"ev_d8gp\"}}\n\nDemonstration 2 request:\nGet the current weather for Paris using Fahrenheit.\nDemonstration 2 response:\n{\"fn_xhwz\":{\"arg_aqh8\":\"Paris\",\"arg_l0dy\":\"ev_x0y1\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Vienna on 2027-11-09.\nDemonstration 3 response:\n{\"fn_41ht\":{\"arg_5quw\":\"09sx_elpc11sx_elpc2027\",\"arg_aqh8\":\"Vienna\",\"arg_l0dy\":\"ev_d8gp\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Madrid on 2027-04-25.\nDemonstration 4 response:\n{\"fn_41ht\":{\"arg_5quw\":\"25sx_elpc04sx_elpc2027\",\"arg_aqh8\":\"Madrid\",\"arg_l0dy\":\"ev_x0y1\"}}",
+      "support_values": [
+        "09sx_elpc11sx_elpc2027",
+        "25sx_elpc04sx_elpc2027",
+        "Madrid",
+        "Oslo",
+        "Paris",
+        "Vienna",
+        "ev_d8gp",
+        "ev_x0y1"
+      ],
+      "target_call": {
+        "fn_41ht": {
+          "arg_5quw": "17sx_elpc03sx_elpc2027",
+          "arg_aqh8": "Naples",
+          "arg_l0dy": "ev_x0y1"
+        }
+      },
+      "target_text": "{\"fn_41ht\":{\"arg_5quw\":\"17sx_elpc03sx_elpc2027\",\"arg_aqh8\":\"Naples\",\"arg_l0dy\":\"ev_x0y1\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_elpc",
+      "enum_names": {
+        "celsius": "ev_d8gp",
+        "fahrenheit": "ev_x0y1"
+      },
+      "field_names": {
+        "city": "arg_aqh8",
+        "date": "arg_5quw",
+        "units": "arg_l0dy"
+      },
+      "operation_names": {
+        "forecast": "fn_41ht",
+        "weather": "fn_xhwz"
+      },
+      "protocol_id": "validation-47"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_97ei",
+        "enum_names": {
+          "celsius": "ev_9izr",
+          "fahrenheit": "ev_bmzw"
+        },
+        "field_names": {
+          "city": "arg_4n1z",
+          "date": "arg_kkxv",
+          "units": "arg_0yjk"
+        },
+        "operation_names": {
+          "forecast": "fn_ezzq",
+          "weather": "fn_ggyh"
+        },
+        "protocol_id": "validation-45"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Oslo using Celsius.\nDemonstration 1 response:\n{\"fn_ggyh\":{\"arg_0yjk\":\"ev_9izr\",\"arg_4n1z\":\"Oslo\"}}\n\nDemonstration 2 request:\nGet the current weather for Dublin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_ggyh\":{\"arg_0yjk\":\"ev_bmzw\",\"arg_4n1z\":\"Dublin\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Berlin on 2028-07-21.\nDemonstration 3 response:\n{\"fn_ezzq\":{\"arg_0yjk\":\"ev_9izr\",\"arg_4n1z\":\"Berlin\",\"arg_kkxv\":\"21sx_97ei07sx_97ei2028\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Madrid on 2027-06-18.\nDemonstration 4 response:\n{\"fn_ezzq\":{\"arg_0yjk\":\"ev_bmzw\",\"arg_4n1z\":\"Madrid\",\"arg_kkxv\":\"18sx_97ei06sx_97ei2027\"}}",
+      "support_values": [
+        "18sx_97ei06sx_97ei2027",
+        "21sx_97ei07sx_97ei2028",
+        "Berlin",
+        "Dublin",
+        "Madrid",
+        "Oslo",
+        "ev_9izr",
+        "ev_bmzw"
+      ],
+      "target_call": {
+        "fn_ezzq": {
+          "arg_0yjk": "ev_bmzw",
+          "arg_4n1z": "Naples",
+          "arg_kkxv": "17sx_97ei03sx_97ei2027"
+        }
+      },
+      "target_text": "{\"fn_ezzq\":{\"arg_0yjk\":\"ev_bmzw\",\"arg_4n1z\":\"Naples\",\"arg_kkxv\":\"17sx_97ei03sx_97ei2027\"}}\n"
+    },
+    "protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_97ei",
+      "enum_names": {
+        "celsius": "ev_9izr",
+        "fahrenheit": "ev_bmzw"
+      },
+      "field_names": {
+        "city": "arg_4n1z",
+        "date": "arg_kkxv",
+        "units": "arg_0yjk"
+      },
+      "operation_names": {
+        "forecast": "fn_ezzq",
+        "weather": "fn_ggyh"
+      },
+      "protocol_id": "validation-45"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_5yqr",
+        "enum_names": {
+          "celsius": "ev_d06s",
+          "fahrenheit": "ev_f8he"
+        },
+        "field_names": {
+          "city": "arg_9ssd",
+          "date": "arg_vgf6",
+          "units": "arg_gneq"
+        },
+        "operation_names": {
+          "forecast": "fn_pouq",
+          "weather": "fn_vbbj"
+        },
+        "protocol_id": "validation-48"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Prague using Celsius.\nDemonstration 1 response:\n{\"fn_vbbj\":{\"arg_9ssd\":\"Prague\",\"arg_gneq\":\"ev_d06s\"}}\n\nDemonstration 2 request:\nGet the current weather for Berlin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_vbbj\":{\"arg_9ssd\":\"Berlin\",\"arg_gneq\":\"ev_f8he\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Dublin on 2028-02-16.\nDemonstration 3 response:\n{\"fn_pouq\":{\"arg_9ssd\":\"Dublin\",\"arg_gneq\":\"ev_d06s\",\"arg_vgf6\":\"02sx_5yqr16sx_5yqr2028\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Tokyo on 2027-04-25.\nDemonstration 4 response:\n{\"fn_pouq\":{\"arg_9ssd\":\"Tokyo\",\"arg_gneq\":\"ev_f8he\",\"arg_vgf6\":\"04sx_5yqr25sx_5yqr2027\"}}",
+      "support_values": [
+        "02sx_5yqr16sx_5yqr2028",
+        "04sx_5yqr25sx_5yqr2027",
+        "Berlin",
+        "Dublin",
+        "Prague",
+        "Tokyo",
+        "ev_d06s",
+        "ev_f8he"
+      ],
+      "target_call": {
+        "fn_pouq": {
+          "arg_9ssd": "Naples",
+          "arg_gneq": "ev_f8he",
+          "arg_vgf6": "03sx_5yqr17sx_5yqr2027"
+        }
+      },
+      "target_text": "{\"fn_pouq\":{\"arg_9ssd\":\"Naples\",\"arg_gneq\":\"ev_f8he\",\"arg_vgf6\":\"03sx_5yqr17sx_5yqr2027\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_hbgk",
+        "enum_names": {
+          "celsius": "ev_lccq",
+          "fahrenheit": "ev_x9v7"
+        },
+        "field_names": {
+          "city": "arg_zgxk",
+          "date": "arg_450f",
+          "units": "arg_kkxv"
+        },
+        "operation_names": {
+          "forecast": "fn_ktn8",
+          "weather": "fn_5za0"
+        },
+        "protocol_id": "validation-50"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Tokyo using Celsius.\nDemonstration 1 response:\n{\"fn_5za0\":{\"arg_kkxv\":\"ev_lccq\",\"arg_zgxk\":\"Tokyo\"}}\n\nDemonstration 2 request:\nGet the current weather for Sofia using Fahrenheit.\nDemonstration 2 response:\n{\"fn_5za0\":{\"arg_kkxv\":\"ev_x9v7\",\"arg_zgxk\":\"Sofia\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Berlin on 2028-02-16.\nDemonstration 3 response:\n{\"fn_ktn8\":{\"arg_450f\":\"2028sx_hbgk02sx_hbgk16\",\"arg_kkxv\":\"ev_lccq\",\"arg_zgxk\":\"Berlin\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Athens on 2027-06-18.\nDemonstration 4 response:\n{\"fn_ktn8\":{\"arg_450f\":\"2027sx_hbgk06sx_hbgk18\",\"arg_kkxv\":\"ev_x9v7\",\"arg_zgxk\":\"Athens\"}}",
+      "support_values": [
+        "2027sx_hbgk06sx_hbgk18",
+        "2028sx_hbgk02sx_hbgk16",
+        "Athens",
+        "Berlin",
+        "Sofia",
+        "Tokyo",
+        "ev_lccq",
+        "ev_x9v7"
+      ],
+      "target_call": {
+        "fn_ktn8": {
+          "arg_450f": "2027sx_hbgk03sx_hbgk17",
+          "arg_kkxv": "ev_x9v7",
+          "arg_zgxk": "Naples"
+        }
+      },
+      "target_text": "{\"fn_ktn8\":{\"arg_450f\":\"2027sx_hbgk03sx_hbgk17\",\"arg_kkxv\":\"ev_x9v7\",\"arg_zgxk\":\"Naples\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_hbgk",
+      "enum_names": {
+        "celsius": "ev_lccq",
+        "fahrenheit": "ev_x9v7"
+      },
+      "field_names": {
+        "city": "arg_zgxk",
+        "date": "arg_450f",
+        "units": "arg_kkxv"
+      },
+      "operation_names": {
+        "forecast": "fn_ktn8",
+        "weather": "fn_5za0"
+      },
+      "protocol_id": "validation-50"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_5yqr",
+        "enum_names": {
+          "celsius": "ev_d06s",
+          "fahrenheit": "ev_f8he"
+        },
+        "field_names": {
+          "city": "arg_9ssd",
+          "date": "arg_vgf6",
+          "units": "arg_gneq"
+        },
+        "operation_names": {
+          "forecast": "fn_pouq",
+          "weather": "fn_vbbj"
+        },
+        "protocol_id": "validation-48"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Lisbon using Celsius.\nDemonstration 1 response:\n{\"fn_vbbj\":{\"arg_9ssd\":\"Lisbon\",\"arg_gneq\":\"ev_d06s\"}}\n\nDemonstration 2 request:\nGet the current weather for Oslo using Fahrenheit.\nDemonstration 2 response:\n{\"fn_vbbj\":{\"arg_9ssd\":\"Oslo\",\"arg_gneq\":\"ev_f8he\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Madrid on 2027-06-18.\nDemonstration 3 response:\n{\"fn_pouq\":{\"arg_9ssd\":\"Madrid\",\"arg_gneq\":\"ev_d06s\",\"arg_vgf6\":\"06sx_5yqr18sx_5yqr2027\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Prague on 2028-07-21.\nDemonstration 4 response:\n{\"fn_pouq\":{\"arg_9ssd\":\"Prague\",\"arg_gneq\":\"ev_f8he\",\"arg_vgf6\":\"07sx_5yqr21sx_5yqr2028\"}}",
+      "support_values": [
+        "06sx_5yqr18sx_5yqr2027",
+        "07sx_5yqr21sx_5yqr2028",
+        "Lisbon",
+        "Madrid",
+        "Oslo",
+        "Prague",
+        "ev_d06s",
+        "ev_f8he"
+      ],
+      "target_call": {
+        "fn_pouq": {
+          "arg_9ssd": "Naples",
+          "arg_gneq": "ev_f8he",
+          "arg_vgf6": "03sx_5yqr17sx_5yqr2027"
+        }
+      },
+      "target_text": "{\"fn_pouq\":{\"arg_9ssd\":\"Naples\",\"arg_gneq\":\"ev_f8he\",\"arg_vgf6\":\"03sx_5yqr17sx_5yqr2027\"}}\n"
+    },
+    "protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_5yqr",
+      "enum_names": {
+        "celsius": "ev_d06s",
+        "fahrenheit": "ev_f8he"
+      },
+      "field_names": {
+        "city": "arg_9ssd",
+        "date": "arg_vgf6",
+        "units": "arg_gneq"
+      },
+      "operation_names": {
+        "forecast": "fn_pouq",
+        "weather": "fn_vbbj"
+      },
+      "protocol_id": "validation-48"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_l09p",
+        "enum_names": {
+          "celsius": "ev_1378",
+          "fahrenheit": "ev_rjv3"
+        },
+        "field_names": {
+          "city": "arg_3tsg",
+          "date": "arg_8my9",
+          "units": "arg_uibk"
+        },
+        "operation_names": {
+          "forecast": "fn_ikf8",
+          "weather": "fn_8swn"
+        },
+        "protocol_id": "validation-51"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Prague using Celsius.\nDemonstration 1 response:\n{\"fn_8swn\":{\"arg_3tsg\":\"Prague\",\"arg_uibk\":\"ev_1378\"}}\n\nDemonstration 2 request:\nGet the current weather for Paris using Fahrenheit.\nDemonstration 2 response:\n{\"fn_8swn\":{\"arg_3tsg\":\"Paris\",\"arg_uibk\":\"ev_rjv3\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Tokyo on 2028-07-21.\nDemonstration 3 response:\n{\"fn_ikf8\":{\"arg_3tsg\":\"Tokyo\",\"arg_8my9\":\"21sx_l09p07sx_l09p2028\",\"arg_uibk\":\"ev_1378\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Lisbon on 2028-02-16.\nDemonstration 4 response:\n{\"fn_ikf8\":{\"arg_3tsg\":\"Lisbon\",\"arg_8my9\":\"16sx_l09p02sx_l09p2028\",\"arg_uibk\":\"ev_rjv3\"}}",
+      "support_values": [
+        "16sx_l09p02sx_l09p2028",
+        "21sx_l09p07sx_l09p2028",
+        "Lisbon",
+        "Paris",
+        "Prague",
+        "Tokyo",
+        "ev_1378",
+        "ev_rjv3"
+      ],
+      "target_call": {
+        "fn_ikf8": {
+          "arg_3tsg": "Naples",
+          "arg_8my9": "17sx_l09p03sx_l09p2027",
+          "arg_uibk": "ev_rjv3"
+        }
+      },
+      "target_text": "{\"fn_ikf8\":{\"arg_3tsg\":\"Naples\",\"arg_8my9\":\"17sx_l09p03sx_l09p2027\",\"arg_uibk\":\"ev_rjv3\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_ave4",
+        "enum_names": {
+          "celsius": "ev_rjv3",
+          "fahrenheit": "ev_n9fm"
+        },
+        "field_names": {
+          "city": "arg_1p94",
+          "date": "arg_5a95",
+          "units": "arg_qh9r"
+        },
+        "operation_names": {
+          "forecast": "fn_gp08",
+          "weather": "fn_a43l"
+        },
+        "protocol_id": "validation-53"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Athens using Celsius.\nDemonstration 1 response:\n{\"fn_a43l\":{\"arg_1p94\":\"Athens\",\"arg_qh9r\":\"ev_rjv3\"}}\n\nDemonstration 2 request:\nGet the current weather for Paris using Fahrenheit.\nDemonstration 2 response:\n{\"fn_a43l\":{\"arg_1p94\":\"Paris\",\"arg_qh9r\":\"ev_n9fm\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Lisbon on 2027-01-12.\nDemonstration 3 response:\n{\"fn_gp08\":{\"arg_1p94\":\"Lisbon\",\"arg_5a95\":\"12sx_ave401sx_ave42027\",\"arg_qh9r\":\"ev_rjv3\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Vienna on 2027-11-09.\nDemonstration 4 response:\n{\"fn_gp08\":{\"arg_1p94\":\"Vienna\",\"arg_5a95\":\"09sx_ave411sx_ave42027\",\"arg_qh9r\":\"ev_n9fm\"}}",
+      "support_values": [
+        "09sx_ave411sx_ave42027",
+        "12sx_ave401sx_ave42027",
+        "Athens",
+        "Lisbon",
+        "Paris",
+        "Vienna",
+        "ev_n9fm",
+        "ev_rjv3"
+      ],
+      "target_call": {
+        "fn_gp08": {
+          "arg_1p94": "Naples",
+          "arg_5a95": "17sx_ave403sx_ave42027",
+          "arg_qh9r": "ev_n9fm"
+        }
+      },
+      "target_text": "{\"fn_gp08\":{\"arg_1p94\":\"Naples\",\"arg_5a95\":\"17sx_ave403sx_ave42027\",\"arg_qh9r\":\"ev_n9fm\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_ave4",
+      "enum_names": {
+        "celsius": "ev_rjv3",
+        "fahrenheit": "ev_n9fm"
+      },
+      "field_names": {
+        "city": "arg_1p94",
+        "date": "arg_5a95",
+        "units": "arg_qh9r"
+      },
+      "operation_names": {
+        "forecast": "fn_gp08",
+        "weather": "fn_a43l"
+      },
+      "protocol_id": "validation-53"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_l09p",
+        "enum_names": {
+          "celsius": "ev_1378",
+          "fahrenheit": "ev_rjv3"
+        },
+        "field_names": {
+          "city": "arg_3tsg",
+          "date": "arg_8my9",
+          "units": "arg_uibk"
+        },
+        "operation_names": {
+          "forecast": "fn_ikf8",
+          "weather": "fn_8swn"
+        },
+        "protocol_id": "validation-51"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Dublin using Celsius.\nDemonstration 1 response:\n{\"fn_8swn\":{\"arg_3tsg\":\"Dublin\",\"arg_uibk\":\"ev_1378\"}}\n\nDemonstration 2 request:\nGet the current weather for Madrid using Fahrenheit.\nDemonstration 2 response:\n{\"fn_8swn\":{\"arg_3tsg\":\"Madrid\",\"arg_uibk\":\"ev_rjv3\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Prague on 2027-06-18.\nDemonstration 3 response:\n{\"fn_ikf8\":{\"arg_3tsg\":\"Prague\",\"arg_8my9\":\"18sx_l09p06sx_l09p2027\",\"arg_uibk\":\"ev_1378\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Tokyo on 2026-08-20.\nDemonstration 4 response:\n{\"fn_ikf8\":{\"arg_3tsg\":\"Tokyo\",\"arg_8my9\":\"20sx_l09p08sx_l09p2026\",\"arg_uibk\":\"ev_rjv3\"}}",
+      "support_values": [
+        "18sx_l09p06sx_l09p2027",
+        "20sx_l09p08sx_l09p2026",
+        "Dublin",
+        "Madrid",
+        "Prague",
+        "Tokyo",
+        "ev_1378",
+        "ev_rjv3"
+      ],
+      "target_call": {
+        "fn_ikf8": {
+          "arg_3tsg": "Naples",
+          "arg_8my9": "17sx_l09p03sx_l09p2027",
+          "arg_uibk": "ev_rjv3"
+        }
+      },
+      "target_text": "{\"fn_ikf8\":{\"arg_3tsg\":\"Naples\",\"arg_8my9\":\"17sx_l09p03sx_l09p2027\",\"arg_uibk\":\"ev_rjv3\"}}\n"
+    },
+    "protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_l09p",
+      "enum_names": {
+        "celsius": "ev_1378",
+        "fahrenheit": "ev_rjv3"
+      },
+      "field_names": {
+        "city": "arg_3tsg",
+        "date": "arg_8my9",
+        "units": "arg_uibk"
+      },
+      "operation_names": {
+        "forecast": "fn_ikf8",
+        "weather": "fn_8swn"
+      },
+      "protocol_id": "validation-51"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_syck",
+        "enum_names": {
+          "celsius": "ev_nyqo",
+          "fahrenheit": "ev_bmzw"
+        },
+        "field_names": {
+          "city": "arg_3tsg",
+          "date": "arg_rdro",
+          "units": "arg_006i"
+        },
+        "operation_names": {
+          "forecast": "fn_jx02",
+          "weather": "fn_klln"
+        },
+        "protocol_id": "validation-54"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for London using Celsius.\nDemonstration 1 response:\n{\"fn_klln\":{\"arg_006i\":\"ev_nyqo\",\"arg_3tsg\":\"London\"}}\n\nDemonstration 2 request:\nGet the current weather for Madrid using Fahrenheit.\nDemonstration 2 response:\n{\"fn_klln\":{\"arg_006i\":\"ev_bmzw\",\"arg_3tsg\":\"Madrid\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Tokyo on 2027-11-09.\nDemonstration 3 response:\n{\"fn_jx02\":{\"arg_006i\":\"ev_nyqo\",\"arg_3tsg\":\"Tokyo\",\"arg_rdro\":\"2027sx_syck11sx_syck09\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Vienna on 2027-06-18.\nDemonstration 4 response:\n{\"fn_jx02\":{\"arg_006i\":\"ev_bmzw\",\"arg_3tsg\":\"Vienna\",\"arg_rdro\":\"2027sx_syck06sx_syck18\"}}",
+      "support_values": [
+        "2027sx_syck06sx_syck18",
+        "2027sx_syck11sx_syck09",
+        "London",
+        "Madrid",
+        "Tokyo",
+        "Vienna",
+        "ev_bmzw",
+        "ev_nyqo"
+      ],
+      "target_call": {
+        "fn_jx02": {
+          "arg_006i": "ev_bmzw",
+          "arg_3tsg": "Naples",
+          "arg_rdro": "2027sx_syck03sx_syck17"
+        }
+      },
+      "target_text": "{\"fn_jx02\":{\"arg_006i\":\"ev_bmzw\",\"arg_3tsg\":\"Naples\",\"arg_rdro\":\"2027sx_syck03sx_syck17\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_47et",
+        "enum_names": {
+          "celsius": "ev_8b09",
+          "fahrenheit": "ev_6v74"
+        },
+        "field_names": {
+          "city": "arg_1e0j",
+          "date": "arg_ad0k",
+          "units": "arg_4n1z"
+        },
+        "operation_names": {
+          "forecast": "fn_g3of",
+          "weather": "fn_uic0"
+        },
+        "protocol_id": "validation-56"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Tokyo using Celsius.\nDemonstration 1 response:\n{\"fn_uic0\":{\"arg_1e0j\":\"Tokyo\",\"arg_4n1z\":\"ev_8b09\"}}\n\nDemonstration 2 request:\nGet the current weather for London using Fahrenheit.\nDemonstration 2 response:\n{\"fn_uic0\":{\"arg_1e0j\":\"London\",\"arg_4n1z\":\"ev_6v74\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Madrid on 2027-01-12.\nDemonstration 3 response:\n{\"fn_g3of\":{\"arg_1e0j\":\"Madrid\",\"arg_4n1z\":\"ev_8b09\",\"arg_ad0k\":\"01sx_47et12sx_47et2027\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Dublin on 2028-02-16.\nDemonstration 4 response:\n{\"fn_g3of\":{\"arg_1e0j\":\"Dublin\",\"arg_4n1z\":\"ev_6v74\",\"arg_ad0k\":\"02sx_47et16sx_47et2028\"}}",
+      "support_values": [
+        "01sx_47et12sx_47et2027",
+        "02sx_47et16sx_47et2028",
+        "Dublin",
+        "London",
+        "Madrid",
+        "Tokyo",
+        "ev_6v74",
+        "ev_8b09"
+      ],
+      "target_call": {
+        "fn_g3of": {
+          "arg_1e0j": "Naples",
+          "arg_4n1z": "ev_6v74",
+          "arg_ad0k": "03sx_47et17sx_47et2027"
+        }
+      },
+      "target_text": "{\"fn_g3of\":{\"arg_1e0j\":\"Naples\",\"arg_4n1z\":\"ev_6v74\",\"arg_ad0k\":\"03sx_47et17sx_47et2027\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_47et",
+      "enum_names": {
+        "celsius": "ev_8b09",
+        "fahrenheit": "ev_6v74"
+      },
+      "field_names": {
+        "city": "arg_1e0j",
+        "date": "arg_ad0k",
+        "units": "arg_4n1z"
+      },
+      "operation_names": {
+        "forecast": "fn_g3of",
+        "weather": "fn_uic0"
+      },
+      "protocol_id": "validation-56"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_syck",
+        "enum_names": {
+          "celsius": "ev_nyqo",
+          "fahrenheit": "ev_bmzw"
+        },
+        "field_names": {
+          "city": "arg_3tsg",
+          "date": "arg_rdro",
+          "units": "arg_006i"
+        },
+        "operation_names": {
+          "forecast": "fn_jx02",
+          "weather": "fn_klln"
+        },
+        "protocol_id": "validation-54"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Tokyo using Celsius.\nDemonstration 1 response:\n{\"fn_klln\":{\"arg_006i\":\"ev_nyqo\",\"arg_3tsg\":\"Tokyo\"}}\n\nDemonstration 2 request:\nGet the current weather for Sofia using Fahrenheit.\nDemonstration 2 response:\n{\"fn_klln\":{\"arg_006i\":\"ev_bmzw\",\"arg_3tsg\":\"Sofia\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Paris on 2027-11-09.\nDemonstration 3 response:\n{\"fn_jx02\":{\"arg_006i\":\"ev_nyqo\",\"arg_3tsg\":\"Paris\",\"arg_rdro\":\"2027sx_syck11sx_syck09\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Berlin on 2027-06-18.\nDemonstration 4 response:\n{\"fn_jx02\":{\"arg_006i\":\"ev_bmzw\",\"arg_3tsg\":\"Berlin\",\"arg_rdro\":\"2027sx_syck06sx_syck18\"}}",
+      "support_values": [
+        "2027sx_syck06sx_syck18",
+        "2027sx_syck11sx_syck09",
+        "Berlin",
+        "Paris",
+        "Sofia",
+        "Tokyo",
+        "ev_bmzw",
+        "ev_nyqo"
+      ],
+      "target_call": {
+        "fn_jx02": {
+          "arg_006i": "ev_bmzw",
+          "arg_3tsg": "Naples",
+          "arg_rdro": "2027sx_syck03sx_syck17"
+        }
+      },
+      "target_text": "{\"fn_jx02\":{\"arg_006i\":\"ev_bmzw\",\"arg_3tsg\":\"Naples\",\"arg_rdro\":\"2027sx_syck03sx_syck17\"}}\n"
+    },
+    "protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_syck",
+      "enum_names": {
+        "celsius": "ev_nyqo",
+        "fahrenheit": "ev_bmzw"
+      },
+      "field_names": {
+        "city": "arg_3tsg",
+        "date": "arg_rdro",
+        "units": "arg_006i"
+      },
+      "operation_names": {
+        "forecast": "fn_jx02",
+        "weather": "fn_klln"
+      },
+      "protocol_id": "validation-54"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_rl3f",
+        "enum_names": {
+          "celsius": "ev_gap3",
+          "fahrenheit": "ev_d06s"
+        },
+        "field_names": {
+          "city": "arg_wxuj",
+          "date": "arg_ovvl",
+          "units": "arg_rsxa"
+        },
+        "operation_names": {
+          "forecast": "fn_yan8",
+          "weather": "fn_sg6j"
+        },
+        "protocol_id": "validation-57"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Berlin using Celsius.\nDemonstration 1 response:\n{\"fn_sg6j\":{\"arg_rsxa\":\"ev_gap3\",\"arg_wxuj\":\"Berlin\"}}\n\nDemonstration 2 request:\nGet the current weather for Athens using Fahrenheit.\nDemonstration 2 response:\n{\"fn_sg6j\":{\"arg_rsxa\":\"ev_d06s\",\"arg_wxuj\":\"Athens\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Paris on 2027-11-09.\nDemonstration 3 response:\n{\"fn_yan8\":{\"arg_ovvl\":\"11sx_rl3f09sx_rl3f2027\",\"arg_rsxa\":\"ev_gap3\",\"arg_wxuj\":\"Paris\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for London on 2027-04-25.\nDemonstration 4 response:\n{\"fn_yan8\":{\"arg_ovvl\":\"04sx_rl3f25sx_rl3f2027\",\"arg_rsxa\":\"ev_d06s\",\"arg_wxuj\":\"London\"}}",
+      "support_values": [
+        "04sx_rl3f25sx_rl3f2027",
+        "11sx_rl3f09sx_rl3f2027",
+        "Athens",
+        "Berlin",
+        "London",
+        "Paris",
+        "ev_d06s",
+        "ev_gap3"
+      ],
+      "target_call": {
+        "fn_yan8": {
+          "arg_ovvl": "03sx_rl3f17sx_rl3f2027",
+          "arg_rsxa": "ev_d06s",
+          "arg_wxuj": "Naples"
+        }
+      },
+      "target_text": "{\"fn_yan8\":{\"arg_ovvl\":\"03sx_rl3f17sx_rl3f2027\",\"arg_rsxa\":\"ev_d06s\",\"arg_wxuj\":\"Naples\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_yvcv",
+        "enum_names": {
+          "celsius": "ev_bm52",
+          "fahrenheit": "ev_e9sm"
+        },
+        "field_names": {
+          "city": "arg_dxns",
+          "date": "arg_4qp7",
+          "units": "arg_i0ki"
+        },
+        "operation_names": {
+          "forecast": "fn_tde4",
+          "weather": "fn_5ujo"
+        },
+        "protocol_id": "validation-59"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for London using Celsius.\nDemonstration 1 response:\n{\"fn_5ujo\":{\"arg_dxns\":\"London\",\"arg_i0ki\":\"ev_bm52\"}}\n\nDemonstration 2 request:\nGet the current weather for Dublin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_5ujo\":{\"arg_dxns\":\"Dublin\",\"arg_i0ki\":\"ev_e9sm\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Oslo on 2027-11-09.\nDemonstration 3 response:\n{\"fn_tde4\":{\"arg_4qp7\":\"2027sx_yvcv11sx_yvcv09\",\"arg_dxns\":\"Oslo\",\"arg_i0ki\":\"ev_bm52\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Berlin on 2026-08-20.\nDemonstration 4 response:\n{\"fn_tde4\":{\"arg_4qp7\":\"2026sx_yvcv08sx_yvcv20\",\"arg_dxns\":\"Berlin\",\"arg_i0ki\":\"ev_e9sm\"}}",
+      "support_values": [
+        "2026sx_yvcv08sx_yvcv20",
+        "2027sx_yvcv11sx_yvcv09",
+        "Berlin",
+        "Dublin",
+        "London",
+        "Oslo",
+        "ev_bm52",
+        "ev_e9sm"
+      ],
+      "target_call": {
+        "fn_tde4": {
+          "arg_4qp7": "2027sx_yvcv03sx_yvcv17",
+          "arg_dxns": "Naples",
+          "arg_i0ki": "ev_e9sm"
+        }
+      },
+      "target_text": "{\"fn_tde4\":{\"arg_4qp7\":\"2027sx_yvcv03sx_yvcv17\",\"arg_dxns\":\"Naples\",\"arg_i0ki\":\"ev_e9sm\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_yvcv",
+      "enum_names": {
+        "celsius": "ev_bm52",
+        "fahrenheit": "ev_e9sm"
+      },
+      "field_names": {
+        "city": "arg_dxns",
+        "date": "arg_4qp7",
+        "units": "arg_i0ki"
+      },
+      "operation_names": {
+        "forecast": "fn_tde4",
+        "weather": "fn_5ujo"
+      },
+      "protocol_id": "validation-59"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_rl3f",
+        "enum_names": {
+          "celsius": "ev_gap3",
+          "fahrenheit": "ev_d06s"
+        },
+        "field_names": {
+          "city": "arg_wxuj",
+          "date": "arg_ovvl",
+          "units": "arg_rsxa"
+        },
+        "operation_names": {
+          "forecast": "fn_yan8",
+          "weather": "fn_sg6j"
+        },
+        "protocol_id": "validation-57"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Paris using Celsius.\nDemonstration 1 response:\n{\"fn_sg6j\":{\"arg_rsxa\":\"ev_gap3\",\"arg_wxuj\":\"Paris\"}}\n\nDemonstration 2 request:\nGet the current weather for Vienna using Fahrenheit.\nDemonstration 2 response:\n{\"fn_sg6j\":{\"arg_rsxa\":\"ev_d06s\",\"arg_wxuj\":\"Vienna\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Lisbon on 2027-06-18.\nDemonstration 3 response:\n{\"fn_yan8\":{\"arg_ovvl\":\"06sx_rl3f18sx_rl3f2027\",\"arg_rsxa\":\"ev_gap3\",\"arg_wxuj\":\"Lisbon\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Tokyo on 2028-02-16.\nDemonstration 4 response:\n{\"fn_yan8\":{\"arg_ovvl\":\"02sx_rl3f16sx_rl3f2028\",\"arg_rsxa\":\"ev_d06s\",\"arg_wxuj\":\"Tokyo\"}}",
+      "support_values": [
+        "02sx_rl3f16sx_rl3f2028",
+        "06sx_rl3f18sx_rl3f2027",
+        "Lisbon",
+        "Paris",
+        "Tokyo",
+        "Vienna",
+        "ev_d06s",
+        "ev_gap3"
+      ],
+      "target_call": {
+        "fn_yan8": {
+          "arg_ovvl": "03sx_rl3f17sx_rl3f2027",
+          "arg_rsxa": "ev_d06s",
+          "arg_wxuj": "Naples"
+        }
+      },
+      "target_text": "{\"fn_yan8\":{\"arg_ovvl\":\"03sx_rl3f17sx_rl3f2027\",\"arg_rsxa\":\"ev_d06s\",\"arg_wxuj\":\"Naples\"}}\n"
+    },
+    "protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_rl3f",
+      "enum_names": {
+        "celsius": "ev_gap3",
+        "fahrenheit": "ev_d06s"
+      },
+      "field_names": {
+        "city": "arg_wxuj",
+        "date": "arg_ovvl",
+        "units": "arg_rsxa"
+      },
+      "operation_names": {
+        "forecast": "fn_yan8",
+        "weather": "fn_sg6j"
+      },
+      "protocol_id": "validation-57"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_5q28",
+        "enum_names": {
+          "celsius": "ev_21fp",
+          "fahrenheit": "ev_xnwf"
+        },
+        "field_names": {
+          "city": "arg_orkq",
+          "date": "arg_7r7t",
+          "units": "arg_iki9"
+        },
+        "operation_names": {
+          "forecast": "fn_kczr",
+          "weather": "fn_nrrz"
+        },
+        "protocol_id": "validation-60"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Prague using Celsius.\nDemonstration 1 response:\n{\"fn_nrrz\":{\"arg_iki9\":\"ev_21fp\",\"arg_orkq\":\"Prague\"}}\n\nDemonstration 2 request:\nGet the current weather for Dublin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_nrrz\":{\"arg_iki9\":\"ev_xnwf\",\"arg_orkq\":\"Dublin\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Athens on 2027-11-09.\nDemonstration 3 response:\n{\"fn_kczr\":{\"arg_7r7t\":\"09sx_5q2811sx_5q282027\",\"arg_iki9\":\"ev_21fp\",\"arg_orkq\":\"Athens\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Sofia on 2027-06-18.\nDemonstration 4 response:\n{\"fn_kczr\":{\"arg_7r7t\":\"18sx_5q2806sx_5q282027\",\"arg_iki9\":\"ev_xnwf\",\"arg_orkq\":\"Sofia\"}}",
+      "support_values": [
+        "09sx_5q2811sx_5q282027",
+        "18sx_5q2806sx_5q282027",
+        "Athens",
+        "Dublin",
+        "Prague",
+        "Sofia",
+        "ev_21fp",
+        "ev_xnwf"
+      ],
+      "target_call": {
+        "fn_kczr": {
+          "arg_7r7t": "17sx_5q2803sx_5q282027",
+          "arg_iki9": "ev_xnwf",
+          "arg_orkq": "Naples"
+        }
+      },
+      "target_text": "{\"fn_kczr\":{\"arg_7r7t\":\"17sx_5q2803sx_5q282027\",\"arg_iki9\":\"ev_xnwf\",\"arg_orkq\":\"Naples\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_4qzm",
+        "enum_names": {
+          "celsius": "ev_uuti",
+          "fahrenheit": "ev_ub7a"
+        },
+        "field_names": {
+          "city": "arg_3tsg",
+          "date": "arg_s8au",
+          "units": "arg_7bmh"
+        },
+        "operation_names": {
+          "forecast": "fn_1d2x",
+          "weather": "fn_804k"
+        },
+        "protocol_id": "validation-62"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Athens using Celsius.\nDemonstration 1 response:\n{\"fn_804k\":{\"arg_3tsg\":\"Athens\",\"arg_7bmh\":\"ev_uuti\"}}\n\nDemonstration 2 request:\nGet the current weather for Prague using Fahrenheit.\nDemonstration 2 response:\n{\"fn_804k\":{\"arg_3tsg\":\"Prague\",\"arg_7bmh\":\"ev_ub7a\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Lisbon on 2028-02-16.\nDemonstration 3 response:\n{\"fn_1d2x\":{\"arg_3tsg\":\"Lisbon\",\"arg_7bmh\":\"ev_uuti\",\"arg_s8au\":\"02sx_4qzm16sx_4qzm2028\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Vienna on 2028-07-21.\nDemonstration 4 response:\n{\"fn_1d2x\":{\"arg_3tsg\":\"Vienna\",\"arg_7bmh\":\"ev_ub7a\",\"arg_s8au\":\"07sx_4qzm21sx_4qzm2028\"}}",
+      "support_values": [
+        "02sx_4qzm16sx_4qzm2028",
+        "07sx_4qzm21sx_4qzm2028",
+        "Athens",
+        "Lisbon",
+        "Prague",
+        "Vienna",
+        "ev_ub7a",
+        "ev_uuti"
+      ],
+      "target_call": {
+        "fn_1d2x": {
+          "arg_3tsg": "Naples",
+          "arg_7bmh": "ev_ub7a",
+          "arg_s8au": "03sx_4qzm17sx_4qzm2027"
+        }
+      },
+      "target_text": "{\"fn_1d2x\":{\"arg_3tsg\":\"Naples\",\"arg_7bmh\":\"ev_ub7a\",\"arg_s8au\":\"03sx_4qzm17sx_4qzm2027\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_4qzm",
+      "enum_names": {
+        "celsius": "ev_uuti",
+        "fahrenheit": "ev_ub7a"
+      },
+      "field_names": {
+        "city": "arg_3tsg",
+        "date": "arg_s8au",
+        "units": "arg_7bmh"
+      },
+      "operation_names": {
+        "forecast": "fn_1d2x",
+        "weather": "fn_804k"
+      },
+      "protocol_id": "validation-62"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_5q28",
+        "enum_names": {
+          "celsius": "ev_21fp",
+          "fahrenheit": "ev_xnwf"
+        },
+        "field_names": {
+          "city": "arg_orkq",
+          "date": "arg_7r7t",
+          "units": "arg_iki9"
+        },
+        "operation_names": {
+          "forecast": "fn_kczr",
+          "weather": "fn_nrrz"
+        },
+        "protocol_id": "validation-60"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Vienna using Celsius.\nDemonstration 1 response:\n{\"fn_nrrz\":{\"arg_iki9\":\"ev_21fp\",\"arg_orkq\":\"Vienna\"}}\n\nDemonstration 2 request:\nGet the current weather for Sofia using Fahrenheit.\nDemonstration 2 response:\n{\"fn_nrrz\":{\"arg_iki9\":\"ev_xnwf\",\"arg_orkq\":\"Sofia\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Madrid on 2027-01-12.\nDemonstration 3 response:\n{\"fn_kczr\":{\"arg_7r7t\":\"12sx_5q2801sx_5q282027\",\"arg_iki9\":\"ev_21fp\",\"arg_orkq\":\"Madrid\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Lisbon on 2026-10-14.\nDemonstration 4 response:\n{\"fn_kczr\":{\"arg_7r7t\":\"14sx_5q2810sx_5q282026\",\"arg_iki9\":\"ev_xnwf\",\"arg_orkq\":\"Lisbon\"}}",
+      "support_values": [
+        "12sx_5q2801sx_5q282027",
+        "14sx_5q2810sx_5q282026",
+        "Lisbon",
+        "Madrid",
+        "Sofia",
+        "Vienna",
+        "ev_21fp",
+        "ev_xnwf"
+      ],
+      "target_call": {
+        "fn_kczr": {
+          "arg_7r7t": "17sx_5q2803sx_5q282027",
+          "arg_iki9": "ev_xnwf",
+          "arg_orkq": "Naples"
+        }
+      },
+      "target_text": "{\"fn_kczr\":{\"arg_7r7t\":\"17sx_5q2803sx_5q282027\",\"arg_iki9\":\"ev_xnwf\",\"arg_orkq\":\"Naples\"}}\n"
+    },
+    "protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_5q28",
+      "enum_names": {
+        "celsius": "ev_21fp",
+        "fahrenheit": "ev_xnwf"
+      },
+      "field_names": {
+        "city": "arg_orkq",
+        "date": "arg_7r7t",
+        "units": "arg_iki9"
+      },
+      "operation_names": {
+        "forecast": "fn_kczr",
+        "weather": "fn_nrrz"
+      },
+      "protocol_id": "validation-60"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_i6k6",
+        "enum_names": {
+          "celsius": "ev_0n09",
+          "fahrenheit": "ev_sk27"
+        },
+        "field_names": {
+          "city": "arg_osh0",
+          "date": "arg_0ruw",
+          "units": "arg_gay6"
+        },
+        "operation_names": {
+          "forecast": "fn_sjhs",
+          "weather": "fn_lkto"
+        },
+        "protocol_id": "validation-63"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Madrid using Celsius.\nDemonstration 1 response:\n{\"fn_lkto\":{\"arg_gay6\":\"ev_0n09\",\"arg_osh0\":\"Madrid\"}}\n\nDemonstration 2 request:\nGet the current weather for Prague using Fahrenheit.\nDemonstration 2 response:\n{\"fn_lkto\":{\"arg_gay6\":\"ev_sk27\",\"arg_osh0\":\"Prague\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Tokyo on 2028-02-16.\nDemonstration 3 response:\n{\"fn_sjhs\":{\"arg_0ruw\":\"16sx_i6k602sx_i6k62028\",\"arg_gay6\":\"ev_0n09\",\"arg_osh0\":\"Tokyo\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Berlin on 2028-07-21.\nDemonstration 4 response:\n{\"fn_sjhs\":{\"arg_0ruw\":\"21sx_i6k607sx_i6k62028\",\"arg_gay6\":\"ev_sk27\",\"arg_osh0\":\"Berlin\"}}",
+      "support_values": [
+        "16sx_i6k602sx_i6k62028",
+        "21sx_i6k607sx_i6k62028",
+        "Berlin",
+        "Madrid",
+        "Prague",
+        "Tokyo",
+        "ev_0n09",
+        "ev_sk27"
+      ],
+      "target_call": {
+        "fn_sjhs": {
+          "arg_0ruw": "17sx_i6k603sx_i6k62027",
+          "arg_gay6": "ev_sk27",
+          "arg_osh0": "Naples"
+        }
+      },
+      "target_text": "{\"fn_sjhs\":{\"arg_0ruw\":\"17sx_i6k603sx_i6k62027\",\"arg_gay6\":\"ev_sk27\",\"arg_osh0\":\"Naples\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_sx1j",
+        "enum_names": {
+          "celsius": "ev_yq1n",
+          "fahrenheit": "ev_x0y1"
+        },
+        "field_names": {
+          "city": "arg_rjgb",
+          "date": "arg_bjls",
+          "units": "arg_gneq"
+        },
+        "operation_names": {
+          "forecast": "fn_yan8",
+          "weather": "fn_4j2g"
+        },
+        "protocol_id": "validation-65"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Prague using Celsius.\nDemonstration 1 response:\n{\"fn_4j2g\":{\"arg_gneq\":\"ev_yq1n\",\"arg_rjgb\":\"Prague\"}}\n\nDemonstration 2 request:\nGet the current weather for London using Fahrenheit.\nDemonstration 2 response:\n{\"fn_4j2g\":{\"arg_gneq\":\"ev_x0y1\",\"arg_rjgb\":\"London\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Madrid on 2028-07-21.\nDemonstration 3 response:\n{\"fn_yan8\":{\"arg_bjls\":\"21sx_sx1j07sx_sx1j2028\",\"arg_gneq\":\"ev_yq1n\",\"arg_rjgb\":\"Madrid\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Athens on 2027-04-25.\nDemonstration 4 response:\n{\"fn_yan8\":{\"arg_bjls\":\"25sx_sx1j04sx_sx1j2027\",\"arg_gneq\":\"ev_x0y1\",\"arg_rjgb\":\"Athens\"}}",
+      "support_values": [
+        "21sx_sx1j07sx_sx1j2028",
+        "25sx_sx1j04sx_sx1j2027",
+        "Athens",
+        "London",
+        "Madrid",
+        "Prague",
+        "ev_x0y1",
+        "ev_yq1n"
+      ],
+      "target_call": {
+        "fn_yan8": {
+          "arg_bjls": "17sx_sx1j03sx_sx1j2027",
+          "arg_gneq": "ev_x0y1",
+          "arg_rjgb": "Naples"
+        }
+      },
+      "target_text": "{\"fn_yan8\":{\"arg_bjls\":\"17sx_sx1j03sx_sx1j2027\",\"arg_gneq\":\"ev_x0y1\",\"arg_rjgb\":\"Naples\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_sx1j",
+      "enum_names": {
+        "celsius": "ev_yq1n",
+        "fahrenheit": "ev_x0y1"
+      },
+      "field_names": {
+        "city": "arg_rjgb",
+        "date": "arg_bjls",
+        "units": "arg_gneq"
+      },
+      "operation_names": {
+        "forecast": "fn_yan8",
+        "weather": "fn_4j2g"
+      },
+      "protocol_id": "validation-65"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_i6k6",
+        "enum_names": {
+          "celsius": "ev_0n09",
+          "fahrenheit": "ev_sk27"
+        },
+        "field_names": {
+          "city": "arg_osh0",
+          "date": "arg_0ruw",
+          "units": "arg_gay6"
+        },
+        "operation_names": {
+          "forecast": "fn_sjhs",
+          "weather": "fn_lkto"
+        },
+        "protocol_id": "validation-63"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Athens using Celsius.\nDemonstration 1 response:\n{\"fn_lkto\":{\"arg_gay6\":\"ev_0n09\",\"arg_osh0\":\"Athens\"}}\n\nDemonstration 2 request:\nGet the current weather for Lisbon using Fahrenheit.\nDemonstration 2 response:\n{\"fn_lkto\":{\"arg_gay6\":\"ev_sk27\",\"arg_osh0\":\"Lisbon\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for London on 2027-01-12.\nDemonstration 3 response:\n{\"fn_sjhs\":{\"arg_0ruw\":\"12sx_i6k601sx_i6k62027\",\"arg_gay6\":\"ev_0n09\",\"arg_osh0\":\"London\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Prague on 2027-11-09.\nDemonstration 4 response:\n{\"fn_sjhs\":{\"arg_0ruw\":\"09sx_i6k611sx_i6k62027\",\"arg_gay6\":\"ev_sk27\",\"arg_osh0\":\"Prague\"}}",
+      "support_values": [
+        "09sx_i6k611sx_i6k62027",
+        "12sx_i6k601sx_i6k62027",
+        "Athens",
+        "Lisbon",
+        "London",
+        "Prague",
+        "ev_0n09",
+        "ev_sk27"
+      ],
+      "target_call": {
+        "fn_sjhs": {
+          "arg_0ruw": "17sx_i6k603sx_i6k62027",
+          "arg_gay6": "ev_sk27",
+          "arg_osh0": "Naples"
+        }
+      },
+      "target_text": "{\"fn_sjhs\":{\"arg_0ruw\":\"17sx_i6k603sx_i6k62027\",\"arg_gay6\":\"ev_sk27\",\"arg_osh0\":\"Naples\"}}\n"
+    },
+    "protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_i6k6",
+      "enum_names": {
+        "celsius": "ev_0n09",
+        "fahrenheit": "ev_sk27"
+      },
+      "field_names": {
+        "city": "arg_osh0",
+        "date": "arg_0ruw",
+        "units": "arg_gay6"
+      },
+      "operation_names": {
+        "forecast": "fn_sjhs",
+        "weather": "fn_lkto"
+      },
+      "protocol_id": "validation-63"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_rdr6",
+        "enum_names": {
+          "celsius": "ev_bv31",
+          "fahrenheit": "ev_dp41"
+        },
+        "field_names": {
+          "city": "arg_2t84",
+          "date": "arg_ovvl",
+          "units": "arg_1p94"
+        },
+        "operation_names": {
+          "forecast": "fn_shnv",
+          "weather": "fn_s4hs"
+        },
+        "protocol_id": "validation-66"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for London using Celsius.\nDemonstration 1 response:\n{\"fn_s4hs\":{\"arg_1p94\":\"ev_bv31\",\"arg_2t84\":\"London\"}}\n\nDemonstration 2 request:\nGet the current weather for Dublin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_s4hs\":{\"arg_1p94\":\"ev_dp41\",\"arg_2t84\":\"Dublin\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Tokyo on 2027-06-18.\nDemonstration 3 response:\n{\"fn_shnv\":{\"arg_1p94\":\"ev_bv31\",\"arg_2t84\":\"Tokyo\",\"arg_ovvl\":\"18sx_rdr606sx_rdr62027\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Madrid on 2027-01-12.\nDemonstration 4 response:\n{\"fn_shnv\":{\"arg_1p94\":\"ev_dp41\",\"arg_2t84\":\"Madrid\",\"arg_ovvl\":\"12sx_rdr601sx_rdr62027\"}}",
+      "support_values": [
+        "12sx_rdr601sx_rdr62027",
+        "18sx_rdr606sx_rdr62027",
+        "Dublin",
+        "London",
+        "Madrid",
+        "Tokyo",
+        "ev_bv31",
+        "ev_dp41"
+      ],
+      "target_call": {
+        "fn_shnv": {
+          "arg_1p94": "ev_dp41",
+          "arg_2t84": "Naples",
+          "arg_ovvl": "17sx_rdr603sx_rdr62027"
+        }
+      },
+      "target_text": "{\"fn_shnv\":{\"arg_1p94\":\"ev_dp41\",\"arg_2t84\":\"Naples\",\"arg_ovvl\":\"17sx_rdr603sx_rdr62027\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "YMD",
+        "date_separator": "sx_20ev",
+        "enum_names": {
+          "celsius": "ev_e9sm",
+          "fahrenheit": "ev_yq1n"
+        },
+        "field_names": {
+          "city": "arg_7r7t",
+          "date": "arg_xdrd",
+          "units": "arg_006i"
+        },
+        "operation_names": {
+          "forecast": "fn_iabs",
+          "weather": "fn_x8l2"
+        },
+        "protocol_id": "validation-68"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Lisbon using Celsius.\nDemonstration 1 response:\n{\"fn_x8l2\":{\"arg_006i\":\"ev_e9sm\",\"arg_7r7t\":\"Lisbon\"}}\n\nDemonstration 2 request:\nGet the current weather for Berlin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_x8l2\":{\"arg_006i\":\"ev_yq1n\",\"arg_7r7t\":\"Berlin\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Athens on 2026-10-14.\nDemonstration 3 response:\n{\"fn_iabs\":{\"arg_006i\":\"ev_e9sm\",\"arg_7r7t\":\"Athens\",\"arg_xdrd\":\"2026sx_20ev10sx_20ev14\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Oslo on 2028-02-16.\nDemonstration 4 response:\n{\"fn_iabs\":{\"arg_006i\":\"ev_yq1n\",\"arg_7r7t\":\"Oslo\",\"arg_xdrd\":\"2028sx_20ev02sx_20ev16\"}}",
+      "support_values": [
+        "2026sx_20ev10sx_20ev14",
+        "2028sx_20ev02sx_20ev16",
+        "Athens",
+        "Berlin",
+        "Lisbon",
+        "Oslo",
+        "ev_e9sm",
+        "ev_yq1n"
+      ],
+      "target_call": {
+        "fn_iabs": {
+          "arg_006i": "ev_yq1n",
+          "arg_7r7t": "Naples",
+          "arg_xdrd": "2027sx_20ev03sx_20ev17"
+        }
+      },
+      "target_text": "{\"fn_iabs\":{\"arg_006i\":\"ev_yq1n\",\"arg_7r7t\":\"Naples\",\"arg_xdrd\":\"2027sx_20ev03sx_20ev17\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "YMD",
+      "date_separator": "sx_20ev",
+      "enum_names": {
+        "celsius": "ev_e9sm",
+        "fahrenheit": "ev_yq1n"
+      },
+      "field_names": {
+        "city": "arg_7r7t",
+        "date": "arg_xdrd",
+        "units": "arg_006i"
+      },
+      "operation_names": {
+        "forecast": "fn_iabs",
+        "weather": "fn_x8l2"
+      },
+      "protocol_id": "validation-68"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_rdr6",
+        "enum_names": {
+          "celsius": "ev_bv31",
+          "fahrenheit": "ev_dp41"
+        },
+        "field_names": {
+          "city": "arg_2t84",
+          "date": "arg_ovvl",
+          "units": "arg_1p94"
+        },
+        "operation_names": {
+          "forecast": "fn_shnv",
+          "weather": "fn_s4hs"
+        },
+        "protocol_id": "validation-66"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Tokyo using Celsius.\nDemonstration 1 response:\n{\"fn_s4hs\":{\"arg_1p94\":\"ev_bv31\",\"arg_2t84\":\"Tokyo\"}}\n\nDemonstration 2 request:\nGet the current weather for Berlin using Fahrenheit.\nDemonstration 2 response:\n{\"fn_s4hs\":{\"arg_1p94\":\"ev_dp41\",\"arg_2t84\":\"Berlin\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Oslo on 2027-06-18.\nDemonstration 3 response:\n{\"fn_shnv\":{\"arg_1p94\":\"ev_bv31\",\"arg_2t84\":\"Oslo\",\"arg_ovvl\":\"18sx_rdr606sx_rdr62027\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Athens on 2026-08-20.\nDemonstration 4 response:\n{\"fn_shnv\":{\"arg_1p94\":\"ev_dp41\",\"arg_2t84\":\"Athens\",\"arg_ovvl\":\"20sx_rdr608sx_rdr62026\"}}",
+      "support_values": [
+        "18sx_rdr606sx_rdr62027",
+        "20sx_rdr608sx_rdr62026",
+        "Athens",
+        "Berlin",
+        "Oslo",
+        "Tokyo",
+        "ev_bv31",
+        "ev_dp41"
+      ],
+      "target_call": {
+        "fn_shnv": {
+          "arg_1p94": "ev_dp41",
+          "arg_2t84": "Naples",
+          "arg_ovvl": "17sx_rdr603sx_rdr62027"
+        }
+      },
+      "target_text": "{\"fn_shnv\":{\"arg_1p94\":\"ev_dp41\",\"arg_2t84\":\"Naples\",\"arg_ovvl\":\"17sx_rdr603sx_rdr62027\"}}\n"
+    },
+    "protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_rdr6",
+      "enum_names": {
+        "celsius": "ev_bv31",
+        "fahrenheit": "ev_dp41"
+      },
+      "field_names": {
+        "city": "arg_2t84",
+        "date": "arg_ovvl",
+        "units": "arg_1p94"
+      },
+      "operation_names": {
+        "forecast": "fn_shnv",
+        "weather": "fn_s4hs"
+      },
+      "protocol_id": "validation-66"
+    }
+  },
+  {
+    "alternate": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_961n",
+        "enum_names": {
+          "celsius": "ev_8z9f",
+          "fahrenheit": "ev_f8pa"
+        },
+        "field_names": {
+          "city": "arg_osh0",
+          "date": "arg_5l2h",
+          "units": "arg_gay6"
+        },
+        "operation_names": {
+          "forecast": "fn_scps",
+          "weather": "fn_z1cu"
+        },
+        "protocol_id": "validation-69"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Tokyo using Celsius.\nDemonstration 1 response:\n{\"fn_z1cu\":{\"arg_gay6\":\"ev_8z9f\",\"arg_osh0\":\"Tokyo\"}}\n\nDemonstration 2 request:\nGet the current weather for Prague using Fahrenheit.\nDemonstration 2 response:\n{\"fn_z1cu\":{\"arg_gay6\":\"ev_f8pa\",\"arg_osh0\":\"Prague\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Paris on 2027-04-25.\nDemonstration 3 response:\n{\"fn_scps\":{\"arg_5l2h\":\"25sx_961n04sx_961n2027\",\"arg_gay6\":\"ev_8z9f\",\"arg_osh0\":\"Paris\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Sofia on 2028-07-21.\nDemonstration 4 response:\n{\"fn_scps\":{\"arg_5l2h\":\"21sx_961n07sx_961n2028\",\"arg_gay6\":\"ev_f8pa\",\"arg_osh0\":\"Sofia\"}}",
+      "support_values": [
+        "21sx_961n07sx_961n2028",
+        "25sx_961n04sx_961n2027",
+        "Paris",
+        "Prague",
+        "Sofia",
+        "Tokyo",
+        "ev_8z9f",
+        "ev_f8pa"
+      ],
+      "target_call": {
+        "fn_scps": {
+          "arg_5l2h": "17sx_961n03sx_961n2027",
+          "arg_gay6": "ev_f8pa",
+          "arg_osh0": "Naples"
+        }
+      },
+      "target_text": "{\"fn_scps\":{\"arg_5l2h\":\"17sx_961n03sx_961n2027\",\"arg_gay6\":\"ev_f8pa\",\"arg_osh0\":\"Naples\"}}\n"
+    },
+    "counterfactual": {
+      "protocol": {
+        "date_order": "MDY",
+        "date_separator": "sx_n26i",
+        "enum_names": {
+          "celsius": "ev_j6du",
+          "fahrenheit": "ev_agkp"
+        },
+        "field_names": {
+          "city": "arg_p2oh",
+          "date": "arg_c7z7",
+          "units": "arg_xmsf"
+        },
+        "operation_names": {
+          "forecast": "fn_81e9",
+          "weather": "fn_id1s"
+        },
+        "protocol_id": "validation-71"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Berlin using Celsius.\nDemonstration 1 response:\n{\"fn_id1s\":{\"arg_p2oh\":\"Berlin\",\"arg_xmsf\":\"ev_j6du\"}}\n\nDemonstration 2 request:\nGet the current weather for Lisbon using Fahrenheit.\nDemonstration 2 response:\n{\"fn_id1s\":{\"arg_p2oh\":\"Lisbon\",\"arg_xmsf\":\"ev_agkp\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Dublin on 2027-11-09.\nDemonstration 3 response:\n{\"fn_81e9\":{\"arg_c7z7\":\"11sx_n26i09sx_n26i2027\",\"arg_p2oh\":\"Dublin\",\"arg_xmsf\":\"ev_j6du\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Oslo on 2027-06-18.\nDemonstration 4 response:\n{\"fn_81e9\":{\"arg_c7z7\":\"06sx_n26i18sx_n26i2027\",\"arg_p2oh\":\"Oslo\",\"arg_xmsf\":\"ev_agkp\"}}",
+      "support_values": [
+        "06sx_n26i18sx_n26i2027",
+        "11sx_n26i09sx_n26i2027",
+        "Berlin",
+        "Dublin",
+        "Lisbon",
+        "Oslo",
+        "ev_agkp",
+        "ev_j6du"
+      ],
+      "target_call": {
+        "fn_81e9": {
+          "arg_c7z7": "03sx_n26i17sx_n26i2027",
+          "arg_p2oh": "Naples",
+          "arg_xmsf": "ev_agkp"
+        }
+      },
+      "target_text": "{\"fn_81e9\":{\"arg_c7z7\":\"03sx_n26i17sx_n26i2027\",\"arg_p2oh\":\"Naples\",\"arg_xmsf\":\"ev_agkp\"}}\n"
+    },
+    "counterfactual_protocol": {
+      "date_order": "MDY",
+      "date_separator": "sx_n26i",
+      "enum_names": {
+        "celsius": "ev_j6du",
+        "fahrenheit": "ev_agkp"
+      },
+      "field_names": {
+        "city": "arg_p2oh",
+        "date": "arg_c7z7",
+        "units": "arg_xmsf"
+      },
+      "operation_names": {
+        "forecast": "fn_81e9",
+        "weather": "fn_id1s"
+      },
+      "protocol_id": "validation-71"
+    },
+    "matched": {
+      "protocol": {
+        "date_order": "DMY",
+        "date_separator": "sx_961n",
+        "enum_names": {
+          "celsius": "ev_8z9f",
+          "fahrenheit": "ev_f8pa"
+        },
+        "field_names": {
+          "city": "arg_osh0",
+          "date": "arg_5l2h",
+          "units": "arg_gay6"
+        },
+        "operation_names": {
+          "forecast": "fn_scps",
+          "weather": "fn_z1cu"
+        },
+        "protocol_id": "validation-69"
+      },
+      "query_text": "Execute the request using the hidden protocol encoded by the active skill. Return one JSON object only.\n\nRequest:\nGet the Fahrenheit forecast for Naples on 2027-03-17.\n\nJSON:\n",
+      "semantic_query": {
+        "city": "Naples",
+        "date": "2027-03-17",
+        "operation": "forecast",
+        "units": "fahrenheit"
+      },
+      "support_text": "Infer the hidden execution protocol from these demonstrations. The interface names and transformations are arbitrary.\n\nDemonstration 1 request:\nGet the current weather for Sofia using Celsius.\nDemonstration 1 response:\n{\"fn_z1cu\":{\"arg_gay6\":\"ev_8z9f\",\"arg_osh0\":\"Sofia\"}}\n\nDemonstration 2 request:\nGet the current weather for London using Fahrenheit.\nDemonstration 2 response:\n{\"fn_z1cu\":{\"arg_gay6\":\"ev_f8pa\",\"arg_osh0\":\"London\"}}\n\nDemonstration 3 request:\nGet the Celsius forecast for Berlin on 2027-11-09.\nDemonstration 3 response:\n{\"fn_scps\":{\"arg_5l2h\":\"09sx_961n11sx_961n2027\",\"arg_gay6\":\"ev_8z9f\",\"arg_osh0\":\"Berlin\"}}\n\nDemonstration 4 request:\nGet the Fahrenheit forecast for Lisbon on 2027-06-18.\nDemonstration 4 response:\n{\"fn_scps\":{\"arg_5l2h\":\"18sx_961n06sx_961n2027\",\"arg_gay6\":\"ev_f8pa\",\"arg_osh0\":\"Lisbon\"}}",
+      "support_values": [
+        "09sx_961n11sx_961n2027",
+        "18sx_961n06sx_961n2027",
+        "Berlin",
+        "Lisbon",
+        "London",
+        "Sofia",
+        "ev_8z9f",
+        "ev_f8pa"
+      ],
+      "target_call": {
+        "fn_scps": {
+          "arg_5l2h": "17sx_961n03sx_961n2027",
+          "arg_gay6": "ev_f8pa",
+          "arg_osh0": "Naples"
+        }
+      },
+      "target_text": "{\"fn_scps\":{\"arg_5l2h\":\"17sx_961n03sx_961n2027\",\"arg_gay6\":\"ev_f8pa\",\"arg_osh0\":\"Naples\"}}\n"
+    },
+    "protocol": {
+      "date_order": "DMY",
+      "date_separator": "sx_961n",
+      "enum_names": {
+        "celsius": "ev_8z9f",
+        "fahrenheit": "ev_f8pa"
+      },
+      "field_names": {
+        "city": "arg_osh0",
+        "date": "arg_5l2h",
+        "units": "arg_gay6"
+      },
+      "operation_names": {
+        "forecast": "fn_scps",
+        "weather": "fn_z1cu"
+      },
+      "protocol_id": "validation-69"
+    }
+  }
+]

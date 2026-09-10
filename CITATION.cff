@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the course project report."
+title: "Persistent Skill IR for Tool-Using Language Models"
+type: software
+authors:
+  - family-names: Bianchi
+    given-names: Christian
+year: 2026
+repository-code: "https://github.com/Fascetta/tool-lora-skill-ir"
+license: MIT

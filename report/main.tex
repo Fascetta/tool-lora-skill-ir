@@ -1,0 +1,91 @@
+\documentclass{article}
+
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amssymb}
+
+\usepackage[accepted]{dlaiml2026}
+
+\dlaititlerunning{Persistent Skill IR}
+
+\begin{document}
+
+\twocolumn[
+\dlaititle{Persistent Skill Representations for Tool-Using Language Models}
+
+\begin{center}\today\end{center}
+
+\begin{dlaiauthorlist}
+\dlaiauthor{Christian Bianchi}{}
+\end{dlaiauthorlist}
+
+\dlaicorrespondingauthor{Christian Bianchi}{ch.bianchi02@gmail.com}
+
+\vskip 0.3in
+]
+
+\printAffiliationsAndNotice{}
+
+\begin{abstract}
+Tool-using language models can adapt through low-rank weights, but adapter parameters are difficult to predict reliably from descriptions. We study a complementary object: a persistent \emph{Skill IR} acquired from demonstrations and stored independently of both the prompt and adapter weights. The representation combines generic relational records with a lexical sidecar, is canonicalized across demonstrations, and reconnects through a structured resolver to a frozen execution interface. On a controlled 72-case suite, the frozen learned matcher always retains a correct correspondence and yields a unique correct hypothesis in 95.83\% of cases; an exact observable matcher reaches 100\%. The artifact survives support removal and serialization. Conversely, generated LoRAs reach 79.36\% correct-tool accuracy, below nearest-neighbor reuse at 94.31\%. The results establish execution-sufficient persistence in the controlled domain while exposing limits of parameter-space skill generation.
+\end{abstract}
+
+\section{Introduction}
+
+Low-rank adaptation (LoRA) specializes a frozen language model by learning $\Delta W=BA$ with few trainable parameters \cite{hu2022lora}. A more ambitious goal is to synthesize such updates directly from task descriptions \cite{charakorn2025text}. For tool use, however, a skill contains both relational semantics (which observed value fills which argument) and opaque lexical identities (API and field names). Directly regressing independently trained adapters also faces a non-unique target: $(B,A)$ and $(BR,R^{-1}A)$ implement the same update.
+
+This project asks whether demonstrations can instead produce a compact skill artifact that remains executable after the demonstrations are deleted. We separate persistent semantic state from ephemeral neural execution state. Code and frozen artifacts are available at \url{https://github.com/Fascetta/tool-lora-skill-ir}.
+
+\section{Method}
+
+The maintained pipeline is
+\begin{center}
+\small
+$\mathcal D\!\rightarrow\!\text{relations}\!\rightarrow\!\text{correspondence}$\\
+$\rightarrow\!\text{canonical IR}\!\rightarrow\!\text{resolver}\!\rightarrow\!\text{executor}$.
+\end{center}
+Acquisition parses only learner-visible requests and responses. Each persisted record stores an output key, generic relation labels (exact, enumerated, or transformed), transformation hypotheses, and a lexical sidecar for opaque literals. It deliberately excludes support text and evaluator ontology labels.
+
+For three-component transformations, P6-R1 embeds source and target byte strings with a bidirectional GRU and scores a $3\times3$ compatibility matrix. Bijective assignment predicts the permutation. Evidence from multiple demonstrations is canonicalized by count, score, and confidence margin with deterministic tie abstention. When source components remain directly observable, an exact constraint matcher is also available. After serialization and reload, a symbolic resolver converts generic records to the frozen interface; the execution layer may then instantiate ephemeral LoRA factors for Qwen3-0.6B \cite{yang2025qwen3}.
+
+\section{Experiments}
+
+\paragraph{Persistent representation.}
+We freeze the 13,281-parameter P6-R1 matcher and an immutable suite containing 24 skill groups. Matched, alternate, and counterfactual conditions give 72 cases. We report whether any inferred hypothesis is correct, whether the correct hypothesis is unique, artifact reload accuracy, and CPU latency.
+
+\begin{table}[t]
+\caption{Frozen component evaluation on 72 cases.}
+\label{tab:components}
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Path & Any & Unique & Reload & ms/case \\
+\midrule
+P6-R1 learned & 100 & 95.83 & 100 & 4.12 \\
+Exact observable & 100 & 100 & 100 & 0.45 \\
+Deterministic & 100 & 100 & 100 & 0.34 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:components} shows that all paths preserve a correct hypothesis and reload exactly. The learned matcher leaves three ambiguous cases. Exact matching removes these ambiguities and is about $9\times$ faster, but is valid only when occurrences are observable. Canonicalization reaches 100\% unique correctness on this suite. Separate tests delete the demonstrations, reload the JSON artifact, and recover the expected execution.
+
+\paragraph{Generated adapters.}
+We also compare generated, retrieved, and independently trained LoRAs on held-out tool calls. The generated residual adapter obtains 79.36\% correct-tool accuracy, versus 94.31\% for nearest-neighbor reuse and 99.34\% for the oracle. Weight reconstruction, output-norm control, SVD-structured generation, and fixed-$A$/generated-$B$ controls did not close the gap. The asymmetry of LoRA factors is known to affect optimization \cite{zhu2024asymmetry}; here, the broader result is that adapter weights are a poor persistent semantic target at the available task scale.
+
+\section{Discussion and conclusion}
+
+The positive claim is one of information sufficiency: in this controlled domain, demonstrations can be converted into a canonical hybrid IR that preserves relational and lexical information after support removal and reconnects to an independently tested executor. This does not demonstrate arbitrary ontology discovery. Intervention experiments found stable statistical groups but not independently manipulable or compositional semantic modules.
+
+The negative adapter result sharpens the design boundary. Skill IR should be treated as persistent state; LoRA factors are implementation-dependent execution state. Future work should test opaque real-world correspondences and shared linear adaptation coordinates, rather than supervising a generator with independently optimized LoRA weights.
+
+\section{Statement on the use of AI}
+
+OpenAI Codex was used extensively to assist with code drafting and refactoring, experiment scripts, debugging, result aggregation, literature exploration, report editing, and preparation of the public repository. Experimental outputs and claims were checked against saved artifacts by the student, who remains responsible for understanding, verifying, and explaining all submitted material.
+
+\bibliography{references.bib}
+\bibliographystyle{dlaiml2026}
+
+\end{document}

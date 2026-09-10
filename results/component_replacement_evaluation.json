@@ -1,0 +1,77 @@
+{
+  "reference": {
+    "checkpoint_sha256": "d2721f3684ec7f0dc16bf46834098a35cf9e07d42499e89fe439ea47ac5cb827",
+    "suite_sha256": "8a8b1d71b1a7dd61973086c1041d4503887caeddced3f1562ab91fd22e6263a5"
+  },
+  "results": [
+    {
+      "component": "P6-R1 learned correspondence",
+      "cases": 72,
+      "any_correct": 1.0,
+      "singleton_correct": 0.9583333333333334,
+      "mean_hypotheses": 1.0416666666666667,
+      "reload": 1.0,
+      "seconds": 0.29667597298976034,
+      "milliseconds_per_case": 4.120499624857782
+    },
+    {
+      "component": "exact observable permutation",
+      "cases": 72,
+      "any_correct": 1.0,
+      "singleton_correct": 1.0,
+      "mean_hypotheses": 1.0,
+      "reload": 1.0,
+      "seconds": 0.03241082699969411,
+      "milliseconds_per_case": 0.45015037499575156
+    },
+    {
+      "component": "deterministic acquisition baseline",
+      "cases": 72,
+      "any_correct": 1.0,
+      "singleton_correct": 1.0,
+      "mean_hypotheses": 1.0,
+      "reload": 1.0,
+      "seconds": 0.024594781978521496,
+      "milliseconds_per_case": 0.34159419414613185
+    },
+    {
+      "component": "JSONDecoder_response_validation",
+      "cases": 72,
+      "parse_success": 1.0
+    },
+    {
+      "component": "canonicalization_rules",
+      "results": [
+        {
+          "rule": "A",
+          "cases": 72,
+          "canonical_singleton": 0.9861111111111112,
+          "abstention": 0.0
+        },
+        {
+          "rule": "B",
+          "cases": 72,
+          "canonical_singleton": 1.0,
+          "abstention": 0.0
+        },
+        {
+          "rule": "C",
+          "cases": 72,
+          "canonical_singleton": 1.0,
+          "abstention": 0.0
+        },
+        {
+          "rule": "D",
+          "cases": 72,
+          "canonical_singleton": 1.0,
+          "abstention": 0.0
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "exact_permutation": "candidate replacement only when component occurrences are observable",
+    "json_decoder": "parser robustness check, not a semantic replacement",
+    "deterministic_acquisition": "existing ontology-free acquisition control"
+  }
+}

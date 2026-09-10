@@ -1,0 +1,19 @@
+name: report
+
+on:
+  push:
+    paths:
+      - "report/**"
+  pull_request:
+    paths:
+      - "report/**"
+
+jobs:
+  latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: report
+          root_file: main.tex

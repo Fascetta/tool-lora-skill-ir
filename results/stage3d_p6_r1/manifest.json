@@ -1,0 +1,25 @@
+{
+  "name": "P6-R1",
+  "checkpoint": "results/stage3d_p6_r1/p6_r1_checkpoint.pt",
+  "checkpoint_sha256": "d2721f3684ec7f0dc16bf46834098a35cf9e07d42499e89fe439ea47ac5cb827",
+  "suite": "results/stage3d_p6_r1/immutable_suite.json",
+  "suite_sha256": "8a8b1d71b1a7dd61973086c1041d4503887caeddced3f1562ab91fd22e6263a5",
+  "script": "historical Stage-3 training runner (not required for frozen evaluation)",
+  "script_sha256": "59e2f20dc3169698b062b158a132cf8c3962dcd888e17dd5988e819c2f685d4a",
+  "git_commit": "f6c9d7ac600988208327d10375cbd74e2fe8e730",
+  "python": "3.13.5",
+  "torch": "2.11.0+cu130",
+  "cuda_runtime": "13.0",
+  "cudnn": 91900,
+  "gpu": "NVIDIA RTX A6000",
+  "deterministic_algorithms": false,
+  "cudnn_deterministic": false,
+  "cudnn_benchmark": false,
+  "training": {
+    "steps": 1200,
+    "seed": 20260831,
+    "parameter_count": 13281,
+    "loss_initial": 1.09718656539917,
+    "loss_final": 0.0011174749815836549
+  }
+}
