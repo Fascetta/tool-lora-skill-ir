@@ -2,7 +2,24 @@
 
 Course project by **Christian Bianchi** for **Deep Learning and Applied AI, Sapienza University of Rome (2026)**.
 
-This repository studies whether demonstrations can be converted into a compact, persistent skill representation that remains executable after the demonstrations are removed. The maintained system stores generic relational structure together with a lexical sidecar for opaque identifiers. It then resolves the saved artifact into a frozen execution interface that can produce ephemeral LoRA updates for a frozen language model.
+## What this project is about
+
+This repository contains one research project: learning persistent representations of tool-use skills for language models.
+
+The motivating goal was to generate task-specific LoRA adapters directly from a description or demonstrations of a tool. The experiments showed that independently trained LoRAs are a poor semantic target: adapters that implement similar behavior can occupy very different regions of parameter space, and learned generation remained substantially worse than simply retrieving a nearby adapter.
+
+The project therefore separates two objects:
+
+- **Skill IR** is the persistent representation. It stores the relational structure and opaque lexical information acquired from demonstrations.
+- **LoRA weights** are ephemeral execution state. They may be produced by a frozen compiler when the skill is executed, but they are not treated as the semantic representation itself.
+
+The final research question is:
+
+> Can learner-visible demonstrations be converted into a canonical, persistent Skill IR that remains sufficient for execution after the demonstrations are removed, without supplying the evaluator's semantic ontology?
+
+## Maintained system
+
+The final validated pipeline is:
 
 ```text
 demonstrations
@@ -14,11 +31,36 @@ demonstrations
   -> frozen compiler / executor
 ```
 
-The central positive result is deliberately narrow: on the controlled protocol task, the persisted representation retains the information needed for execution without storing support text. The project does **not** claim to discover an arbitrary latent ontology or independently compositional semantic modules.
+Acquisition extracts generic relations from observable requests and responses. Correspondence aligns structured components, canonicalization combines evidence across demonstrations, and serialization stores relational records plus a lexical sidecar. The original demonstrations are then deleted. A structured resolver reloads the artifact and maps it into the independently validated frozen execution interface.
 
-## Results
+## Complete research synthesis
 
-The immutable benchmark has 24 groups and three conditions per group (72 cases).
+### 1. Direct adapter generation
+
+The initial approach attempted to predict LoRA parameters from tool documentation and demonstrations. Full-vector regression, PCA/basis prediction, canonicalized updates, residual generation, structured token prediction, and corrected WIZARD-style decoders were tested. Decoder plumbing and serialization could be made correct, but generated adapters did not generalize reliably to unseen tools.
+
+The strongest learned generator obtained **79.36% correct-tool accuracy**, compared with **94.31%** for nearest-neighbor adapter reuse and **99.34%** for an independently trained oracle LoRA. This established that the main problem was not simply finding a larger decoder or a different weight-space loss.
+
+### 2. Persistent Skill IR
+
+The second direction represented the skill explicitly instead of using adapter weights as memory. The resulting hybrid representation contains:
+
+- generic relations such as exact copy, enumerated binding, and structured transformation;
+- correspondence hypotheses between observable components;
+- a lexical sidecar that preserves opaque API names, argument names, and literal values;
+- no support text and no evaluator ontology labels.
+
+The artifact can be serialized, the demonstrations can be removed, and the artifact can then be reloaded and executed.
+
+### 3. Correspondence and canonicalization
+
+P6-R1 is a frozen 13,281-parameter matcher. It embeds byte-level source and target components with a bidirectional GRU, scores a compatibility matrix, and selects a bijective assignment. A deterministic exact matcher is also included for cases where component occurrences are directly observable.
+
+Evidence from multiple demonstrations is canonicalized by count, assignment score, and confidence margin. The resolver uses the persisted convention `target[j] = source[permutation[j]]`, which is tested over all six three-component permutations.
+
+### 4. Validated result
+
+The immutable evaluation contains 24 skill groups under matched, alternate, and counterfactual conditions, giving 72 cases.
 
 | Correspondence path | Any correct | Singleton correct | Reload | Time/case |
 |---|---:|---:|---:|---:|
@@ -26,9 +68,9 @@ The immutable benchmark has 24 groups and three conditions per group (72 cases).
 | Exact observable permutation | 100% | 100% | 100% | 0.45 ms |
 | Deterministic acquisition | 100% | 100% | 100% | 0.34 ms |
 
-The exact path is appropriate only when structured components remain observable. P6-R1 is retained as the learned control for opaque correspondence.
+All three paths retain at least one correct hypothesis in every case and survive serialization/reload. P6-R1 produces a unique correct hypothesis in 95.83% of cases. The exact observable matcher resolves all cases uniquely and is faster, but it applies only when source components remain visible.
 
-An accompanying adapter-generation study found that direct generation remained substantially below retrieval and independently trained adapters on correct-tool accuracy:
+The adapter-generation comparison that motivated Skill IR is:
 
 | Adapter method | Correct tool |
 |---|---:|
@@ -36,7 +78,23 @@ An accompanying adapter-generation study found that direct generation remained s
 | Nearest-neighbor LoRA | 94.31% |
 | Oracle per-tool LoRA | 99.34% |
 
-This negative result motivated the separation between persistent semantic state (Skill IR) and ephemeral neural execution state (LoRA weights).
+### 5. What the project establishes
+
+On the controlled protocol domain, demonstrations contain enough information to construct a canonical, persistent hybrid Skill IR. The representation preserves relational semantics and lexical identity, survives support removal, and reconnects to a frozen executor.
+
+This is an **information-sufficiency and persistence result**. It is not evidence that the system discovers an arbitrary hidden ontology.
+
+### 6. Negative findings and claim boundary
+
+Several negative results are part of the contribution:
+
+- unrestricted learned correspondence models exploited shortcuts;
+- global learned bridges failed to translate generic records into executor semantics reliably;
+- sparse factorization and anti-collapse objectives did not discover stable semantic modules;
+- statistically stable groups were not independently manipulable or compositional;
+- generated LoRAs did not beat nearest-neighbor adapter reuse.
+
+These findings distinguish semantic availability and executor sufficiency from causal modularity and ontology discovery. The maintained system consequently uses a structured resolver and treats generated adapters as temporary execution artifacts.
 
 ## Installation
 
