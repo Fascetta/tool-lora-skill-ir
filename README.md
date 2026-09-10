@@ -2,99 +2,129 @@
 
 Course project by **Christian Bianchi** for **Deep Learning and Applied AI, Sapienza University of Rome (2026)**.
 
-## What this project is about
+## Research question
 
-This repository contains one research project: learning persistent representations of tool-use skills for language models.
+A **tool-use skill** is the behavior that maps a user request and prior observations to a structured tool call. A **support set** is the collection of demonstrations from which the system learns that behavior.
 
-The motivating goal was to generate task-specific LoRA adapters directly from a description or demonstrations of a tool. The experiments showed that independently trained LoRAs are a poor semantic target: adapters that implement similar behavior can occupy very different regions of parameter space, and learned generation remained substantially worse than simply retrieving a nearby adapter.
+This project asks:
 
-The project therefore separates two objects:
+> Can a support set be converted into a persistent intermediate representation of a tool-use skill that remains sufficient for execution after the support set is deleted, without giving the learner the evaluator's semantic labels?
 
-- **Skill IR** is the persistent representation. It stores the relational structure and opaque lexical information acquired from demonstrations.
-- **LoRA weights** are ephemeral execution state. They may be produced by a frozen compiler when the skill is executed, but they are not treated as the semantic representation itself.
+We call the persistent object **Skill IR**, where *IR* means *intermediate representation*. Throughout this repository, **Skill IR** refers only to the serialized representation learned from demonstrations. We use **execution adapter** only for the temporary LoRA parameters applied during language-model execution. These terms are not interchangeable.
 
-The final research question is:
+## Why Skill IR is separate from LoRA parameters
 
-> Can learner-visible demonstrations be converted into a canonical, persistent Skill IR that remains sufficient for execution after the demonstrations are removed, without supplying the evaluator's semantic ontology?
-
-## Maintained system
-
-The final validated pipeline is:
+Low-rank adaptation (LoRA) modifies a frozen model weight matrix through
 
 ```text
-demonstrations
-  -> ontology-free acquisition
-  -> observable or learned correspondence
-  -> canonical persistent Skill IR
-  -> support removal and reload
-  -> structured resolver
-  -> frozen compiler / executor
+updated weight = frozen weight + B @ A
 ```
 
-Acquisition extracts generic relations from observable requests and responses. Correspondence aligns structured components, canonicalization combines evidence across demonstrations, and serialization stores relational records plus a lexical sidecar. The original demonstrations are then deleted. A structured resolver reloads the artifact and maps it into the independently validated frozen execution interface.
+Here, `A` and `B` are low-rank parameter matrices and `B @ A` is the effective weight update. Different pairs of matrices can implement the same effective update. Independently trained adapters can also implement similar behavior while remaining far apart in parameter space. Consequently, an execution adapter is not a stable semantic identifier for a tool-use skill.
+
+The project therefore assigns different roles to the two objects:
+
+- **Skill IR** is persistent. It stores what was learned about the tool-use skill.
+- **Execution adapter** is temporary. A frozen compiler produces it when the skill is executed.
+
+## Maintained pipeline
+
+```text
+support set
+  -> relation acquisition
+  -> component correspondence
+  -> canonicalization
+  -> Skill IR
+  -> support-set deletion and Skill-IR reload
+  -> resolver
+  -> frozen compiler
+  -> execution adapter
+  -> frozen language model
+```
+
+Each stage has one role:
+
+1. **Relation acquisition** extracts observable relations between request fields and tool-call fields. The relation types are exact copy, enumerated binding, and structured transformation.
+2. **Component correspondence** identifies which input component supplies each output component.
+3. **Canonicalization** combines correspondence evidence from multiple demonstrations into one deterministic Skill IR. It abstains when the best hypotheses remain tied.
+4. **Skill IR** stores canonical relational records and a lexical sidecar. The **lexical sidecar** stores opaque strings, such as API names and literal identifiers, that cannot be reconstructed from relational structure alone. Skill IR does not store the support set.
+5. **Resolver** deterministically maps Skill IR into the semantic fields expected by the frozen compiler.
+6. **Frozen compiler** maps the resolved fields into an execution adapter. *Frozen* means that its parameters are not trained or modified in this experiment.
+7. **Frozen language model** executes the request while the execution adapter is temporarily active.
 
 ## Complete research synthesis
 
-### 1. Direct adapter generation
+### Stage 1: adapter generation
 
-The initial approach attempted to predict LoRA parameters from tool documentation and demonstrations. Full-vector regression, PCA/basis prediction, canonicalized updates, residual generation, structured token prediction, and corrected WIZARD-style decoders were tested. Decoder plumbing and serialization could be made correct, but generated adapters did not generalize reliably to unseen tools.
+The initial objective was to generate LoRA parameters from tool documentation and demonstrations. The evaluated methods included direct parameter regression, principal-component bases, canonicalized effective updates, nearest-neighbor residuals, structured adapter tokens, and WIZARD-style decoders.
 
-The strongest learned generator obtained **79.36% correct-tool accuracy**, compared with **94.31%** for nearest-neighbor adapter reuse and **99.34%** for an independently trained oracle LoRA. This established that the main problem was not simply finding a larger decoder or a different weight-space loss.
+The strongest generated execution adapter achieved **79.36% correct-tool accuracy**, where correct-tool accuracy is the fraction of generated calls that name the required tool. **Nearest-neighbor adapter retrieval**, which reuses the adapter of the most similar training tool, achieved **94.31%**. An independently trained adapter for each evaluated tool achieved **99.34%**. Therefore, generated execution adapters did not provide a competitive persistent representation.
 
-### 2. Persistent Skill IR
+### Stage 2: persistent Skill IR
 
-The second direction represented the skill explicitly instead of using adapter weights as memory. The resulting hybrid representation contains:
+The second stage replaced adapter parameters with Skill IR. Skill IR contains:
 
-- generic relations such as exact copy, enumerated binding, and structured transformation;
-- correspondence hypotheses between observable components;
-- a lexical sidecar that preserves opaque API names, argument names, and literal values;
-- no support text and no evaluator ontology labels.
+- the output field selected by the tool-use skill;
+- generic request-to-output relations;
+- component permutations for structured values;
+- a lexical sidecar for opaque names and literals.
 
-The artifact can be serialized, the demonstrations can be removed, and the artifact can then be reloaded and executed.
+Serialization tests delete the support set, reload Skill IR from JSON, and execute new requests. Passing this test means that execution does not depend on hidden access to the original demonstrations.
 
-### 3. Correspondence and canonicalization
+### Stage 3: learned correspondence
 
-P6-R1 is a frozen 13,281-parameter matcher. It embeds byte-level source and target components with a bidirectional GRU, scores a compatibility matrix, and selects a bijective assignment. A deterministic exact matcher is also included for cases where component occurrences are directly observable.
+**P6-R1** is the frozen learned correspondence model used in the final evaluation. It contains 13,281 parameters; *frozen* means that these parameters are not updated during the reported evaluation. P6-R1 encodes source and target strings with a bidirectional gated recurrent unit and produces a compatibility score for every source–target component pair. A bijective assignment then selects one permutation.
 
-Evidence from multiple demonstrations is canonicalized by count, assignment score, and confidence margin. The resolver uses the persisted convention `target[j] = source[permutation[j]]`, which is tested over all six three-component permutations.
+The repository also includes the **exact matcher**. This deterministic method enumerates all permutations and selects the unique permutation that reconstructs the observed target. It applies only when every source component remains directly observable in the target.
 
-### 4. Validated result
+For both matchers, the stored permutation follows one convention:
 
-The immutable evaluation contains 24 skill groups under matched, alternate, and counterfactual conditions, giving 72 cases.
+```text
+target[j] = source[permutation[j]]
+```
 
-| Correspondence path | Any correct | Singleton correct | Reload | Time/case |
+`j` is an output position, and `permutation[j]` is the input position copied into it. Tests cover all six permutations of three components.
+
+### Stage 4: canonical persistence and execution
+
+The final experiment evaluates 24 skill groups. Each group has three conditions:
+
+- **matched:** demonstrations and evaluation use the same skill configuration;
+- **alternate:** demonstrations express the same skill through different examples;
+- **counterfactual:** the underlying component transformation is deliberately changed.
+
+The three conditions produce 72 evaluation cases. The reported metrics are:
+
+- **Any correct:** the predicted set contains the ground-truth permutation.
+- **Unique correct:** the ground-truth permutation is the only member of the predicted set.
+- **Reload:** Skill IR is unchanged after serialization and deserialization.
+- **Time/case:** mean CPU evaluation time per case in the recorded run.
+
+| Correspondence method | Any correct | Unique correct | Reload | Time/case |
 |---|---:|---:|---:|---:|
-| Learned P6-R1 matcher | 100% | 95.83% | 100% | 4.12 ms |
-| Exact observable permutation | 100% | 100% | 100% | 0.45 ms |
-| Deterministic acquisition | 100% | 100% | 100% | 0.34 ms |
+| P6-R1 | 100% | 95.83% | 100% | 4.12 ms |
+| Exact matcher | 100% | 100% | 100% | 0.45 ms |
+| Deterministic acquisition control | 100% | 100% | 100% | 0.34 ms |
 
-All three paths retain at least one correct hypothesis in every case and survive serialization/reload. P6-R1 produces a unique correct hypothesis in 95.83% of cases. The exact observable matcher resolves all cases uniquely and is faster, but it applies only when source components remain visible.
+P6-R1 retains a correct hypothesis in every case but leaves three cases ambiguous. The exact matcher resolves every case uniquely, but its observability assumption is stronger. All methods preserve Skill IR exactly across reload.
 
-The adapter-generation comparison that motivated Skill IR is:
+## Conclusions
 
-| Adapter method | Correct tool |
-|---|---:|
-| Generated residual LoRA | 79.36% |
-| Nearest-neighbor LoRA | 94.31% |
-| Oracle per-tool LoRA | 99.34% |
+The experiment establishes the following result:
 
-### 5. What the project establishes
+> In the controlled protocol domain, the support set contains enough information to construct a canonical Skill IR that preserves relational structure and opaque lexical identity, survives support-set deletion, and reconnects to the frozen execution pipeline.
 
-On the controlled protocol domain, demonstrations contain enough information to construct a canonical, persistent hybrid Skill IR. The representation preserves relational semantics and lexical identity, survives support removal, and reconnects to a frozen executor.
+This is an **information-sufficiency result**: Skill IR contains enough information for the tested execution task. It is not an ontology-discovery result. In this repository, **semantic ontology** means the evaluator's predefined decomposition of a skill into named semantic factors. The learner was not given those names, and the experiments did not show that it independently recovered the same decomposition.
 
-This is an **information-sufficiency and persistence result**. It is not evidence that the system discovers an arbitrary hidden ontology.
+## Negative results and limitations
 
-### 6. Negative findings and claim boundary
+- Generated execution adapters did not outperform nearest-neighbor adapter retrieval.
+- Learned global mappings from generic records to compiler fields did not reliably replace the deterministic resolver.
+- Stable statistical clusters did not yield independently controllable semantic factors.
+- The exact matcher requires visible source components.
+- The positive result is limited to a controlled synthetic protocol domain.
 
-Several negative results are part of the contribution:
-
-- unrestricted learned correspondence models exploited shortcuts;
-- global learned bridges failed to translate generic records into executor semantics reliably;
-- sparse factorization and anti-collapse objectives did not discover stable semantic modules;
-- statistically stable groups were not independently manipulable or compositional;
-- generated LoRAs did not beat nearest-neighbor adapter reuse.
-
-These findings distinguish semantic availability and executor sufficiency from causal modularity and ontology discovery. The maintained system consequently uses a structured resolver and treats generated adapters as temporary execution artifacts.
+These limitations are part of the experimental conclusion. Statistical regularity, semantic information, deterministic executability, and compositional structure are different properties; success on one does not imply success on the others.
 
 ## Installation
 
@@ -111,26 +141,20 @@ pytest
 python benchmarks/evaluate_component_replacements.py
 ```
 
-The tests verify the frozen checkpoint and suite hashes, persistence after support removal, the resolver's permutation convention, and Stage 1/2 invariants. The benchmark reproduces the component comparison in `results/component_replacement_evaluation.json`.
+The tests verify the frozen checkpoint and evaluation-suite hashes, support-set deletion, Skill-IR reload, the resolver convention, and the Stage 1/2 invariants. The benchmark reproduces `results/component_replacement_evaluation.json`.
 
-## Repository layout
+## Repository structure
 
-- `src/tool_lora/skill_ir/`: acquisition, correspondence, canonicalization, persistence, resolution, compilation, and execution.
-- `results/stage3d_p6_r1/`: frozen P6-R1 checkpoint, immutable suite, and provenance manifest.
-- `benchmarks/`: reproducible component evaluation.
-- `tests/`: focused maintained-path tests.
-- `docs/`: architecture, scientific scope, experiment history, and reproducibility notes.
-- `report/`: the two-page DLAI course report and official template files.
+- `src/tool_lora/skill_ir/`: maintained Skill-IR implementation.
+- `src/tool_lora/functional_hypernet/functional_lora.py`: temporary execution-adapter application.
+- `results/stage3d_p6_r1/`: frozen P6-R1 checkpoint, immutable evaluation suite, and provenance metadata.
+- `benchmarks/`: component evaluation.
+- `tests/`: maintained-path tests.
+- `docs/`: architecture, research history, and reproducibility notes.
+- `report/`: DLAI LaTeX report and the course template files.
 
-## Limitations
-
-- The positive evaluation uses a controlled synthetic protocol domain.
-- The exact matcher relies on directly observable structured components.
-- Statistical organization did not imply causal modularity or discovered composition.
-- The generated-LoRA experiments did not beat nearest-neighbor adapter reuse.
-
-See [the research synthesis](docs/stage3_research_synthesis.md) for the complete claim boundary and [the LaTeX report](report/main.tex) for the course submission.
+The concise scientific report is available in [report/main.tex](report/main.tex). The detailed claim boundary is documented in [docs/stage3_research_synthesis.md](docs/stage3_research_synthesis.md).
 
 ## License
 
-MIT. The Qwen model and external datasets are not redistributed by this repository.
+The project code is released under the MIT License. The Qwen model and external datasets are not redistributed.
